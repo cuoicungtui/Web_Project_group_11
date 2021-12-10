@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+body {
+    height: 200vh;
+}
+:root {
+    --primary-color: #24a8d8;
+    --second-color: #c2f9ff;
+    --gray-color: #e7e7e8;
+    --header-mg: 98px;
+
+}
+
+#main {
+    margin-top: var(--header-mg);
+}
+
