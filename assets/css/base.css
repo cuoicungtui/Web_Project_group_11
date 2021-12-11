@@ -5,9 +5,16 @@
     font-family: 'Rubik', sans-serif;
 }
 body {
-    height: 200vh;
+    background-image: url(../img/bg.png) ;
+    background-position: fixed;;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    height: 100vh;
 }
+
 :root {
+    --text-color: #7e7e7e;
     --primary-color: #24a8d8;
     --second-color: #c2f9ff;
     --gray-color: #e7e7e8;

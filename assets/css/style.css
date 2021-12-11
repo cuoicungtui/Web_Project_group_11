@@ -196,6 +196,7 @@
 }
 
 .tab-content {
+    width: calc(100% + 16px);
     padding: 20px 0;
     background-color: #fff;    
     margin-top: 12px;
@@ -233,7 +234,7 @@
 
 .input-bookTicket-icon {
     position: absolute;
-    left: 15px;
+    left: 5px;
     top: 26px;
     padding: 8px;
 }
@@ -243,6 +244,10 @@
     right: 10px;
     top: 25px;
     padding: 8px;
+}
+
+.input-bookTicket input[type="text"]:hover {
+    border-bottom: 1px solid #000;
 }
 
 .input-bookTicket input[type="text"] {
@@ -261,6 +266,14 @@ input[type="checkbox"] {
     border-radius: 4px;
     cursor: pointer;
 }
+.tab-controlR .input-bookTicket .input-bookTicket-iconR,
+.tab-controlR .input-bookTicket .input-bookTicket-icon {
+    top: 32px;
+}
+
+.tab-controlR .input-bookTicket input {
+    padding-left: 50px;
+}
 
 .tab-search {
     display: flex;
@@ -275,12 +288,16 @@ input[type="checkbox"] {
 }
 
 .btn-bookT {
-    padding: 15px 30px;
+    padding: 12px 30px;
     background-color: var(--primary-color);
     border-radius: 30px;
     color: #fff;
     cursor: pointer;
     display: inline-block;
+}
+
+.btn-bookT:hover {
+    background-color: #217492;
 }
 
 .tab-control {
@@ -292,22 +309,23 @@ input[type="checkbox"] {
 
 .btn-control-wrap {
     display: flex;
-}
-
-.btn-control-wrap i {
-    font-size: 1.6rem;
-    padding-right: 14px;
+    font-size: 18px;
 }
 
 .btn-control-wrap p {
-    margin-top: 12px;
+    margin-bottom: 0;
+}
+
+.btn-control-wrap i {
+    font-size: 1.4rem;
+    padding-right: 14px;
 }
 
 .btn-plus,
 .btn-repair {
     display: flex;
     align-items: center;
-    border-radius: 30px;
+    border-radius: 40px;
     padding: 5px 30px;
 }
 
@@ -316,14 +334,28 @@ input[type="checkbox"] {
     color: var(--primary-color);
 }
 
+.btn-plus:hover {
+    border: 1px solid #04b8fa;
+    background-color: #e5f5fd;
+}
+
 .btn-repair {
     border: 1px solid #ccc;
+    align-items: center;
+    font-size: 18px;
+}
+
+.btn-repair:hover {
+    border: 1px solid rgb(182, 179, 179);
+    background-color: rgb(253, 250, 250);
 }
 
 .tab-controlR {
     width: 500px;
 }
 
-.tab-controlR > .btn-bookT {
-    margin-left: auto;
+.btn-bookNC {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.3rem;
 }
