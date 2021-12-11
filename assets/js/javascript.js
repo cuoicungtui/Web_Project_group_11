@@ -24,3 +24,4 @@ tabs.forEach((tab, index) => {
         pane.classList.add("active");
     };
 });
+
