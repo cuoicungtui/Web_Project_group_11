@@ -10,7 +10,7 @@
     <title>Document</title>
 </head>
 
-<body>
+<body style="background-color: gray;">
 
 
     <div class="container my-container ">
