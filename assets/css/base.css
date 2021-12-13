@@ -74,6 +74,11 @@ body {
 }
 
 
+@media screen and (min-width: 1280px) {
+    
+}
+
+
 .btn-load {
     font-size: 1.2rem;
     align-items: center;

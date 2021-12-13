@@ -16,102 +16,105 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <header>
-        <div class="container-fluid fixed-top">
-            <div class="row">
-                <div class="col-md-12 header">
-                    <div class="navbar-logo">
-                        <img src="./assets/img/logo.png" alt="" class="img-logo">
-                        <div class="navbar-input input-search">
-                            <input class="navbar-search" type="text" placeholder="Tìm kiếm">
-                            <i class="bi bi-search"></i>
-                        </div>
-                    </div>
-                    <ul class="navbar-list">
-                        <li class="navbar-item">
-                            <a href="">
-                                <div class="navbar-item-wrap">
-                                    <div class="circle"></div>
-                                    <i class="bi bi-newspaper"></i> 
-                                </div>
-                                <p>Bảng tin</p>
-                            </a>
-                        </li>
-                        <li class="navbar-item">
-                            <a href="">
-                                <div class="navbar-item-wrap">
-                                    <div class="circle"></div>
-                                    <i class="bi bi-umbrella"></i>
-                                </div>
-                                <p>Trải nghiệm</p> 
-                            </a>
-                        </li>
-                        <li class="navbar-item">
-                            <a href="">
-                                <div class="navbar-item-wrap">
-                                    <div class="circle circle1"></div>
-                                    <i class="bi bi-geo"></i>
-                                </div>
-                                <p>Tour</p> 
-                            </a>
-                        </li>
-                        <li class="navbar-item">
-                            <a href="">
-                                <div class="navbar-item-wrap">
-                                    <div class="circle"></div>
-                                    <i class="bi bi-building"></i>
-                                </div>
-                                <p>Khách sạn</p>
-                            </a>
-                        </li>
-                        <li class="navbar-item active-navbar">
-                            <a href="">
-                                <div class="navbar-item-wrap">
-                                    <div class="circle"></div>
-                                    <i class="bi bi-send"></i>
-                                </div>
-                                <p class="title-active">Vé máy bay</p> 
-                            </a>
-                        </li>
-                        <li class="navbar-item">
-                            <a href="">
-                                <div class="navbar-item-wrap">
-                                    <div class="circle"></div>
-                                    <i class="bi bi-truck"></i>
-                                </div>
-                                <p>Cho thuê xe</p> 
-                            </a>
-                        </li>
-                        <li class="navbar-item">
-                            <a href="">
-                                <div class="navbar-item-wrap">
-                                    <div class="circle"></div>
-                                    <i class="bi bi-bag"></i>
-                                </div>
-                                <p>Mua sắm</p>
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="navbar-auth">
-                        <button class="btn">
-                            <i class="bi bi-cart3"></i>
-                        </button>
-                        <button class="btn">
-                            <i class="bi bi-wallet"></i>
-                        </button>
-                        <button class="btn">
-                            <i class="bi bi-messenger"></i>
-                        </button class="btn">
-                        <div class="avatar">
-                            <img src="./assets/img/no-avatar.png" alt="" class="img-avatar">
-                        </div>
-                    </div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light header fixed-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
 
-                </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <a class="navbar-brand navbar-logo" href="#">
+                    <img src="./assets/img/logo.png" height="55" alt="MDB Logo" loading="lazy"/>
+                    <div class="navbar-input input-search">
+                        <input class="navbar-search" type="text" placeholder="Tìm kiếm">
+                        <i class="bi bi-search"></i>
+                    </div>
+                </a>
+                <ul class="navbar-nav m-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <div class="navbar-item-wrap">
+                                <div class="circle"></div>
+                                <i class="bi bi-newspaper"></i> 
+                            </div>
+                            <p>Bảng tin</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <div class="navbar-item-wrap">
+                                <div class="circle"></div>
+                                <i class="bi bi-umbrella"></i>
+                            </div>
+                            <p>Trải nghiệm</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <div class="navbar-item-wrap">
+                                <div class="circle circle1"></div>
+                                <i class="bi bi-geo"></i>
+                            </div>
+                            <p>Tour</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <div class="navbar-item-wrap">
+                                <div class="circle"></div>
+                                <i class="bi bi-building"></i>
+                            </div>
+                            <p>Khách sạn</p>
+                        </a>
+                    </li>
+                    <li class="nav-item active-navbar">
+                        <a class="nav-link" href="#">
+                            <div class="navbar-item-wrap">
+                                <div class="circle"></div>
+                                <i class="bi bi-send"></i>
+                            </div>
+                            <p>Vé máy bay</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <div class="navbar-item-wrap">
+                                <div class="circle"></div>
+                                <i class="bi bi-truck"></i>
+                            </div>
+                            <p>Cho thuê xe</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <div class="navbar-item-wrap">
+                                <div class="circle"></div>
+                                <i class="bi bi-bag"></i>
+                            </div>
+                            <p>Mua sắm</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="d-flex align-items-center icon-size">
+                <a class="text-reset me-4" href="#">
+                    <i class="bi bi-cart3"></i>
+                </a>
+                <a class="text-reset me-4" href="#">
+                    <i class="bi bi-wallet"></i>
+                </a>
+                <a class="text-reset me-4" href="#">
+                    <i class="bi bi-messenger"></i>
+                </a>
+                <a class="d-flex align-items-center hidden-arrow" href="#" role="button" aria-expanded="false">
+                    <img src="./assets/img/no-avatar.png" class="rounded-circle" height="50" alt="Black and White Portrait of a Man" loading="lazy"/>
+                </a>
             </div>
         </div>
-    </header>
-    
+    </nav>
+<!-- Navbar -->
+
     <div id="main">
         <div class="container">
             <div class="row">
@@ -299,7 +302,7 @@
                             <img src="./assets/img/p1.jpg" class="card-img-top" alt="">
                             <div class="card-body">
                                 <h4 class="card-title">BAMBOO AIRWAYS MỞ BÁN VÉ BAY THẲNG TP HCM – ĐIỆN BIÊN, GIÁ TỪ 159.000 ĐỒNG</h4>
-                                <p class="card-text">Với những hành trình bay bằng phản lực Embraer của Bamboo Airways, lần đầu tiên trong lịch sử, khoảng cách gần 2000km giữa TP HCM và Điện Biên sẽ chỉ còn gói gọn trong hơn 2 giờ bay thẳng.</p>
+                                <p class="card-text">Với những hành trình bay bằng phản lực Embraer của Bamboo Airways, lần đầu tiên trong lịch sử,.</p>
                                 <a href="#" class="card-link">Chi tiết</a>
                             </div>
                         </div>

@@ -7,17 +7,14 @@
 }
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 40px;
     box-shadow: 2px 2px 10px 3px rgba(0, 0, 0, 0.06);
     z-index: 1;
     background-color: #fff;
 }
 
-.img-logo {
-    width: 60px;
+.navbar {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
 }
 
 .navbar-input {
@@ -46,35 +43,28 @@
     font-size: 20px;
 }
 
-.navbar-list {
-    display: flex;
-    padding-top: 15px;
-}
-
 .navbar-logo {
     display: flex;
     align-items: center;
     padding: 0 30px;
 }
 
-.wrap {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.navbar-list{
-    list-style: none;
-    margin: 0;
-}
-
-.navbar-item {
+.nav-item {
     padding: 0 20px;
     text-align: center;
 }
 
-.navbar-item i {
+.nav-item i {
     font-size: 26px;
+    color: #000;
+}
+
+.nav-item p {
+    margin-bottom: 0;
+}
+
+.nav-item a{
+    text-decoration: none;
     color: #000;
 }
 
@@ -91,31 +81,11 @@
 
 .circle1 {
     margin-top: 8px;
-    margin-left: 10px;
+    margin-left: 6px;
 }
 
-.navbar-item a{
-    text-decoration: none;
-    color: #000;
-}
-
-.navbar-auth {
-    display: flex;
-    padding: 0 25px;
-}
-
-.btn i {
-    font-size: 26px;
-}
-
-.avatar {
-    padding-left: 15px;
-}
-
-.img-avatar {
-    display: flex;
-    width: 50px;
-    border-radius: 50%;
+.icon-size i{
+    font-size: 1.6rem;
 }
 
 /* Main */
@@ -402,7 +372,6 @@ input[type="checkbox"] {
 }
 
 .card-img-top {
-    flex-shrink: 0;
     display: flex;
     flex-direction: column;
     object-fit: cover;
@@ -410,7 +379,7 @@ input[type="checkbox"] {
 
 .card-body {
     margin-top: auto;
-    flex: 1;
+    /* height: 300px; */
 }
 
 .card-title {
@@ -419,17 +388,21 @@ input[type="checkbox"] {
 
 .card-text {
     align-items: justify;
-    /* display: -webkit-box;
+    display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 4; */
-    /* overflow: hidden; */
+    -webkit-line-clamp: 4;
+    overflow: hidden;
 }
 
 .card-link {
     position: relative;
-    margin-left: auto;
     text-decoration: none;
     color: var(--primary-color);
     font-weight: 500;
-    flex-grow: 1;
+    margin-top: auto;
+}
+
+
+.card-body a {
+    margin-left: auto;
 }
