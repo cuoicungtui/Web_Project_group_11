@@ -319,10 +319,6 @@ input[type="checkbox"] {
     background-color: rgb(253, 250, 250);
 }
 
-.tab-controlR {
-    width: 500px;
-}
-
 .btn-bookNC {
     display: flex;
     justify-content: flex-end;
