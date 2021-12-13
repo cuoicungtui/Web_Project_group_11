@@ -43,6 +43,10 @@
     font-size: 20px;
 }
 
+.search-checkbox {
+    align-items: center;
+}
+
 .navbar-logo {
     display: flex;
     align-items: center;
@@ -50,7 +54,7 @@
 }
 
 .nav-item {
-    padding: 0 20px;
+    padding: 0 15px;
     text-align: center;
 }
 
@@ -349,10 +353,6 @@ input[type="checkbox"] {
     color: var(--primary-color);
 }
 
-.help-title {
-    max-width: 600px;
-}
-
 .straight-line {
     font-size: 1.3rem;
     align-items: center;
@@ -375,7 +375,7 @@ input[type="checkbox"] {
 
 .card-body {
     margin-top: auto;
-    /* height: 300px; */
+    height: 260px;
 }
 
 .card-title {
@@ -395,10 +395,16 @@ input[type="checkbox"] {
     text-decoration: none;
     color: var(--primary-color);
     font-weight: 500;
-    margin-top: auto;
+    margin-left: auto;
+    padding: 0 20px 10px 0;
 }
 
 
 .card-body a {
     margin-left: auto;
+}
+
+.card-img-top {
+    height: 300px;
+    object-fit: cover;
 }
