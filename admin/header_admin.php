@@ -23,7 +23,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.php">Home</a>
+                            <a class="nav-link active" aria-current="page" href="Home.php">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="Account_admin.php">Admin</a>
@@ -42,7 +42,11 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled">Logout</a>
+                        <a class="nav-link" ><?php echo $_SESSION['USERNAME_admin'] ?></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="logout_admin.php">Logout</a>
                         </li>
                     </ul>
                    
