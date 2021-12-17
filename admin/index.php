@@ -17,24 +17,27 @@
         <img src="../assets/img/hahalolo.png" class="rounded mx-auto d-block img_admin_login " alt="...">
         <h1 class="text-center">Login</h1>
         <Form action="login_admin.php" method="POST" class="my-form">
-            <div>
-                <div class="mb-4 form_conten ">
-                    <label for="input_usename" class="form_label me-2">Use Name</label>
-                    <input type="text" id="input_usename " class="form_input" name="usename" require >
+            <div class="container">
+                <div class="mb-4 ">                   
+                    <input type="text" id="input_usename " class="form_input " name="usename" require placeholder="Username">
                 </div>
-                <div class="mb-4 form_conten ">
-                    <label for="input_password" class="form_label me-2">PassWord</label>
-                    <input type="password" id="input_password" class="form_input" name="password" require>
-                </div>             
+                <div class="mb-4 ">
+                    
+                    <input type="password" id="input_password" class="form_input" name="password" require placeholder="Password">
+                </div>
                 <div class="mb-4 btn_login ">
-                <button type="submit" class="btn btn-outline-primary" name="btn-admin-login">Login</button>
+                    <button type="submit" class="btn btn-outline-primary" name="btn-admin-login">Login</button>
                 </div>
             </div>
         </Form>
-
+        <style>
+            input{
+                width: 100%;
+                height: 35px;
+            }
+        </style>
 
     </div>
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>

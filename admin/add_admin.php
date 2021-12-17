@@ -22,21 +22,10 @@
 
     <div class="container my-container ">
         <img src="../assets/img/hahalolo.png" class="rounded mx-auto d-block img_admin_login " alt="...">
-        <h1 class="text-center">Đăng kí</h1>
+        <h1 class="text-center">Register admin</h1>
         <Form>
-            <div>
-            <label for="username">Usename</label>
-            <input type="text" id = "username">
-            </div>
-           <div></div>
-           <div></div>
-           <div></div>
-            <label for="email">Email</label>
-            <input type="text" id = "email">
-            <label for="password">Password1</label>
-            <input type="text" id="password">
-            <label for="re_password">Password2</label>
-            <input type="text" id = "re_password">
+           
+
 
         </Form>
 

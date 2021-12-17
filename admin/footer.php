@@ -1,5 +1,5 @@
 
-<footer class="page-footer ">
+<footer class="page-footer mb-auto ">
 
 <div class="footer-copyright text-center py-3">© 61THNB-nhóm 8:
   <a href="#">hahalolo.com</a>
