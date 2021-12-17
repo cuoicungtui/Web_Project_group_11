@@ -19,7 +19,7 @@ include "header_admin.php";
                     <th scope="col">UseName</th>
                     <th scope="col">Password</th>
                     <th scope="col">Sửa</th>
-                    <th scope="col">Xóa</th>            
+                    <th scope="col">Xóa</th>
                 </tr>
             </thead>
             <tbody>
@@ -39,8 +39,8 @@ include "header_admin.php";
                         <th scope="row"> <?php echo $row['Id'] ?> </th>
                         <td> <?php echo $row['UseName'] ?></td>
                         <td> <?php echo $row['PASSWORD'] ?></td>
-                        <td>  <a href="#" >add_admin</a></td>
-                        <td>  <a href="#" >fix_admin</a></td>                     
+                        <td> <a href="#"><i class="bi bi-pencil-square"></i></a></td>
+                        <td> <a href="#"><i class="bi bi-trash"></i></a></td>
                     </tr>
                 <?php
                     }

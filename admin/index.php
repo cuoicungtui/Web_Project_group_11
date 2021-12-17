@@ -26,7 +26,7 @@
                     <input type="password" id="input_password" class="form_input" name="password" require placeholder="Password">
                 </div>
                 <div class="mb-4 btn_login ">
-                    <button type="submit" class="btn btn-outline-primary" name="btn-admin-login">Login</button>
+                    <input class="btn btn-primary" type="submit" value="Login" name="btn-admin-login">                   
                 </div>
             </div>
         </Form>
