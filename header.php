@@ -25,7 +25,7 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <a class="navbar-brand navbar-logo" href="#">
-                    <img src="assets/img/hahalolo.png" height="55" alt="hahalolo" loading="lazy"/>
+                    <img src="assets/img/hahalolo.png" height="40" alt="hahalolo" loading="lazy"/>
                     <div class="navbar-input input-search">
                         <input class="navbar-search" type="text" placeholder="Tìm kiếm">
                         <i class="bi bi-search"></i>
@@ -108,7 +108,7 @@
                     <i class="bi bi-messenger"></i>
                 </a>
                 <a class="d-flex align-items-center hidden-arrow" href="#" role="button" aria-expanded="false">
-                    <img src="./assets/img/no-avatar.png" class="rounded-circle" height="50" alt="Black and White Portrait of a Man" loading="lazy"/>
+                    <img src="./assets/img/no-avatar.png" class="rounded-circle" height="40" alt="Black and White Portrait of a Man" loading="lazy"/>
                 </a>
             </div>
         </div>

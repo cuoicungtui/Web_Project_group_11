@@ -1,4 +1,4 @@
-<?php include('./header.php') ?>
+    <?php include('./header.php') ?>
 
     <div id="main">
         <div class="container">
@@ -318,7 +318,4 @@
     
 
 
-
-    <script src="./assets/js/javascript.js"></script>
-</body>
-</html>
+<?php include('./footer.php') ?>
