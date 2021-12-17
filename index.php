@@ -421,6 +421,36 @@
                             <a href="#" class="card-link">Chi tiết</a>
                         </div>
                     </div>
+<!-- /////////////////////////////// -->
+                     <?php
+                        require "admin/connect.php";
+                        $query = "SELECT * FROM table_dl";
+                        $Data = mysqli_query($conn,$query);
+                        $dt = mysqli_fetch_assoc($Data);
+
+
+                        ?>
+                        <div class="col-xs-12 col-sm-6 col-xl-4 mb-4">
+                        <div class="card">
+                            <?php
+                                echo "<img src=".$dt['img'];
+                                echo 'class="card-img-top"alt="">';
+                            ?>
+                             <!-- <img src="./assets/img/p12.jpg" class="card-img-top" alt=""> -->
+                            <div class="card-body">
+                                <h4 class="card-title"><?php echo $dt['Title'] ?></h4>
+                                <p class="card-text"><?php echo $dt['Prg'] ?></p>
+                            </div>
+                            <a href="#" class="card-link">Chi tiết</a>
+                        </div>
+                    </div> 
+
+
+                        <?php
+
+                    ?> 
+                  
+
                 </div>
             </div>
 
