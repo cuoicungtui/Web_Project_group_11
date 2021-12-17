@@ -17,6 +17,24 @@
     padding-bottom: 0 !important;
 }
 
+.navbar-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-collapse {
+    flex-grow: 0 !important;
+}
+
+.navbar-nav {
+    flex-direction: row !important;
+}
+
+.ul-2 {
+    display: none;
+}
+
 .navbar-input {
     position: relative;
     margin-left: 12px;
@@ -54,17 +72,18 @@
 }
 
 .nav-item {
-    padding: 0 15px;
+    padding: 0 6px;
     text-align: center;
 }
 
 .nav-item i {
-    font-size: 26px;
+    font-size: 18px;
     color: #000;
 }
 
 .nav-item p {
     margin-bottom: 0;
+    font-size: 12px;
 }
 
 .nav-item a{
@@ -74,11 +93,11 @@
 
 .circle {
     z-index: -1;
-    margin-top: 8px;
-    margin-left: 28px;
+    margin-top: 6px;
+    margin-left: 24px;
     position: absolute;
-    width: 30px;
-    height: 30px;
+    width: 26px;
+    height: 26px;
     border-radius: 50%;
     background-color: var(--second-color);
 }
@@ -89,7 +108,7 @@
 }
 
 .icon-size i{
-    font-size: 1.6rem;
+    font-size: 20px;
 }
 
 /* Main */
@@ -102,14 +121,14 @@
 }
 
 .main-title{
-    font-size: 2rem;
-    flex-grow: 1;
+    font-size: 1.6rem;
+    /* flex-grow: 1; */
 }
 
 .main-btn{
     font-size: 1.3rem;
     border-radius: 50px;
-    padding: 12px 30px;
+    padding: 10px 20px;
     background-color: #0ac46b;
     outline: none;
     color: #fff;
@@ -143,8 +162,8 @@
 
 .tab-item {
     min-width: 80px;
-    padding: 12px 35px;
-    font-size: 1.3rem;
+    padding: 8px 20px;
+    font-size: 1rem;
     text-align: center;
     color: #7e7d7d;
     background-color: var(--gray-color);
@@ -196,7 +215,7 @@
 }
 
 .input-bookTicket span {
-    font-style: 1rem;
+    font-size: 14px;
     color: #aeaeae;
 }
 
@@ -208,7 +227,7 @@
 .input-bookTicket-icon {
     position: absolute;
     left: 5px;
-    top: 26px;
+    top: 18px;
     padding: 8px;
 }
 
@@ -230,18 +249,18 @@
     border: none;
     border-bottom: 1px solid #ccc;
     width: 100%;
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 
 input[type="checkbox"] {
-    height: 25px;
-    width: 25px;
+    height: 20px;
+    width: 20px;
     border-radius: 4px;
     cursor: pointer;
 }
 .tab-controlR .input-bookTicket .input-bookTicket-iconR,
 .tab-controlR .input-bookTicket .input-bookTicket-icon {
-    top: 32px;
+    top: 20px;
 }
 
 .tab-controlR .input-bookTicket input {
@@ -253,7 +272,6 @@ input[type="checkbox"] {
     justify-content: flex-end;
     align-items: center;
     padding-top: 20px;
-    font-size: 1.3rem;
 }
 
 .tab-search p {
@@ -261,7 +279,7 @@ input[type="checkbox"] {
 }
 
 .btn-bookT {
-    padding: 12px 30px;
+    padding: 8px 20px;
     background-color: var(--primary-color);
     border-radius: 30px;
     color: #fff;
@@ -282,7 +300,7 @@ input[type="checkbox"] {
 
 .btn-control-wrap {
     display: flex;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 .btn-control-wrap p {
@@ -299,7 +317,7 @@ input[type="checkbox"] {
     display: flex;
     align-items: center;
     border-radius: 40px;
-    padding: 5px 30px;
+    padding: 0 15px;
 }
 
 .btn-plus {
@@ -315,7 +333,6 @@ input[type="checkbox"] {
 .btn-repair {
     border: 1px solid #ccc;
     align-items: center;
-    font-size: 18px;
 }
 
 .btn-repair:hover {
@@ -326,7 +343,6 @@ input[type="checkbox"] {
 .btn-bookNC {
     display: flex;
     justify-content: flex-end;
-    font-size: 1.3rem;
 }
 
 /* Help */
@@ -337,15 +353,18 @@ input[type="checkbox"] {
 }
 
 .help-avatar {
-    padding: 16px;
+    padding-top: 12px;
     display: flex;
     align-items: center;
-    font-size: 1.3rem;
 }
 
 .help-avatar-img {
     padding-right: 30px;
-    width: 100px;
+    width: 90px;
+}
+
+.help-text {
+    margin-bottom: 0;
 }
 
 .help-sdt {
@@ -354,7 +373,6 @@ input[type="checkbox"] {
 }
 
 .straight-line {
-    font-size: 1.3rem;
     align-items: center;
     border-left: 1px solid #ccc;
     padding-left: 30px;
@@ -375,11 +393,16 @@ input[type="checkbox"] {
 
 .card-body {
     margin-top: auto;
-    height: 260px;
+    height: 210px;
+}
+
+.card-body a {
+    margin-left: auto;
 }
 
 .card-title {
     align-items: justify;
+    font-size: 16px;
 }
 
 .card-text {
@@ -391,17 +414,13 @@ input[type="checkbox"] {
 }
 
 .card-link {
+    font-size: 14px;
     position: relative;
     text-decoration: none;
     color: var(--primary-color);
     font-weight: 500;
     margin-left: auto;
     padding: 0 20px 10px 0;
-}
-
-
-.card-body a {
-    margin-left: auto;
 }
 
 .card-img-top {

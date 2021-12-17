@@ -72,25 +72,24 @@ body {
     .tab-content .tab-search {
         display: block;
     }
-}
-
-@media screen and (max-width: 992px) {
     .main-top {
-        display: block;
+        display: block !important;
+    }
+    .main-btn {
+        max-width: 191px;
+        margin-top: 20px;
     }
 }
 
-
-
-@media screen and (max-width: 374px) {
-    .help-title {
-        /* max-width: 200px; */
+@media screen and (max-width: 360px) {
+    .tab-item {
+        padding: 6px 10px !important;
     }
-    .tab-pane .tab-control .btn-control-wrap {
-        /* display: block; */
+    .main-btn {
+        font-size: 16px !important;
+        max-width: 156px!important;
     }
 }
-
 
 @media screen and (max-width: 1594px) {
     .navbar-search {
@@ -102,9 +101,15 @@ body {
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     .help-title {
         overflow: hidden;
+    }
+    .main-title {
+        max-width: 450px;
+    }
+    .main-btn {
+        font-size: 10px;
     }
 }
 
