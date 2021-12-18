@@ -11,16 +11,16 @@ include "header_admin.php";
 
 <body>
     <div class="container">
-       <h1 class="title mt-5 mb-5">Manage Users</h1>
+       <h1 class="title mt-5 mb-5 text-center">Manage Users</h1>
         <a class="btn btn-primary mt-5" href="add_admin.php" role="button">Add admin</a>
         <table class="table mt-2">
             <thead>
                 <tr>
-                    <th scope="col">ID</th>
-                    <th scope="col">UseName</th>
-                    <th scope="col">Password</th>
-                    <th scope="col">Change Password</th>
-                    <th scope="col">Delete Admin</th>
+                    <th scope="col" class="text-center">ID</th>
+                    <th scope="col" class="text-center">UseName</th>
+                    <th scope="col" class="text-center">Password</th>
+                    <th scope="col" class="text-center">Change Password</th>
+                    <th scope="col" class="text-center">Delete Admin</th>
                 </tr>
             </thead>
             <tbody>
@@ -38,10 +38,10 @@ include "header_admin.php";
                 ?>
                     <tr>
                         <th scope="row"> <?php echo $row['Id'] ?> </th>
-                        <td> <?php echo $row['UseName'] ?></td>
-                        <td> <?php echo $row['PASSWORD'] ?></td>
-                        <td> <a href="edit_admin.php?id=<?php echo $row['Id']  ?>"><i class="bi bi-pencil-square"></i></a></td>
-                        <td> <a href="delete_admin_DB.php?id=<?php echo $row['Id']  ?>"><i class="bi bi-trash"></i></a></td>
+                        <td class="text-center"> <?php echo $row['UseName'] ?></td>
+                        <td class="text-center"> <?php echo $row['PASSWORD'] ?></td>
+                        <td class="text-center"> <a href="edit_admin.php?id=<?php echo $row['Id']  ?>"><i class="bi bi-pencil-square"></i></a></td>
+                        <td class="text-center"> <a href="delete_admin_DB.php?id=<?php echo $row['Id']  ?>"><i class="bi bi-trash"></i></a></td>
                     </tr>
                 <?php
                     }

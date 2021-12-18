@@ -14,13 +14,12 @@
     $query = "SELECT * From admin WHERE Id = $ID";
     $result = mysqli_query($conn,$query);
     $data= mysqli_fetch_assoc($result);
+    
     if(password_verify($cusent_pw,$data['PASSWORD'])){
-        $query = "UPDATE admin SET PASSWORD = '$password_hash' WHERE Id = $ID ";
-        mysqli_query($conn,$query);
-        header("loaction:Account_admin.php");
+        $query2 = "UPDATE admin SET PASSWORD = '$password_hash' Where id = $ID ";
+        mysqli_query($conn,$query2);
+        header("location:Account_admin.php");
     }else{
-        $err="1";
-        header("location:edit_admin.php?err=$err");
+        header("location:edit_admin.php?id=$ID");
     }
-
 ?>

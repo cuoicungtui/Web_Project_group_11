@@ -11,11 +11,11 @@
     <title>Document</title>
 </head>
 
-<body>
-    <div class="container-fruit">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+<body">
+    <div class="container-fruit " >
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="Home.php">
                 <img src="../assets/img/hahalolo.png" alt="" width="35" height="30">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,7 +30,7 @@
                             <a class="nav-link" href="Account_admin.php">Admin</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Tin tức</a>
+                            <a class="nav-link" href="News.php">News</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">

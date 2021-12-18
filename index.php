@@ -12,8 +12,8 @@
                                 <div class="col-xs-12 col-sm-6 col-xl-4 mb-4">
                                     <div class="card">
                                         <?php
-                                            echo "<img src=".$dt['img'];
-                                            echo 'class="card-img-top"alt="">';
+                                            echo '<img src="'.$dt['img'];
+                                            echo '"class="card-img-top"alt="">';
                                         ?>
                                         
                                         <div class="card-body">
