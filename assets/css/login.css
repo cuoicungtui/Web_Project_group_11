@@ -18,3 +18,14 @@
         border-bottom-right-radius: .3rem;
     }
 }
+
+.image {
+    display: flex;
+    align-items: center;
+}
+
+.img-logo-name {
+    font-size: 28px;
+    font-style: bold;
+    color: #24a8d8;
+}
