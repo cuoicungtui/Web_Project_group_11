@@ -17,6 +17,7 @@ tabs.forEach((tab, index) => {
         $(".tab-item.active").classList.remove("active");
         $(".tab-pane.active").classList.remove("active");
 
+        console.log(abc)
         line.style.left = this.offsetLeft + "px";
         line.style.width = this.offsetWidth + "px";
 

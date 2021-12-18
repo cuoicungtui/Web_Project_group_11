@@ -17,13 +17,9 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light header fixed-top">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <nav class="navbar navbar-light header fixed-top">
+        <div class="container-fluid navbar-heading">
+            <div class="" >
                 <a class="navbar-brand navbar-logo" href="#">
                     <img src="assets/img/hahalolo.png" height="40" alt="hahalolo" loading="lazy"/>
                     <div class="navbar-input input-search">
@@ -31,72 +27,74 @@
                         <i class="bi bi-search"></i>
                     </div>
                 </a>
-                <ul class="navbar-nav m-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <div class="navbar-item-wrap">
-                                <div class="circle"></div>
-                                <i class="bi bi-newspaper"></i> 
-                            </div>
-                            <p>Bảng tin</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <div class="navbar-item-wrap">
-                                <div class="circle"></div>
-                                <i class="bi bi-umbrella"></i>
-                            </div>
-                            <p>Trải nghiệm</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <div class="navbar-item-wrap">
-                                <div class="circle circle1"></div>
-                                <i class="bi bi-geo"></i>
-                            </div>
-                            <p>Tour</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <div class="navbar-item-wrap">
-                                <div class="circle"></div>
-                                <i class="bi bi-building"></i>
-                            </div>
-                            <p>Khách sạn</p>
-                        </a>
-                    </li>
-                    <li class="nav-item active-navbar">
-                        <a class="nav-link" href="#">
-                            <div class="navbar-item-wrap">
-                                <div class="circle"></div>
-                                <i class="bi bi-send"></i>
-                            </div>
-                            <p>Vé máy bay</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <div class="navbar-item-wrap">
-                                <div class="circle"></div>
-                                <i class="bi bi-truck"></i>
-                            </div>
-                            <p>Cho thuê xe</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <div class="navbar-item-wrap">
-                                <div class="circle"></div>
-                                <i class="bi bi-bag"></i>
-                            </div>
-                            <p>Mua sắm</p>
-                        </a>
-                    </li>
-                </ul>
             </div>
+
+            <ul class="navbar-nav m-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <div class="navbar-item-wrap">
+                            <div class="circle"></div>
+                            <i class="bi bi-newspaper"></i> 
+                        </div>
+                        <p>Bảng tin</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <div class="navbar-item-wrap">
+                            <div class="circle"></div>
+                            <i class="bi bi-umbrella"></i>
+                        </div>
+                        <p>Trải nghiệm</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <div class="navbar-item-wrap">
+                            <div class="circle circle1"></div>
+                            <i class="bi bi-geo"></i>
+                        </div>
+                        <p>Tour</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <div class="navbar-item-wrap">
+                            <div class="circle"></div>
+                            <i class="bi bi-building"></i>
+                        </div>
+                        <p>Khách sạn</p>
+                    </a>
+                </li>
+                <li class="nav-item active-navbar">
+                    <a class="nav-link" href="#">
+                        <div class="navbar-item-wrap">
+                            <div class="circle"></div>
+                            <i class="bi bi-send"></i>
+                        </div>
+                        <p>Vé máy bay</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <div class="navbar-item-wrap">
+                            <div class="circle"></div>
+                            <i class="bi bi-truck"></i>
+                        </div>
+                        <p>Cho thuê xe</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <div class="navbar-item-wrap">
+                            <div class="circle"></div>
+                            <i class="bi bi-bag"></i>
+                        </div>
+                        <p>Mua sắm</p>
+                    </a>
+                </li>
+            </ul>
+            
             <div class="d-flex align-items-center icon-size">
                 <a class="text-reset me-4" href="#">
                     <i class="bi bi-cart3"></i>
@@ -111,5 +109,191 @@
                     <img src="./assets/img/no-avatar.png" class="rounded-circle" height="40" alt="Black and White Portrait of a Man" loading="lazy"/>
                 </a>
             </div>
+
+            
         </div>
     </nav>
+
+    <div id="main">
+        <div class="container">
+            <div class="row">
+                <div class="">
+                    <div class="main-top">
+                        <h2 class="main-title">Tìm kiếm chuyến bay cho hành trình của bạn!</h2>
+                        <div class="main-btn">Tra cứu đặt chỗ</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="body-book-ticket">
+                <div class="book-ticket">
+                    <div class="tabs">
+                        <div class="tab-item active">
+                            Một chiều
+                        </div>
+                        <div class="tab-item">
+                            Khứ hồi
+                        </div>
+                        <div class="tab-item">
+                            Nhiều chặng
+                        </div>
+                        <div class="line"></div>
+                    </div>
+    
+                    <!-- Tab content -->
+                    <div class="tab-content">
+                        <div class="tab-pane active">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="input-bookTicket col-12 col-xl-3 col-sm-6 mb-3">
+                                        <span>Điểm khởi hành</span>
+                                        <input type="text" value="Đà Nẵng (DAD)">
+                                        <i class="input-bookTicket-icon fa fa-plane"></i>
+                                    </div>
+                                    <div class="input-bookTicket col-12 col-xl-3 col-sm-6 mb-3">
+                                        <span>Điểm đến</span>
+                                        <input type="text" value="Phú Quốc (PQC)">
+                                        <i class="input-bookTicket-icon fa fa-plane"></i>
+                                    </div>
+                                    <div class="input-bookTicket col-12 col-xl-3 col-sm-6 mb-3">
+                                        <span>Ngày đi</span>
+                                        <input type="text" value="09/12/2021">
+                                        <i class="input-bookTicket-icon fa fa-calendar"></i>
+                                    </div>
+                                    <div class="input-bookTicket col-12 col-xl-3 col-sm-6 mb-3">
+                                        <span>Số hành khách</span>
+                                        <input type="text" value="2 người lớn, 0 trẻ em">
+                                        <i class="input-bookTicket-icon fa fa-user-plus"></i>
+                                        <i class="input-bookTicket-iconR fa fa-question-circle"></i>
+                                    </div>
+                                </div>
+                                <div class="tab-search">
+                                    <div class="search-checkbox d-flex">
+                                        <input type="checkbox" class="checkbox">
+                                        <p>Tìm kiếm vé rẻ trong tháng</p>
+                                    </div>
+                                    <div class="btn-bookT">Tìm kiếm</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="input-bookTicket col-12 col-xl-3 col-sm-6 mb-3">
+                                        <span>Điểm khởi hành</span>
+                                        <input type="text" placeholder="Nhập địa điểm">
+                                        <i class="input-bookTicket-icon fa fa-plane"></i>
+                                    </div>
+                                    <div class="input-bookTicket col-12 col-xl-3 col-sm-6 mb-3">
+                                        <span>Điểm đến</span>
+                                        <input type="text" placeholder="Nhập địa điểm">
+                                        <i class="input-bookTicket-icon fa fa-plane"></i>
+                                    </div>
+                                    <div class="input-bookTicket col-12 col-xl-3 col-sm-6 mb-3">
+                                        <span>Ngày đi</span>
+                                        <input type="text" value="08/12/2021 - 09/12/2021">
+                                        <i class="input-bookTicket-icon fa fa-calendar"></i>
+                                    </div>
+                                    <div class="input-bookTicket col-12 col-xl-3 col-sm-6 mb-3">
+                                        <span>Số hành khách</span>
+                                        <input type="text" value="1 người lớn, 0 trẻ em">
+                                        <i class="input-bookTicket-icon fa fa-user-plus"></i>
+                                        <i class="input-bookTicket-iconR fa fa-question-circle"></i>
+                                    </div>
+                                </div>
+                                <div class="tab-search">
+                                    <div class="search-checkbox d-flex">
+                                        <input type="checkbox" class="checkbox">
+                                        <p>Tìm kiếm vé rẻ trong tháng</p>
+                                    </div>
+                                    <div class="btn-bookT">Tìm kiếm</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="input-bookTicket col-sm-6 col-12 col-xl-4 mb-3">
+                                        <span>Điểm khởi hành</span>
+                                        <input type="text" value="Hà Nội (HAN)">
+                                        <i class="input-bookTicket-icon fa fa-plane"></i>
+                                    </div>
+                                    <div class="input-bookTicket col-sm-6 col-12 col-xl-4 mb-3">
+                                        <span>Điểm đến</span>
+                                        <input type="text" value="Phú Quốc (PQC)">
+                                        <i class="input-bookTicket-icon fa fa-plane"></i>
+                                    </div>
+                                    <div class="input-bookTicket col-sm-6 col-12 col-xl-4 mb-3">
+                                        <span>Ngày đi</span>
+                                        <input type="text" value="09/12/2021">
+                                        <i class="input-bookTicket-icon fa fa-calendar"></i>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-bookTicket col-sm-6 col-12 col-xl-4 mb-3">
+                                        <span>Điểm khởi hành</span>
+                                        <input type="text" placeholder="Nhập địa điểm">
+                                        <i class="input-bookTicket-icon fa fa-plane"></i>
+                                    </div>
+                                    <div class="input-bookTicket col-sm-6 col-12 col-xl-4 mb-3">
+                                        <span>Điểm đến</span>
+                                        <input type="text" placeholder="Nhập địa điểm">
+                                        <i class="input-bookTicket-icon fa fa-plane"></i>
+                                    </div>
+                                    <div class="input-bookTicket col-sm-6 col-12 col-xl-4 mb-3">
+                                        <span>Ngày đi</span>
+                                        <input type="text" value="09/12/2021">
+                                        <i class="input-bookTicket-icon fa fa-calendar"></i>
+                                    </div>
+                                </div>
+                                <div class="tab-control mt-5">
+                                    <div class="btn-control-wrap col-lg-6 col-sm-12 col-12">
+                                        <div class="btn-plus me-5">
+                                            <i class="fa fa-plus"></i>
+                                            <p>Thêm chuyến bay</p> 
+                                        </div>
+                                        <div class="btn-repair">
+                                            <i class="bi bi-arrow-repeat"></i>
+                                            <p>Thiết lặp lại</p>
+                                        </div>
+                                    </div>
+                                    <div class="tab-controlR col-lg-6 col-sm-12 col-12">
+                                        <div class="input-bookTicket">
+                                            <span>Số hành khách</span>
+                                            <input type="text" value="1 người lớn, 0 trẻ em">
+                                            <i class="input-bookTicket-icon fa fa-user-plus"></i>
+                                            <i class="input-bookTicket-iconR fa fa-question-circle"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btn-bookNC mt-3">
+                                    <p class="btn-bookT text-center">Tìm kiếm</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Help -->
+                    <div class="container help mt-4">
+                        <div class="row">
+                            <div class="col-lg-12 col-xl-6 col-sm-12">
+                                <div class="help-avatar">
+                                    <img src="./assets/img/help.svg" alt="" class="help-avatar-img">
+                                    <div class="help-title">
+                                        <div class="help-text">Tổng đài CSKH</div>
+                                        <div class="help-sdt">1900571248</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-xl-6 col-sm-12">
+                                <div class="help-avatar">
+                                    <div class="help-title straight-line">
+                                        <p class="help-text">Tài khoản trung tâm Chăm sóc khách hàng</p>
+                                        <p class="help-sdt">https://www.hahalolo.com/u/chamsockhachhang</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
