@@ -6,6 +6,13 @@
 ?>
 
 <?php
+    if(!isset($_GET['id'])){
+        header("location:index.php");
+    }
+?>
+
+<?php
+    
     $ID = $_GET['id'];
     include "connect.php";
     $query = "DELETE FROM admin WHERE Id = $ID ";

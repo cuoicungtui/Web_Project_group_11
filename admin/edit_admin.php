@@ -5,6 +5,12 @@ if (!isset($_SESSION['USERNAME_admin'])) {
 }
 ?>
 
+<?php
+    if(!isset($_GET['id'])){
+        header("location:Home.php");
+    }
+?>
+
     <?php
         include "header_admin.php"
     ?>
