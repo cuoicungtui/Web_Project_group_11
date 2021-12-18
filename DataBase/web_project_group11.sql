@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th12 18, 2021 lúc 09:29 AM
+-- Thời gian đã tạo: Th12 18, 2021 lúc 09:35 AM
 -- Phiên bản máy phục vụ: 10.4.21-MariaDB
 -- Phiên bản PHP: 8.0.12
 
@@ -20,6 +20,27 @@ SET time_zone = "+00:00";
 --
 -- Cơ sở dữ liệu: `web_project_group11`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Cấu trúc bảng cho bảng `admin`
+--
+
+CREATE TABLE `admin` (
+  `Id` int(11) NOT NULL,
+  `UseName` varchar(25) NOT NULL,
+  `PASSWORD` char(200) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Đang đổ dữ liệu cho bảng `admin`
+--
+
+INSERT INTO `admin` (`Id`, `UseName`, `PASSWORD`) VALUES
+(4, 'admin', '$2y$10$RQv9PPfR1RcyhMnFVC8Qb.Ba6z62AGe4jaaIMealKT4WjoVoRfvNq'),
+(5, 'quocvuong', '$2y$10$rDK6vD3HbP9xkYjZIALKpOuhbd0kRvyy0N13SQ2XAVL6BKYors68W'),
+(6, 'cuoicungtui', '$2y$10$Hw9MHbEGlxr7qU1UOsvnoubltJhuhBLzJbzj.RcnyRbN31G20Aoli');
 
 -- --------------------------------------------------------
 
@@ -56,9 +77,104 @@ INSERT INTO `dl` (`ID`, `img`, `Title`, `Prg`) VALUES
 (29, '\"./assets/img/p11.jpg\"', 'TẠI SAO NÊN MUA VÉ MÁY BAY QUA ĐẠI LÝ?', 'Máy bay giờ đây đã trở thành phương tiện di chuyển vô cùng phổ biến bởi sự an toàn và nhanh chóng. Hãy cùng Hahalolo tìm hiểu những lợi ích của việc đặt vé qua đại lý ngay dưới đây.'),
 (30, '\"./assets/img/p11.jpg\"', 'GIẢI PHÁP NÀO DÀNH CHO NGƯỜI \"ƯA\" SỰ THAY ĐỔI - HAHALOLO', 'Bạn là người bận rộn, luôn phải di chuyển bằng máy bay nhưng lịch trình lại hay thay đổi nhưng lại quá khó khăn để liên hệ các Hãng hàng không thay đổi vé, hotline của Hãng luôn quá tải, tổng đài viên luôn bận.');
 
+-- --------------------------------------------------------
+
+--
+-- Cấu trúc bảng cho bảng `list_customer`
+--
+
+CREATE TABLE `list_customer` (
+  `Id` int(11) NOT NULL,
+  `Name` varchar(30) DEFAULT NULL,
+  `SDT` char(10) NOT NULL,
+  `EMAIL` char(30) NOT NULL,
+  `Code_Flight` char(7) NOT NULL,
+  `Type_Chair` varchar(10) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Đang đổ dữ liệu cho bảng `list_customer`
+--
+
+INSERT INTO `list_customer` (`Id`, `Name`, `SDT`, `EMAIL`, `Code_Flight`, `Type_Chair`) VALUES
+(1, 'Tưởng Đăng Vương Quốc', '0988965602', 'quoctuong@gmail.com', '1233454', 'L1'),
+(2, 'Ngô Văn Tùng', '0854965666', 'TungNgo@gmail.com', '1234567', 'L2');
+
+-- --------------------------------------------------------
+
+--
+-- Cấu trúc bảng cho bảng `list_flight`
+--
+
+CREATE TABLE `list_flight` (
+  `Code_Flight` char(7) NOT NULL,
+  `Code_Plane` char(7) NOT NULL,
+  `Start_Date` datetime NOT NULL,
+  `End_Date` datetime NOT NULL,
+  `Departure_Plane` varchar(25) NOT NULL,
+  `To_Plane` varchar(25) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Đang đổ dữ liệu cho bảng `list_flight`
+--
+
+INSERT INTO `list_flight` (`Code_Flight`, `Code_Plane`, `Start_Date`, `End_Date`, `Departure_Plane`, `To_Plane`) VALUES
+('1233454', 'BBA123', '2021-12-15 07:35:00', '2021-12-16 21:35:00', 'Sài Gòn', 'Vinh'),
+('1234567', 'VJA123', '2021-12-13 08:30:00', '2021-12-13 21:30:00', 'Hà Nội', 'Sài Gòn');
+
+-- --------------------------------------------------------
+
+--
+-- Cấu trúc bảng cho bảng `list_planes`
+--
+
+CREATE TABLE `list_planes` (
+  `Code_Plane` char(7) NOT NULL,
+  `Name_Plane` varchar(25) NOT NULL,
+  `Name_Airline` varchar(25) NOT NULL,
+  `L1_Chair` int(11) DEFAULT NULL,
+  `L2_Chair` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Đang đổ dữ liệu cho bảng `list_planes`
+--
+
+INSERT INTO `list_planes` (`Code_Plane`, `Name_Plane`, `Name_Airline`, `L1_Chair`, `L2_Chair`) VALUES
+('BBA123', 'BBA_BAe 146', 'Bamboo Airline', 40, 180),
+('VJA123', 'VJA_Boing707', 'Vietjet Airline', 50, 150);
+
+-- --------------------------------------------------------
+
+--
+-- Cấu trúc bảng cho bảng `table_dl`
+--
+
+CREATE TABLE `table_dl` (
+  `ID` int(11) NOT NULL,
+  `Title` varchar(200) NOT NULL,
+  `Prg` varchar(200) NOT NULL,
+  `img` char(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Đang đổ dữ liệu cho bảng `table_dl`
+--
+
+INSERT INTO `table_dl` (`ID`, `Title`, `Prg`, `img`) VALUES
+(1, 'uyuqwuygqwguyqdguq', 'ádadagdfgdgdgdverevevrve', '\"./assets/img/p11.jpg\"');
+
 --
 -- Chỉ mục cho các bảng đã đổ
 --
+
+--
+-- Chỉ mục cho bảng `admin`
+--
+ALTER TABLE `admin`
+  ADD PRIMARY KEY (`Id`),
+  ADD UNIQUE KEY `UseName` (`UseName`);
 
 --
 -- Chỉ mục cho bảng `dl`
@@ -67,14 +183,77 @@ ALTER TABLE `dl`
   ADD PRIMARY KEY (`ID`);
 
 --
+-- Chỉ mục cho bảng `list_customer`
+--
+ALTER TABLE `list_customer`
+  ADD PRIMARY KEY (`Id`),
+  ADD UNIQUE KEY `SDT` (`SDT`),
+  ADD UNIQUE KEY `EMAIL` (`EMAIL`),
+  ADD KEY `Code_Flight` (`Code_Flight`);
+
+--
+-- Chỉ mục cho bảng `list_flight`
+--
+ALTER TABLE `list_flight`
+  ADD PRIMARY KEY (`Code_Flight`),
+  ADD UNIQUE KEY `Code_Plane` (`Code_Plane`);
+
+--
+-- Chỉ mục cho bảng `list_planes`
+--
+ALTER TABLE `list_planes`
+  ADD PRIMARY KEY (`Code_Plane`),
+  ADD UNIQUE KEY `Name_Plane` (`Name_Plane`);
+
+--
+-- Chỉ mục cho bảng `table_dl`
+--
+ALTER TABLE `table_dl`
+  ADD PRIMARY KEY (`ID`);
+
+--
 -- AUTO_INCREMENT cho các bảng đã đổ
 --
+
+--
+-- AUTO_INCREMENT cho bảng `admin`
+--
+ALTER TABLE `admin`
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT cho bảng `dl`
 --
 ALTER TABLE `dl`
   MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
+
+--
+-- AUTO_INCREMENT cho bảng `list_customer`
+--
+ALTER TABLE `list_customer`
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT cho bảng `table_dl`
+--
+ALTER TABLE `table_dl`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- Các ràng buộc cho các bảng đã đổ
+--
+
+--
+-- Các ràng buộc cho bảng `list_customer`
+--
+ALTER TABLE `list_customer`
+  ADD CONSTRAINT `list_customer_ibfk_1` FOREIGN KEY (`Code_Flight`) REFERENCES `list_flight` (`Code_Flight`);
+
+--
+-- Các ràng buộc cho bảng `list_flight`
+--
+ALTER TABLE `list_flight`
+  ADD CONSTRAINT `list_flight_ibfk_1` FOREIGN KEY (`Code_Plane`) REFERENCES `list_planes` (`Code_Plane`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
