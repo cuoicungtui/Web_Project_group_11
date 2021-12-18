@@ -25,6 +25,19 @@
                     
                     <input type="password" id="input_password" class="form_input" name="password" require placeholder="Password">
                 </div>
+                <div class="mb-4">
+                    
+                    <?php 
+                       if(isset($_GET['err'])){
+                           $err = $_GET['err'];
+                           if($err == "1"){
+                               echo '<p style="color: red;" >Incorrect password</p>';
+                           }else{
+                           echo '<p style="color: red;" >Account does not exist</p>';
+                           }
+                       }
+                    ?>
+                </div>
                 <div class="mb-4 btn_login ">
                     <input class="btn btn-primary" type="submit" value="Login" name="btn-admin-login">                   
                 </div>
