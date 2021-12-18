@@ -427,3 +427,142 @@ input[type="checkbox"] {
     height: 300px;
     object-fit: cover;
 }
+
+/* Manage */
+
+.manage-wrap {
+    box-shadow: 2px 2px 10px 3px rgba(0, 0, 0, 0.06);
+    background-color: #fff;
+    border-radius: 4px;
+    position: absolute;
+    right: 14px;
+    top: 54px;
+    transition: 0.5s;
+    display: none;
+}
+
+.manage-wrap-active {
+    display: block;
+}
+
+.login-link,
+.manage-link {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    font-size: 14px;
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 10px;
+}
+
+.login-link i,
+.manage-link i {
+    padding-right: 10px;
+}
+
+.login-link p,
+.manage-link p {
+    margin-bottom: 0;
+}
+
+.login-link:hover,
+.manage-link:hover {
+    background-color: #ccc;
+    color: var(--text-color);
+    width: 100%;
+}
+
+.focus-avatar {
+    position: relative;
+}
+
+/* Cart */
+.cart {
+    position: relative;
+}
+
+.cart-wrap {
+    position: absolute;
+    box-shadow: 2px 2px 10px 3px rgba(0, 0, 0, 0.06);
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    border-radius: 4px;
+    top: 58px;
+    right: 160px;
+    padding: 10px 20px;
+    display: none;
+}
+
+.cart-product i {
+    font-size: 4.6rem;
+    color: var(--primary-color);
+    padding: 15px 0 15px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.cart-product-text {
+    max-width: 300px;
+    text-align: center;
+}
+
+.cart-active {
+    display: block;
+}
+
+/* booking lookup */
+.booking {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    display: none;
+    box-shadow: 2px 2px 10px 3px rgba(0, 0, 0, 0.06);
+}
+
+.booking-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 40px;
+    color: var(--text-primary);
+}
+
+.booking-input {
+    width: 100%;
+    outline: none;
+    border: transparent;
+    border-bottom: 1px solid #ccc;
+}
+
+.booking-text {
+    font-size: 14px;
+    color: var(--text-primary);
+    margin-top: 10px;
+}
+
+.booking .btn-bookT {
+    float: right;
+}
+
+.booking-close {
+    cursor: pointer;
+}
+
+.booking-active {
+    display: block;
+}
+
+/* .coatings {
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: none;
+} */
+
