@@ -4,12 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Đăng nhập</title>
+    <title>Đăng ký</title>
     <link rel="stylesheet" href="./assets/css/login.css">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <style>
+        .text-link {
+            color: #24a8d8;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
     <section class="h-100 gradient-form" style="background-image: url(./assets/img/bg.png);">
@@ -34,28 +40,39 @@
                                 <div class="card-body p-md-5 mx-md-4">
                 
                                 <div class="text-center">
-                                    <h4 class="mt-1 mb-5 pb-1">Login</h4>
+                                    <h4 class="mt-1 mb-5 pb-1">Đăng Ký</h4>
                                 </div>
             
-                                <form>
-                                    <p>Please login to your account</p>
+                                <form action="register_db.php" method="post">
+                                    <div class="input-group mb-4">
+                                        <input type="text" name="firstname" class="form-control" placeholder="Tên" style="padding: 15px 20px; margin-right: 30px;" aria-label="Username">
+                                        <input type="text" name="lastname" class="form-control" placeholder="Họ" aria-label="Server" style="padding: 15px 20px;">
+                                    </div>
+
                                     <div class="form-outline">
-                                        <input type="email" id="form2Example11" class="form-control" placeholder="Phone number or email address" style="padding: 15px 20px;"/>
+                                        <input type="email" name="email" id="form2Example11" class="form-control" placeholder="Email" style="padding: 15px 20px;"/>
                                         <label class="form-label" for="form2Example11"></label>
                                     </div>
                 
+                                    <div class="form-outline">
+                                        <input type="password" name="password" id="form2Example22" class="form-control" placeholder="Mật khẩu" style="padding: 15px 20px;"/>
+                                        <label class="form-label" for="form2Example22"></label>
+                                    </div>
                                     <div class="form-outline mb-4">
-                                        <input type="password" id="form2Example22" class="form-control" placeholder="Password" style="padding: 15px 20px;"/>
+                                        <input type="password" id="form2Example22" class="form-control" placeholder="Xác nhận mật khẩu" style="padding: 15px 20px;"/>
                                         <label class="form-label" for="form2Example22"></label>
                                     </div>
                 
                                     <div class="text-center pt-1 mb-5 pb-1">
-                                        <button class="btn btn-block fa-lg mb-3 d-block" type="button" style="width:100%;background-color: #24a8d8; color: #fff; border-radius: 25px;">Log in</button>
+                                        <button class="btn btn-block fa-lg mb-3 d-block" name="btn-register" type="submit" style="width:100%;background-color: #24a8d8; color: #fff; border-radius: 25px;">Đăng Ký</button>
+                                        <span>Bằng cách nhấp vào Đăng ký, bạn đồng ý với</span>
+                                        <a class="text-link" href="#!">Điều khoản dịch vụ, Chính sách dữ liệu, Chính sách cookie</a> và 
+                                        <a class="text-link" href="#!"> Tiêu chuẩn cộng đồng của chúng tôi</a>
                                     </div>
                 
                                     <div class="d-flex align-items-center justify-content-center pb-4">
-                                        <p class="mb-0 me-2">Don't have an account?</p>
-                                        <button type="button" class="btn" style="color: #24a8d8;">Create new</button>
+                                        <p class="mb-0 me-2">Bạn đã có tài khoản?</p>
+                                        <a   style="color: #24a8d8; cursor: pointer; text-decoration: none;" href="login.php">Đăng nhập</a>
                                     </div>
                 
                                 </form>
@@ -68,5 +85,6 @@
             </div>
         </div>
     </section>
+    
 </body>
 </html>
