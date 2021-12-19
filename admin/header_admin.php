@@ -11,12 +11,12 @@
     <title>Document</title>
 </head>
 
-<body">
-    <div class="container-fruit " >
+<body style="background-image: url(../assets/img/bg.png); background-attachment: fixed;">
+    <div class="container-fruit fixed-top ">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
-            <a class="navbar-brand" href="../index.php">
-                <img src="../assets/img/hahalolo.png" alt="" width="35" height="30">
+                <a class="navbar-brand" href="../index.php">
+                    <img src="../assets/img/hahalolo.png" alt="" width="35" height="30">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -33,24 +33,24 @@
                             <a class="nav-link" href="News.php">News</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Các chuyến bay
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown link
                             </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Vé bay một chiều</a></li>
-                                <li><a class="dropdown-item" href="#">vé khứ hồi</a></li>
-                                
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Thống kê chuyến bay</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" ><?php echo $_SESSION['USERNAME_admin'] ?></a>
+                            <a class="nav-link"><?php echo $_SESSION['USERNAME_admin'] ?></a>
                         </li>
 
                         <li class="nav-item">
                             <a class="nav-link" href="logout_admin.php">Logout</a>
                         </li>
                     </ul>
-                   
+
                 </div>
             </div>
         </nav>
