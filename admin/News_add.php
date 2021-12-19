@@ -25,12 +25,11 @@ include "header_admin.php";
         </div>
         <div class="mb-3">
             <div class="row">
-                <div class="col-6">
-                    <img src="../assets/img/p6.jpg" class="img-thumbnail" alt="...">
-                </div>
-                <div class="col-6">
+            
+                <div class="col-12">
                     <label for="formFile" class="form-label">Image</label>
                     <input class="form-control" type="file" id="formFile" name="file_img" accept="image/png, image/jpeg">
+                   
                 </div>
             </div>
 

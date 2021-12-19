@@ -10,7 +10,7 @@ include "header_admin.php";
 ?>
 <div class="container">
     <h1 class="mt-3 text-center">News</h1>
-    <a class="btn btn-primary mb-5" href="News_add.php?add_news" role="button">Add News</a>
+    <a class="btn btn-primary mb-5 bt-3" href="News_add.php?add_news" role="button">Add News</a>
     <table class="table">
         <thead>
             <tr>
