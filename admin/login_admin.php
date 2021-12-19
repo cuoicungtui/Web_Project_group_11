@@ -15,7 +15,7 @@
             $error = "1";
             header("location:index.php?err=$error");
         }
-             
+
     }else{
         $error = "2";
         header("location:index.php?err=$error");

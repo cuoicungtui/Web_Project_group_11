@@ -11,16 +11,12 @@
     $result = mysqli_query($conn,$query);
     $data = mysqli_fetch_assoc($result);
 
-   
-    if(password_verify($password,$data['password'])){
-        
-        header('Location:index.php');
 
+    if(password_verify($password,$data['password'])){
+        header('Location:index.php');
     }
     else {
-
         header('Location:login.php');
-      
     }
 
 ?>

@@ -15,6 +15,8 @@
             color: #24a8d8;
             text-decoration: none;
         }
+
+
     </style>
 </head>
 <body>
@@ -43,15 +45,16 @@
                                     <h4 class="mt-1 mb-5 pb-1">Đăng Ký</h4>
                                 </div>
             
-                                <form action="register_db.php" method="post">
+                                <form id="form" action="register_db.php" method="post">
                                     <div class="input-group mb-4">
                                         <input type="text" name="firstname" class="form-control" placeholder="Tên" style="padding: 15px 20px; margin-right: 30px;" aria-label="Username">
                                         <input type="text" name="lastname" class="form-control" placeholder="Họ" aria-label="Server" style="padding: 15px 20px;">
                                     </div>
 
                                     <div class="form-outline">
-                                        <input type="email" name="email" id="form2Example11" class="form-control" placeholder="Email" style="padding: 15px 20px;"/>
+                                        <input type="email" name="email" id="form2Example11" class="form-control email" placeholder="Email" onkeydown="validation()" style="padding: 15px 20px;"/>
                                         <label class="form-label" for="form2Example11"></label>
+                                        <span id="text"></span>
                                     </div>
                 
                                     <div class="form-outline">
@@ -86,5 +89,28 @@
         </div>
     </section>
     
+
+    <script type="text/javascript">
+        function validation() {
+                var form = document.getElementById('form');
+                var email = document.querySelector('.email').value;
+                var text = document.getElementById('text');
+                var pattern = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                if(email.match(pattern)) {
+                    text.innerHTML = "Địa chỉ Email của bạn Hợp lệ.";
+                    text.style.color = "#00ff00";
+                }
+                else {
+                    text.innerHTML = "Vui lòng nhập địa chỉ email hợp lệ.";
+                    text.style.color = "#ff0000";
+                }
+                if(email == "") {
+                    text.innerHTML = "";
+                    text.style.color = "#00ff00";
+                }
+            }
+
+
+    </script>
 </body>
 </html>

@@ -14,6 +14,73 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .main-top {
+            margin-bottom: 20px;
+        }
+        .main-btn {
+            background-color: var(--primary-color);
+        }
+        .people {
+            font-size: 18px;
+            font-weight: 100;
+            display: flex;
+            align-items: center;
+            color: var(--text-color);
+        }
+        .people i {
+            font-size: 22px;
+            padding-right: 6px;
+        }
+        .flight {
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .light-title {
+            font-size: 20px;
+        }
+        .adress,
+        .light-title {
+            font-weight: 500;
+        }
+        .date {
+            color: #e3f4fa;
+            font-size: 14px;
+        }
+        .ticket {
+            box-shadow: 2px 2px 10px 3px rgba(0, 0, 0, 0.06);
+            padding: 20px 0;
+        }
+        .ticket-logo {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .ticket-logo h6 {
+            font-size: 14px;
+        }
+        .ticket-logo p {
+            margin-bottom: 0;
+        }
+        .ticket-logo img{
+            width: 120px;
+        }
+        .ticket-title {
+            font-size: 14px;
+        }
+        .gray {
+            color: var(--text-color);
+        }
+        .ticket-logoID {
+            padding-right: 60px;
+        }
+        .ticket-icon,
+        .time {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <!-- Navbar -->
@@ -137,197 +204,77 @@
     <div id="main">
         <div class="container">
             <div class="row">
-                <div class="">
-                    <div class="main-top">
-                        <h2 class="main-title">Tìm kiếm chuyến bay cho hành trình của bạn!</h2>
-                        <div class="main-btn">Tra cứu đặt chỗ</div>
-                    </div>
+                <div class="main-top">
+                    <h2 class="main-title">
+                        Kết quả tìm kiếm "chuyến bay một chiều"
+                        <div class="people mt-3">
+                            <i class="bi bi-people"></i>
+                            <span>2 người lớn</span>
+                        </div>
+                    </h2>
+                    <div class="main-btn">Thay đổi tìm kiếm</div>
                 </div>
-                <div class="booking mb-3">
-                    <div class="booking-title">
-                        <h5>Tra cứu đặt chỗ</h5>
-                        <i class="bi bi-x-lg booking-close"></i>
+
+                <div class="flight">
+                    <p class="light-title">Chuyến bay</p>
+                    <div class="adress">
+                        <span>Cần thơ (VCA)</span> 
+                        <i class="bi bi-arrow-right"></i>
+                        <span>Phú Quốc (PQC)</span>
                     </div>
-                    <input type="text" class="booking-input" placeholder="Mã đặt chỗ">
-                    <p class="booking-text">Nhập mã đặt chỗ để tra cứu thông tin chuyến bay của bạn</p>
-                    <div class="btn-bookT">Tìm kiếm</div>
+                    <div class="date">Thứ Tư, 22/12/2021</div>
                 </div>
-            </div>
 
-            <div class="body-book-ticket">
-                <div class="book-ticket">
-                    <div class="tabs">
-                        <div class="tab-item active">
-                            Một chiều
-                        </div>
-                        <div class="tab-item">
-                            Khứ hồi
-                        </div>
-                        <div class="tab-item">
-                            Nhiều chặng
-                        </div>
-                        <div class="line"></div>
-                    </div>
-    
-                    <!-- Tab content -->
-                    <div class="tab-content">
-                        <div class="tab-pane active">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="input-bookTicket col-12 col-xl-3 col-sm-6 mb-3">
-                                        <span>Điểm khởi hành</span>
-                                        <input type="text" value="Đà Nẵng (DAD)">
-                                        <i class="input-bookTicket-icon fa fa-plane"></i>
-                                    </div>
-                                    <div class="input-bookTicket col-12 col-xl-3 col-sm-6 mb-3">
-                                        <span>Điểm đến</span>
-                                        <input type="text" value="Phú Quốc (PQC)">
-                                        <i class="input-bookTicket-icon fa fa-plane"></i>
-                                    </div>
-                                    <div class="input-bookTicket col-12 col-xl-3 col-sm-6 mb-3">
-                                        <span>Ngày đi</span>
-                                        <input type="text" value="09/12/2021">
-                                        <i class="input-bookTicket-icon fa fa-calendar"></i>
-                                    </div>
-                                    <div class="input-bookTicket col-12 col-xl-3 col-sm-6 mb-3">
-                                        <span>Số hành khách</span>
-                                        <input type="text" value="2 người lớn, 0 trẻ em">
-                                        <i class="input-bookTicket-icon fa fa-user-plus"></i>
-                                        <i class="input-bookTicket-iconR fa fa-question-circle"></i>
-                                    </div>
-                                </div>
-                                <div class="tab-search">
-                                    <div class="search-checkbox d-flex">
-                                        <input type="checkbox" class="checkbox">
-                                        <p>Tìm kiếm vé rẻ trong tháng</p>
-                                    </div>
-                                    <div class="btn-bookT">Tìm kiếm</div>
+                <div class="container">
+                    <div class="row ticket mt-4">
+                        <div class="col-md-3">
+                            <div class="ticket-logo">
+                                <img src="assets/img/lg1.png" alt="">
+                                <div class="ticket-title">
+                                    <h6>Bamboo Airways</h6>
+                                    <span class="gray">Phổ thông</span>
+                                    <p class="gray">(ECONOMYSAVER)</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="input-bookTicket col-12 col-xl-3 col-sm-6 mb-3">
-                                        <span>Điểm khởi hành</span>
-                                        <input type="text" placeholder="Nhập địa điểm">
-                                        <i class="input-bookTicket-icon fa fa-plane"></i>
-                                    </div>
-                                    <div class="input-bookTicket col-12 col-xl-3 col-sm-6 mb-3">
-                                        <span>Điểm đến</span>
-                                        <input type="text" placeholder="Nhập địa điểm">
-                                        <i class="input-bookTicket-icon fa fa-plane"></i>
-                                    </div>
-                                    <div class="input-bookTicket col-12 col-xl-3 col-sm-6 mb-3">
-                                        <span>Ngày đi</span>
-                                        <input type="text" value="08/12/2021 - 09/12/2021">
-                                        <i class="input-bookTicket-icon fa fa-calendar"></i>
-                                    </div>
-                                    <div class="input-bookTicket col-12 col-xl-3 col-sm-6 mb-3">
-                                        <span>Số hành khách</span>
-                                        <input type="text" value="1 người lớn, 0 trẻ em">
-                                        <i class="input-bookTicket-icon fa fa-user-plus"></i>
-                                        <i class="input-bookTicket-iconR fa fa-question-circle"></i>
-                                    </div>
-                                </div>
-                                <div class="tab-search">
-                                    <div class="search-checkbox d-flex">
-                                        <input type="checkbox" class="checkbox">
-                                        <p>Tìm kiếm vé rẻ trong tháng</p>
-                                    </div>
-                                    <div class="btn-bookT">Tìm kiếm</div>
+                        <div class="col-md-3">
+                            <div class="ticket-logo">
+                                <h6 class="ticket-logoID ps-5">QH2181</h6>
+                                <div class="time pe-4">
+                                    <span class="gray">19/12/2021</span>
+                                    <h5 class=>13:20</h5>
+                                    <h6>Cần Thơ (VCA)</h6>
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="input-bookTicket col-sm-6 col-12 col-xl-4 mb-3">
-                                        <span>Điểm khởi hành</span>
-                                        <input type="text" value="Hà Nội (HAN)">
-                                        <i class="input-bookTicket-icon fa fa-plane"></i>
-                                    </div>
-                                    <div class="input-bookTicket col-sm-6 col-12 col-xl-4 mb-3">
-                                        <span>Điểm đến</span>
-                                        <input type="text" value="Phú Quốc (PQC)">
-                                        <i class="input-bookTicket-icon fa fa-plane"></i>
-                                    </div>
-                                    <div class="input-bookTicket col-sm-6 col-12 col-xl-4 mb-3">
-                                        <span>Ngày đi</span>
-                                        <input type="text" value="09/12/2021">
-                                        <i class="input-bookTicket-icon fa fa-calendar"></i>
-                                    </div>
+                        <div class="col-md-3">
+                            <div class="ticket-logo">
+                                <div class="ticket-icon ms-3">
+                                    <p>55 phút</p>
+                                    <i class="fa fa-plane" style="font-size: 20px; color: rgb(250, 186, 49)"></i>
+                                    <p>Bay thẳng</p>
                                 </div>
-                                <div class="row">
-                                    <div class="input-bookTicket col-sm-6 col-12 col-xl-4 mb-3">
-                                        <span>Điểm khởi hành</span>
-                                        <input type="text" placeholder="Nhập địa điểm">
-                                        <i class="input-bookTicket-icon fa fa-plane"></i>
-                                    </div>
-                                    <div class="input-bookTicket col-sm-6 col-12 col-xl-4 mb-3">
-                                        <span>Điểm đến</span>
-                                        <input type="text" placeholder="Nhập địa điểm">
-                                        <i class="input-bookTicket-icon fa fa-plane"></i>
-                                    </div>
-                                    <div class="input-bookTicket col-sm-6 col-12 col-xl-4 mb-3">
-                                        <span>Ngày đi</span>
-                                        <input type="text" value="09/12/2021">
-                                        <i class="input-bookTicket-icon fa fa-calendar"></i>
-                                    </div>
-                                </div>
-                                <div class="tab-control mt-5">
-                                    <div class="btn-control-wrap col-lg-6 col-sm-12 col-12">
-                                        <div class="btn-plus me-5">
-                                            <i class="fa fa-plus"></i>
-                                            <p>Thêm chuyến bay</p> 
-                                        </div>
-                                        <div class="btn-repair">
-                                            <i class="bi bi-arrow-repeat"></i>
-                                            <p>Thiết lặp lại</p>
-                                        </div>
-                                    </div>
-                                    <div class="tab-controlR col-lg-6 col-sm-12 col-12">
-                                        <div class="input-bookTicket">
-                                            <span>Số hành khách</span>
-                                            <input type="text" value="1 người lớn, 0 trẻ em">
-                                            <i class="input-bookTicket-icon fa fa-user-plus"></i>
-                                            <i class="input-bookTicket-iconR fa fa-question-circle"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="btn-bookNC mt-3">
-                                    <p class="btn-bookT text-center">Tìm kiếm</p>
+                                <div class="time me-4">
+                                    <span class="gray">19/12/2021</span>
+                                    <h5>13:20</h5>
+                                    <h6>Cần Thơ (VCA)</h6>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                        <div class="col-md-3">
+                            <div class="ticket-logo">
+                                <p class="ms-3" style="color: var(--primary-color);">Chi tiết</p>
+                                <div class="ticket-price">
+                                    <h5 style="color: var(--price--color);">622.000 ₫</h5>
+                                    <div class="btn-bookT">Chọn</div>
+                                </div>
+                            </div>
+                        </div>
 
-                    <!-- Help -->
-                    <div class="container help mt-4">
-                        <div class="row">
-                            <div class="col-lg-12 col-xl-6 col-sm-12">
-                                <div class="help-avatar">
-                                    <img src="./assets/img/help.svg" alt="" class="help-avatar-img">
-                                    <div class="help-title">
-                                        <div class="help-text">Tổng đài CSKH</div>
-                                        <div class="help-sdt">1900571248</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-12 col-xl-6 col-sm-12">
-                                <div class="help-avatar">
-                                    <div class="help-title straight-line">
-                                        <p class="help-text">Tài khoản trung tâm Chăm sóc khách hàng</p>
-                                        <p class="help-sdt">https://www.hahalolo.com/u/chamsockhachhang</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
 
-            
 
 
             <script src="assets/js/javascript.js"></script>
