@@ -6,12 +6,6 @@ if (!isset($_SESSION['USERNAME_admin'])) {
 ?>
 
 <?php
-    if(!isset($_GET['add'])){
-        header("location:Home.php");
-    }
-?>
-
-<?php
     include "header_admin.php";
 ?>
 
@@ -28,15 +22,17 @@ if (!isset($_SESSION['USERNAME_admin'])) {
                                             <h3 class="text-center heading">Register admin</h3>
                                         </div>
                                     </div>
-                                    <div class="form-group form-primary"> <input type="text" class="form-control" name="first_name" value="" placeholder="Display name"  require> </div>
+                                    <div class="form-group form-primary firstname"> <input type="text" class="form-control" name="first_name" value="" placeholder="Display name"  require> </div>
                                     <div class="form-group form-primary"> <input type="password" class="form-control" name="password" placeholder="Password" value=""  require> </div>
                                     <div class="form-group form-primary"> <input type="password" class="form-control" name="password_confirm" placeholder="Repeat password" value="" require> </div>
                                     <div class="form-group form-primary">
 
                                         <?php
-                                        if (isset($_POST['err']))
-                                            echo '<p style="color: red;">Tên đăng nhập hoặc mật khẩu không đúng</p>';
+                                        if (isset($_GET['err'])) {                            
+                                            echo '<p style="color: red;">Tên đăng nhập đã tồn tại</p>';   
+                                              }                        
                                         ?>
+                                        
                                     </div>
                                     <div class="row">
                                         <div class="col-md-12"> <input type="submit" class="btn btn-primary btn-md btn-block waves-effect text-center m-b-20" name="submit" value="Register"> <!-- <button type="button" class="btn btn-primary btn-md btn-block waves-effect text-center m-b-20"><i class="fa fa-lock"></i> Signup Now </button> -->

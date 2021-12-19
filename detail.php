@@ -14,7 +14,7 @@
           $data = mysqli_query($conn,$query);
           $row = mysqli_fetch_assoc($data);
           ?>
-          <h2><?php echo $row['ID'] ?></h2>
+          
           <?php 
         ?>
         <h2 class="mb-3">BAMBOO AIRWAYS MỞ BÁN VÉ BAY THẲNG TP HCM – ĐIỆN BIÊN, GIÁ TỪ 159.000 ĐỒNG</h2>
