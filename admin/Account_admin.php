@@ -10,7 +10,7 @@ include "header_admin.php";
 ?>
 
 <body>
-    <div class="container">
+    <div class="container "style="margin-top: 5%;">
        <h1 class="title mt-5 mb-5 text-center">Manage Users</h1>
         <a class="btn btn-primary mt-5" href="add_admin.php?add" role="button">Add admin</a>
         <table class="table mt-2">

@@ -9,7 +9,7 @@ if (!isset($_SESSION['USERNAME_admin'])) {
 <?php
  include "header_admin.php";
 ?>
-<div class="container mt-5">
+<div class="container  " style="margin-top: 5%;">
     <h3>Thông Tin </h3>
 </div>
 

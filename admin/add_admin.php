@@ -22,7 +22,7 @@ if (!isset($_SESSION['USERNAME_admin'])) {
                                             <h3 class="text-center heading">Register admin</h3>
                                         </div>
                                     </div>
-                                    <div class="form-group form-primary firstname"> <input type="text" class="form-control" name="first_name" value="" placeholder="Display name"  require> </div>
+                                    <div class="form-group form-primary firstname"> <input type="text" class="form-control my-err " name="first_name" value="" placeholder="Display name"  require > </div>
                                     <div class="form-group form-primary"> <input type="password" class="form-control" name="password" placeholder="Password" value=""  require> </div>
                                     <div class="form-group form-primary"> <input type="password" class="form-control" name="password_confirm" placeholder="Repeat password" value="" require> </div>
                                     <div class="form-group form-primary">
@@ -35,7 +35,7 @@ if (!isset($_SESSION['USERNAME_admin'])) {
                                         
                                     </div>
                                     <div class="row">
-                                        <div class="col-md-12"> <input type="submit" class="btn btn-primary btn-md btn-block waves-effect text-center m-b-20" name="submit" value="Register"> <!-- <button type="button" class="btn btn-primary btn-md btn-block waves-effect text-center m-b-20"><i class="fa fa-lock"></i> Signup Now </button> -->
+                                        <div class="col-md-12"> <input type="submit" class="btn btn-primary btn-md btn-block waves-effect text-center m-b-20" name="submit" value="Register" onclick="check_add_admin()"> 
                                         </div>
                                     </div>
 
@@ -46,10 +46,14 @@ if (!isset($_SESSION['USERNAME_admin'])) {
                 </div>
             </div>
         </section>
+        <script src="../assets/js/add_admin.js"></script>
         <style>
             body {
                 background-color: #f2f7fb
-            }
+            }   
+            .my-err{
+               border-bottom-color: red;
+            }         
 
             .login-block {
                 margin: 30px auto;

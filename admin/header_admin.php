@@ -12,8 +12,8 @@
 </head>
 
 <body style="background-image: url(../assets/img/bg.png); background-attachment: fixed;">
-    <div class="container-fruit fixed-top ">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fruit  fixed-top ">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light ">
             <div class="container">
                 <a class="navbar-brand" href="../index.php">
                     <img src="../assets/img/hahalolo.png" alt="" width="35" height="30">
@@ -34,12 +34,12 @@
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown link
+                            Manages
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">Thống kê chuyến bay</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li><a class="dropdown-item" href="#">Flight Manager </a></li>
+                                <li><a class="dropdown-item" href="#">Plane Manager</a></li>
+                                <li><a class="dropdown-item" href="#">Customer Manager</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">

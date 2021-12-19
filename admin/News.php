@@ -8,7 +8,7 @@ if (!isset($_SESSION['USERNAME_admin'])) {
 <?php
 include "header_admin.php";
 ?>
-<div class="container">
+<div class="container" style="margin-top: 5%;">
     <h1 class="mt-3 text-center">News</h1>
     <a class="btn btn-primary mb-5 bt-3" href="News_add.php?add_news" role="button">Add News</a>
     <table class="table">
