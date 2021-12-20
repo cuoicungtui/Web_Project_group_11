@@ -1,0 +1,93 @@
+.main-top {
+    margin-bottom: 20px;
+}
+.main-btn {
+    background-color: var(--primary-color);
+}
+.people {
+    font-size: 18px;
+    font-weight: 100;
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+}
+.people i {
+    font-size: 22px;
+    padding-right: 6px;
+}
+.flight {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+.light-title {
+    font-size: 20px;
+}
+.adress,
+.light-title {
+    font-weight: 500;
+}
+.date {
+    color: #e3f4fa;
+    font-size: 14px;
+}
+.ticket {
+    box-shadow: 2px 2px 10px 3px rgba(0, 0, 0, 0.06);
+    padding: 20px 0;
+}
+.ticket-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.ticket-logo h6 {
+    font-size: 16px;
+}
+.ticket-logo p {
+    margin-bottom: 0;
+}
+.ticket-logo img{
+    width: 120px;
+}
+.ticket-title {
+    font-size: 14px;
+    position: relative;
+}
+.ticket-title::before {
+    content: "";
+    position: absolute;
+    border: 1px solid #ccc;
+    height: 100%;
+    left: -50px;
+}
+.gray {
+    color: var(--text-color);
+}
+.ticket-logoID {
+    padding-right: 60px;
+}
+.ticket-icon,
+.time {
+    text-align: center;
+}
+
+.detail {
+    color: var(--primary-color); 
+    cursor: pointer;
+    font-size: 15px;
+}
+
+
+/* detail */
+.details {
+    width: 100%;
+}
+
+.detail-left {
+    width: 30%;
+}
+
+.detail-right {
+    width: 70%;
+}

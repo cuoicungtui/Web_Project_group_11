@@ -1,4 +1,5 @@
 <?php include('header.php') ?>
+<?php include('main.php') ?>
 <?php 
   $id = $_GET['id'];
 
@@ -14,8 +15,7 @@
           $data = mysqli_query($conn,$query);
           $row = mysqli_fetch_assoc($data);
           ?>
-          <?php 
-        ?>
+        
         <h2 class="mb-3 mt-3">BAMBOO AIRWAYS MỞ BÁN VÉ BAY THẲNG TP HCM – ĐIỆN BIÊN, GIÁ TỪ 159.000 ĐỒNG</h2>
         <p>19/11/2021</p>
         <h5 class="d-flex justify-content-center">BAMBOO AIRWAYS MỞ BÁN VÉ BAY THẲNG TP HCM – ĐIỆN BIÊN, GIÁ TỪ 159.000 ĐỒNG</h5>

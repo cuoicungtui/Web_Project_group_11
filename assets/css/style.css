@@ -116,13 +116,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 40px;
-    margin-bottom: 45px;
 }
 
 .main-title{
     font-size: 1.6rem;
-    /* flex-grow: 1; */
 }
 
 .main-btn{
@@ -286,6 +283,7 @@ input[type="checkbox"] {
     display: inline-block;
 }
 
+.main-btn:hover,
 .btn-bookT:hover {
     background-color: #217492;
 }
@@ -553,16 +551,4 @@ input[type="checkbox"] {
 .booking-active {
     display: block;
 }
-
-/* .coatings {
-    background-color: rgba(0, 0, 0, 0.8);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    display: none;
-} */
 

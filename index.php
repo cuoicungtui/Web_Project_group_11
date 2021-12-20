@@ -1,4 +1,5 @@
 <?php include('header.php') ?>
+<?php include('main.php') ?>
 
             <div class="mt-4">
                 <div class="row mb-4">
