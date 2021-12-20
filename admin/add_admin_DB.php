@@ -3,6 +3,21 @@
     if (!isset($_SESSION['USERNAME_admin'])) {
         header("location:index.php");
     }
+    $err = 0;
+?>
+
+<?php
+    if($_POST['password'] == "" || $_POST['first_name'] == "" || $_POST['password_confirm'] == ""){
+        $err=1;
+        header("location:add_admin.php?err1=$err");
+        return;
+    }else{
+        if($_POST['password'] != $_POST['password_confirm']){
+            $err=2;
+            header("location:add_admin.php?err1=$err");
+            return;
+        }
+    }
 ?>
 
 <?php
@@ -13,8 +28,8 @@
     $query = "SELECT * FROM admin Where UseName = '$first_name'";
     $result = mysqli_query($conn,$query);
     if(mysqli_num_rows($result)>0){
-        $err = "error";
-        header("location:add_admin.php?err=$err");
+        $err =3;
+        header("location:add_admin.php?err1=$err");
     }
     else{
         $query = "INSERT INTO admin(UseName,PASSWORD) VALUES('$first_name','$password_hash')";
