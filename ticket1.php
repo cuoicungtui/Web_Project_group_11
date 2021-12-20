@@ -70,6 +70,16 @@
                         </div>
 
                     </div>
+
+                    <div class="details">
+                        <div class="detail-left">
+                            abc
+                        </div>
+
+                        <div class="detail-right">
+                            abc
+                        </div>
+                    </div>
                 </div>
             </div>
 
