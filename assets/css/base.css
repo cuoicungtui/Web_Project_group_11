@@ -31,9 +31,6 @@ body {
 }
 
 @media screen and (max-width: 1200px) {
-    .straight-line {
-        /* border-left: 1px solid transparent; */
-    }
     .tab-pane .row:nth-child(2) {
         margin-top: 50px;
     }

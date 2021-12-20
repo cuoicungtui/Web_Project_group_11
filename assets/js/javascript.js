@@ -50,3 +50,4 @@ avatar.addEventListener('click', function () {
 cart.addEventListener('click', function() {
     cartWrap.classList.toggle('cart-active')
 })
+

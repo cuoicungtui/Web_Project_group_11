@@ -116,13 +116,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 40px;
-    margin-bottom: 45px;
 }
 
 .main-title{
     font-size: 1.6rem;
-    /* flex-grow: 1; */
 }
 
 .main-btn{
