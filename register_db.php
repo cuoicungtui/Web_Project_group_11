@@ -4,6 +4,13 @@ if (!isset($_POST['btn-register']))
 ?>
 
 <?php
+    // session_start();
+    // if(isset($_SESSION['USERNAME_admin'])){
+    //     unset($_SESSION['USERNAME_admin']);
+    //     header("location:index.php");
+    // }
+// $_SESSION['USERNAME_admin'] = $firstname and $lastname;
+
 $firstname = $_POST['firstname'];
 $lastname = $_POST['lastname'];
 $email = $_POST['email'];
