@@ -68,7 +68,7 @@
                     </a>
                 </li>
                 <li class="nav-item active-navbar">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="index.php">
                         <div class="navbar-item-wrap">
                             <div class="circle"></div>
                             <i class="bi bi-send"></i>

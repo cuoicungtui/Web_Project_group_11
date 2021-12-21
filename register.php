@@ -10,17 +10,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <style>
-        .text-link {
-            color: #24a8d8;
-            text-decoration: none;
-        }
-
-
-    </style>
 </head>
 <body>
-    <section class="h-100 gradient-form" style="background-image: url(./assets/img/bg.png);">
+    <section class="h-100 gradient-form" style="background-image: url(./assets/img/bg.png);background-attachment: fixed;">
         <div class="container py-5 h-100">
             <div class="row d-flex justify-content-center align-items-center h-100">
                 <div class="col-xl-10">
@@ -52,7 +44,7 @@
                                     </div>
 
                                     <div class="form-outline">
-                                        <input type="email" name="email" id="form2Example11" class="form-control email" placeholder="Email" onkeydown="validation()" style="padding: 15px 20px;"/>
+                                        <input type="email" name="email" id="form2Example11" class="form-control email" placeholder="Email" focus="validation()" style="padding: 15px 20px;"/>
                                         <label class="form-label" for="form2Example11"></label>
                                         <span id="text"></span>
                                     </div>
@@ -93,9 +85,15 @@
     <script type="text/javascript">
         function validation() {
                 var form = document.getElementById('form');
-                var email = document.querySelector('.email').value;
                 var text = document.getElementById('text');
-                var pattern = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                let email = document.login.email;
+                let pattern = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                // if(pattern.test(email.value) == false) {
+                //     email.value = "Emali không hợp lệ";
+                //     email.style.backgroundColor = "red";
+                //     email.focus();
+                //     return false;
+                // }
                 if(email.match(pattern)) {
                     text.innerHTML = "Địa chỉ Email của bạn Hợp lệ.";
                     text.style.color = "#00ff00";
