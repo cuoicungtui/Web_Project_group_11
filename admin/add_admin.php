@@ -15,7 +15,7 @@ include "header_admin.php";
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-12">
-                    <form class="md-float-material form-material" action="add_admin_DB.php" method="POST">
+                    <form class="md-float-material form-material" action="add_admin_DB.php" method="POST" >
 
                         <div class="auth-box card">
                             <div class="card-block">
@@ -90,7 +90,6 @@ include "header_admin.php";
     <style>
         body {
             background-color: #f2f7fb;
-           
         }
 
         .an{

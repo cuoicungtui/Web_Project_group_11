@@ -82,6 +82,7 @@
 /* detail */
 .details {
     width: 100%;
+    display: flex;
 }
 
 .detail-left {

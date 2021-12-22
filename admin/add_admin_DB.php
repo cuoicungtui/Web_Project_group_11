@@ -25,8 +25,15 @@
     $first_name = $_POST['first_name'];
     $password = $_POST['password'];
     $password_hash = password_hash($password,PASSWORD_BCRYPT);
+
+
+
     $query = "SELECT * FROM admin Where UseName = '$first_name'";
     $result = mysqli_query($conn,$query);
+
+
+
+    
     if(mysqli_num_rows($result)>0){
         $err =3;
         header("location:add_admin.php?err1=$err");

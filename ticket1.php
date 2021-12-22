@@ -71,9 +71,16 @@
 
                     </div>
 
-                    <div class="details">
+                    <div class="details mt-3">
                         <div class="detail-left">
-                            abc
+                            <div class="ticket-logo-s">
+                                <img src="assets/img/lg1.png" alt="">
+                                <div class="ticket-title">
+                                    <h6>Bamboo Airways</h6>
+                                    <span class="gray">Phổ thông</span>
+                                    <p class="gray">(ECONOMYSAVER)</p>
+                                </div>
+                            </div>
                         </div>
 
                         <div class="detail-right">
