@@ -1,0 +1,16 @@
+.statics{
+    display: flex;
+    position: relative;
+}
+.statics-item{
+    padding: 10px 15px;
+    
+}
+.line{
+    position: absolute;
+    background-color: var(--primary-color);
+    width: 100px;
+    height: 6px;
+    bottom: 0px;
+    left: 0px;
+}
