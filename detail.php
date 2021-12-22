@@ -15,11 +15,46 @@
           $data = mysqli_query($conn,$query);
           $row = mysqli_fetch_assoc($data);
           ?>
-        
-        <h2 class="mb-3 mt-3">BAMBOO AIRWAYS MỞ BÁN VÉ BAY THẲNG TP HCM – ĐIỆN BIÊN, GIÁ TỪ 159.000 ĐỒNG</h2>
-        <p>19/11/2021</p>
+         <h2 class="mb-3 mt-3"><?php echo $row['Title'] ?></h2>
+        <p ><?php echo $row['date']?></p>
+        <?php
+          $query = "SELECT * FROM conten WHERE ID=$id ORDER BY index_";
+          $data = mysqli_query($conn,$query);
+          echo '<div class="content" style="align-items: justify;">';
+          while ($row = mysqli_fetch_assoc($data)){
+            if ($row['h5'] != ""){
+              echo '<h5>';
+              echo $row['h5'];
+              echo '</h5>';
+            }
+            if ($row['img'] != ""){
+            echo  '<div class="image" style="text-align:center;">';
+            echo  '<img src="';
+            echo $row['img'];
+            echo '" alt="" class="mb-3 mt-3">';
 
-        <div class="content" style="align-items: justify;">
+              if($row['img_name'] != ""){
+                echo'<p class="mb-5">';
+                echo $row['img_name'];
+                echo'</p>';
+              } 
+              echo'</div>'; 
+            }
+            if ($row['p'] != ""){
+              echo"<p>";
+              echo $row['p'];
+              echo"</p>";
+
+            }
+
+
+          }
+          echo "</div>";
+        ?>
+
+
+
+        <!-- <div class="content" style="align-items: justify;">
           <div class="image" style="text-align:center;">
             <img src="./assets/img/d1.png" alt="" class="mb-3 mt-3">
             <p class="mb-5">Ảnh 1: Thời gian di chuyển giữa 2 thành phố ở 2 đầu đất nước được rút ngắn đáng kể bằng các chuyến bay thẳng của Bamboo Airways</p>
@@ -30,7 +65,7 @@
           <p>Ngay khi đi vào hoạt động, đường bay thẳng TP. HCM – Điện Biên của Bamboo Airways sẽ góp phần rút ngắn đáng kể thời gian di chuyển giữa 2 thành phố ở hai đầu đất nước. Dự kiến, tổng thời gian hành trình bay giữa TP. HCM – Điện Biên khai thác bằng máy bay phản lực Embraer của Bamboo Airways sẽ chỉ còn hơn 2 tiếng đồng hồ.
           </p>
           
-        </div>
+        </div> --> 
 
 
   <!-- footer -->
