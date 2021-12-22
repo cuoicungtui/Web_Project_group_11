@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Đăng nhập</title>
     <link rel="stylesheet" href="./assets/css/login.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
 </head>
 <body>
     <section class="h-100 gradient-form" style="background-image: url(./assets/img/bg.png);">
@@ -43,11 +45,29 @@
                                         <input type="email" required name="email" id="form2Example11" class="form-control" placeholder="Email" style="padding: 15px 20px;"/>
                                         <label class="form-label" for="form2Example11"></label>
                                     </div>
-                
+
+                                    <?php 
+                                        if(isset($_GET['err1'])){
+                                            echo '<p style="color: red;">
+                                            <i class="bi bi-exclamation-octagon"></i>
+                                            Email không tồn tại
+                                            </p>';
+                                        }
+                                    ?>
+
                                     <div class="form-outline mb-4">
                                         <input type="password" required name="password" id="form2Example22" class="form-control" placeholder="Mật khẩu" style="padding: 15px 20px;"/>
                                         <label class="form-label" for="form2Example22"></label>
                                     </div>
+
+                                    <?php 
+                                        if(isset($_GET['err2'])){
+                                            echo '<p style="color: red;">
+                                            <i class="bi bi-exclamation-octagon"></i>
+                                            Mật khẩu sai
+                                            </p>';
+                                        }
+                                    ?>
                 
                                     <div class="text-center pt-1 mb-5 pb-1">
                                         <button class="btn btn-block fa-lg mb-3 d-block" name="btn-login" type="submit" style="width:100%;background-color: #24a8d8; color: #fff; border-radius: 25px;">Đăng Nhập</button>

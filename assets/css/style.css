@@ -400,6 +400,7 @@ input[type="checkbox"] {
 .card-title {
     align-items: justify;
     font-size: 20px;
+    color: #000;
 }
 
 .card-text {
@@ -552,3 +553,6 @@ input[type="checkbox"] {
     display: block;
 }
 
+.card-link {
+    text-decoration: none;
+}
