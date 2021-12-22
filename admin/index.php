@@ -19,11 +19,11 @@
         <Form action="login_admin.php" method="POST" class="my-form">
             <div class="container">
                 <div class="mb-4 ">                   
-                    <input type="text" id="input_usename " class="form_input " name="usename" require placeholder="Username">
+                    <input type="text" id="input_usename " class="form_input " name="usename" required placeholder="Username">
                 </div>
                 <div class="mb-4 ">
                     
-                    <input type="password" id="input_password" class="form_input" name="password" require placeholder="Password">
+                    <input type="password" id="input_password" class="form_input" name="password" required placeholder="Password">
                 </div>
                 <div class="mb-4">
                     
@@ -31,9 +31,9 @@
                        if(isset($_GET['err'])){
                            $err = $_GET['err'];
                            if($err == "1"){
-                               echo '<p style="color: red;" >Incorrect password</p>';
+                                echo '<p style="color: red;" >Incorrect password</p>';
                            }else{
-                           echo '<p style="color: red;" >Account does not exist</p>';
+                                echo '<p style="color: red;" >Account does not exist</p>';
                            }
                        }
                     ?>
