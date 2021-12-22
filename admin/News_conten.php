@@ -18,7 +18,8 @@ include "header_admin.php";
                 <th scope="col" class="text-center">ID</th>
                 <th scope="col" class="text-center">Title</th>
                 <th scope="col" class="text-center">Index</th>
-                <th scope="col" class="text-center">Image</th>                             
+                <th scope="col" class="text-center">Image</th>
+                <th scope="col" class="text-center">Name_image</th>                            
                 <th scope="col" class="text-center">Paragraph</th>
                 <th scope="col" class="text-center">Change </th>
                 <th scope="col" class="text-center">Delete </th>
@@ -37,7 +38,8 @@ include "header_admin.php";
                   
                     <td><?php echo $data['h5']  ?></td>
                     <td><?php echo $data['index_']  ?></td>
-                    <td class="text-center"><img src=".<?php echo $data['img'] ?>" class="img-thumbnail" alt="..." width="75px" height="75px"></td>                 
+                    <td class="text-center"><img src=".<?php echo $data['img'] ?>" class="img-thumbnail" alt="..." width="75px" height="75px"></td>  
+                    <td ><?php echo $data['img_name']  ?></td>            
                     <td style=" width: 60%;}"><?php echo $data['p']  ?></td>
                     <td class="text-center"><a href="News_edit_conten.php?id=<?php echo $data['ID'] ?>&index=<?php echo $data['index_']?>"><i class="bi bi-pencil-square"></i> </a></td>
                     <td class="text-center"><a href="News_delete_conten.php?id=<?php echo $data['ID'] ?>&index=<?php echo $data['index_']?>"><i class="bi bi-trash"></i></a></td>

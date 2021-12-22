@@ -25,14 +25,19 @@ include "header_admin.php";
         </div>
         <div class="mb-3">
             <label for="index" class="form-label">index</label>
-            <input type="number" class="form-control" id="index" name="index"  >
+            <input type="number" class="form-control" id="index" name="index" required >
         </div>
         <div class="mb-3">
             <div class="row">
             
-                <div class="col-12">
+                <div class="col-6">
                     <label for="formFile" class="form-label">Image</label>
                     <input class="form-control" type="file" id="formFile" name="file_img" accept="image/png, image/jpeg" >
+                   
+                </div>
+                <div class="col-6">
+                    <label for="name_image" class="form-label">Image</label>
+                    <input class="form-control" type="title" id="name_image" name="name_image" placeholder="Name image" >
                    
                 </div>
             </div>

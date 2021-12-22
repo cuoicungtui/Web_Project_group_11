@@ -42,9 +42,14 @@ $data = $result->fetch_assoc();
         
         <div class="mb-3">
             <div class="row">
-                <div class="col-12">
+                <div class="col-6">
                     <label for="formFile" class="form-label">Image</label>
                     <input class="form-control" type="file" id="formFile" name="file_img" accept="image/png, image/jpeg">
+                </div>
+                <div class="col-6">
+                    <label for="name_image" class="form-label">Image</label>
+                    <input class="form-control" type="title" id="name_image" name="name_image" placeholder="Name image" >
+                   
                 </div>
             </div>
 
