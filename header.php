@@ -68,7 +68,7 @@
                     </a>
                 </li>
                 <li class="nav-item active-navbar">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="index.php">
                         <div class="navbar-item-wrap">
                             <div class="circle"></div>
                             <i class="bi bi-send"></i>
@@ -120,6 +120,16 @@
                     <img src="./assets/img/no-avatar.png" class="rounded-circle" height="40" alt="Black and White Portrait of a Man" loading="lazy"/>
                 </a>
                 <div class="manage-wrap">
+                    <p>
+                        <!-- <?php 
+                            // session_start();
+                            // if(isset($_SESSION['USERNAME_admin'])){
+                            //     echo '<p>';
+                            //     echo $_SESSION['USERNAME_admin'];
+                            //     echo '</p>';
+                            // }
+                        ?> -->
+                    </p>
                     <a href="" class="manage-link">
                         <i class="bi bi-journal-bookmark"></i>
                         <p>Quản lý đơn hàng</p>

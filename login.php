@@ -40,12 +40,12 @@
                                 <form action="login_db.php" method="post">
                                     <p>Please login to your account</p>
                                     <div class="form-outline">
-                                        <input type="email" name="email" id="form2Example11" class="form-control" placeholder="Email" style="padding: 15px 20px;"/>
+                                        <input type="email" required name="email" id="form2Example11" class="form-control" placeholder="Email" style="padding: 15px 20px;"/>
                                         <label class="form-label" for="form2Example11"></label>
                                     </div>
                 
                                     <div class="form-outline mb-4">
-                                        <input type="password" name="password" id="form2Example22" class="form-control" placeholder="Mật khẩu" style="padding: 15px 20px;"/>
+                                        <input type="password" required name="password" id="form2Example22" class="form-control" placeholder="Mật khẩu" style="padding: 15px 20px;"/>
                                         <label class="form-label" for="form2Example22"></label>
                                     </div>
                 

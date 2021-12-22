@@ -90,7 +90,6 @@ include "header_admin.php";
     <style>
         body {
             background-color: #f2f7fb;
-           
         }
 
         .an{
