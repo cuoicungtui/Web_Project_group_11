@@ -7,10 +7,9 @@ if (!isset($_SESSION['USERNAME_admin'])) {
 
 <?php
     $id = $_GET['id'];
+    $index = $_GET['index'];
     require "connect.php";
-    $query = "DELETE FROM dl WHERE ID = $id ";
+    $query = "DELETE FROM conten WHERE ID = $id and index_=$index"; 
     mysqli_query($conn,$query);
-    $query = "DELETE FROM conten WHERE ID = $id ";
-    mysqli_query($conn,$query);
-    header("location:News.php");
+    header("location:News_conten.php?id=$id");
 ?>

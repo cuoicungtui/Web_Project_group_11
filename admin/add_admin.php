@@ -25,16 +25,16 @@ include "header_admin.php";
                                     </div>
                                 </div>
 
-                                <div class="form-group form-primary "> <input type="text" class="form-control " name="first_name" id="first_name" value="" placeholder="User name" require >                 
+                                <div class="form-group form-primary "> <input type="text" class="form-control " name="first_name" id="first_name" value="" placeholder="User name" required >                 
                                 <p style="color: red;font-size: 80%;"><i class="bi bi-exclamation-lg"></i>Enter password</p>
 
                                 </div>
                                 
-                                <div class="form-group form-primary"> <input type="password" class="form-control" id="password" name="password" placeholder="Password" value="" require>
+                                <div class="form-group form-primary"> <input type="password" class="form-control" id="password" name="password" placeholder="Password" value="" required>
                                 <p style="color: red;font-size: 80%;display :none;"><i class="bi bi-exclamation-lg"></i>Enter password</p>
                                 </div>
                                 
-                                <div class="form-group form-primary "> <input type="password" class="form-control" id="password_confirm" name="password_confirm" placeholder="Repeat password" value="" require>
+                                <div class="form-group form-primary "> <input type="password" class="form-control" id="password_confirm" name="password_confirm" placeholder="Repeat password" value="" required>
                                 <p style="color: red;font-size: 80%;display :none;"><i class="bi bi-exclamation-lg"></i>Enter password confirm</p>
                                 </div>
                                

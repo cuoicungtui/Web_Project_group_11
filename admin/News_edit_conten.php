@@ -17,23 +17,29 @@ include "header_admin.php";
 
 <?php
 $ID = $_GET['id'];
+$index = $_GET['index'];
 require "connect.php";
-$query = "SELECT * FROM dl WHERE ID = $ID";
+$query = "SELECT * FROM conten WHERE ID = $ID and index_ = $index";
 $result = $conn->query($query);
 $data = $result->fetch_assoc();
 ?>
 <div class="container mb-5">
     <h3 class="text-center mt-3">Edit News</h3>
 
-    <Form action="News_edit_DB.php?id=<?php echo $ID ?>" method="Post" enctype="multipart/form-data">
+    <Form action="News_edit_contenDB.php?id=<?php echo $ID ?>&index=<?php echo $_GET['index']?>" method="Post" enctype="multipart/form-data">
+        <div class="mb-3">
+            <label for="ID" class="form-label">ID</label>
+            <input type="number" class="form-control" id="ID" name="ID" value=<?php echo $_GET['id'] ?> readonly>
+        </div>
+        <div class="mb-3">
+            <label for="index" class="form-label">index</label>
+            <input type="number" class="form-control" id="index" name="index" value="<?php echo $_GET['index'] ?>">
+        </div>
         <div class="mb-3">
             <label for="Title" class="form-label">Title</label>
-            <input type="text" class="form-control" id="Title" name="Title" value="<?php echo $data['Title'] ?>">
+            <input type="text" class="form-control" id="Title" name="Title" value="<?php echo $data['h5'] ?>">
         </div>
-        <div class="mb-3">
-            <label for="date" class="form-label">Date</label>
-            <input type="date" class="form-control" id="date" name="date" value="<?php echo $data['date'] ?>">
-        </div>
+        
         <div class="mb-3">
             <div class="row">
                 <div class="col-12">
@@ -46,7 +52,7 @@ $data = $result->fetch_assoc();
         <div class="mb-3">
             <label for="paragraph" class="form-label">Paragraph</label>
             <textarea class="form-control" id="paragraph" name="paragraph" rows="6">
-            <?php echo $data['Prg'] ?>
+            <?php echo $data['p'] ?>
             </textarea>
         </div>
         <div class="mb-3 ">

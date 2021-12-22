@@ -16,12 +16,13 @@ if (!isset($_SESSION['USERNAME_admin'])) {
 <?php
     $Title = $_POST['Title'];
     $prg = $_POST['paragraph'];
+    $date = $_POST['date'];
     $target_dir = "../assets/img/";
     $target_file = $target_dir . basename($_FILES["file_img"]["name"]);
     move_uploaded_file($_FILES["file_img"]["tmp_name"], $target_file);
     $file_path = './assets/img/'.basename($_FILES["file_img"]["name"]);
     require "connect.php";
-    $query = "INSERT INTO dl(img,Title,prg) VALUES('$file_path','$Title','$prg')";
+    $query = "INSERT INTO dl(img,Title,prg,date) VALUES('$file_path','$Title','$prg','$date')";
     mysqli_query($conn,$query);
     header("location:News.php");
 ?>

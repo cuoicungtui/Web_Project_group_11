@@ -16,12 +16,13 @@ include "header_admin.php";
             <tr>
 
                 <th scope="col" class="text-center">ID</th>
-                <th scope="col" class="text-center">Image</th>
+                <th scope="col" class="text-center">Image</th>               
                 <th scope="col" class="text-center">Title</th>
+                <th scope="col" class="text-center">Date</th>
                 <th scope="col" class="text-center">Paragraph</th>
                 <th scope="col" class="text-center">Change </th>
                 <th scope="col" class="text-center">Delete </th>
-
+                <th scope="col" class="text-center">More</th>
             </tr>
         </thead>
         <tbody>
@@ -35,9 +36,11 @@ include "header_admin.php";
                     <th scope="row" class="text-center"><?php echo $data['ID']  ?></th>
                     <td class="text-center"><img src=".<?php echo $data['img'] ?>" class="img-thumbnail" alt="..." width="75px" height="75px"></td>
                     <td><?php echo $data['Title']  ?></td>
+                    <td><?php echo $data['date']  ?></td>
                     <td style=" width: 60%;}"><?php echo $data['Prg']  ?></td>
                     <td class="text-center"><a href="News_edit.php?id=<?php echo $data['ID']  ?>"><i class="bi bi-pencil-square"></i> </a></td>
                     <td class="text-center"><a href="News_delete_DB.php?id=<?php echo $data['ID']  ?>"><i class="bi bi-trash"></i></a></td>
+                    <td class="text-center"><a href="News_conten.php?id=<?php echo $data['ID']  ?>"><i class="bi bi-three-dots"></i> </a></td>
                 </tr>
 
             <?php
