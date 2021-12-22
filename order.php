@@ -23,9 +23,14 @@
                 <div class="statics-item">Chờ xử lý hủy</div>
                 <div class="line"></div>
             </div>
-            <div class="tab-img">
-                <img src="assets/img/noflight.png" alt="">
+            <div class="tab-content ">
+                <div class="tab-img text-center ">
+                    <img src="assets/img/noflight.png" alt="">
+                    <p class="tab-text mt-3 mb-5">Hiện tại bạn chưa có đơn hàng vé máy bay nào.</p>
+                    <p class = "btn-bookT">Tìm kiếm &  Đặt vé ngay</p>
+                </div>
             </div>
+            
         
         </div>
     </div>
