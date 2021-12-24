@@ -54,9 +54,24 @@
                                     </div>
 
                                     <div class="form-outline mb-4">
-                                        <input type="password" required id="form2Example22" class="form-control" placeholder="Xác nhận mật khẩu" style="padding: 15px 20px;"/>
+                                        <input type="password" name="password_confirm" required id="form2Example22" class="form-control" placeholder="Xác nhận mật khẩu" style="padding: 15px 20px;"/>
                                         <p id="sr-pass"></p>
                                     </div>
+
+                                    <?php 
+                                        if(isset($_GET['err1'])){
+                                            echo '<p style="color: red;">
+                                            <i class="bi bi-exclamation-octagon"></i>
+                                            Mật khẩu không giống
+                                            </p>';
+                                        }
+                                        else {
+                                            echo '<p style="color: red;">
+                                            <i class="bi bi-exclamation-octagon"></i>
+                                            Email đã tồn tại
+                                            </p>';
+                                        }
+                                    ?>
                 
                                     <div class="text-center pt-1 mb-5 pb-1">
                                         <button onclick="validation()" class="btn btn-block fa-lg mb-3 d-block" name="btn-register" type="submit" style="width:100%;background-color: #24a8d8; color: #fff; border-radius: 25px;">Đăng Ký</button>
