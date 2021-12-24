@@ -33,6 +33,7 @@
     font-size: 14px;
 }
 .ticket {
+    background-color: #fff;
     box-shadow: 2px 2px 10px 3px rgba(0, 0, 0, 0.06);
     padding: 20px 0;
 }
@@ -49,7 +50,7 @@
 .ticket-logo p {
     margin-bottom: 0;
 }
-.ticket-logo-s img,
+.ticket-logo-left img,
 .ticket-logo img{
     width: 120px;
 }
@@ -67,6 +68,12 @@
 .gray {
     color: var(--text-color);
 }
+.primary {
+    color: var(--primary-color);
+}
+.red {
+    color: var(--price--color);
+}
 .ticket-logoID {
     padding-right: 60px;
 }
@@ -83,16 +90,109 @@
 
 
 /* detail */
+
+.details-wrap {
+    background-color: #fff;
+    box-shadow: 2px 2px 10px 3px rgba(0, 0, 0, 0.06);
+}
+
 .details {
     width: 100%;
     display: flex;
 }
 
 .detail-left {
+    position: relative;
     width: 30%;
 }
 
 .detail-right {
     width: 70%;
+    padding-left: 20px;
 }
 
+.ticket-left {
+    display: flex;
+}
+
+.ticket-logo-left {
+    display: flex;
+}
+
+.ticket-price {
+    float: right;
+    padding: 30px 60px 0 0;
+}
+
+.ticket-text {
+    font-size: 14px;
+}
+
+.detail-title {
+    color: var(--primary-color);
+    font-size: 16px;
+}
+
+.ticket-title-right {
+    width: 20%;
+}
+
+.detail-location-title {
+    font-size: 16px;
+}
+
+.detail-adress {
+    display: flex;
+    align-items: center;
+}
+
+.detail-adress i {
+    font-size: 20px;
+}
+
+.detail-line {
+    padding: 10px 20px;
+}
+
+.detail-line span {
+    padding-left: 44px;
+}
+
+.detail-line:before {
+    content: '';
+    position: absolute;
+    border: 1px solid var(--primary-color);
+    height: 20px;
+}
+
+.detail-lists {
+    padding-left: -10px;
+}
+
+.detail-totalprice {
+    box-shadow: 2px 2px 10px 3px rgba(0, 0, 0, 0.06);
+    padding: 10px 0;
+    margin-bottom: 50px;
+}
+
+.detail-totalprice-right {
+    padding-right: 70px;
+}
+
+.detail-totalprice-right h5,
+.detail-totalprice-left h5{
+    margin-bottom: 0;
+}
+
+.detail-totalprice-left,
+.detail-totalprice-right {
+    align-items: center;
+}
+
+.row .details-wrap {
+    display: none
+}
+
+.row .details-wrap-active {
+    display: block
+}
