@@ -196,3 +196,32 @@
 .row .details-wrap-active {
     display: block
 }
+
+.btn-remove {
+    background-color: rgb(34, 167, 34);
+}
+
+.btn-remove:hover {
+    background-color: rgb(15, 160, 15);
+}
+
+.btn-disabled {
+    background-color: rgb(219, 151, 24);
+}
+
+.btn-disabled:hover {
+    background-color: rgb(230, 161, 34);
+}
+
+.btn-choosed {
+    display: block;
+}
+
+.remove {
+    display: none;
+}
+
+.disabled {
+    pointer-events: none;
+    background-color: #ccc;
+}
