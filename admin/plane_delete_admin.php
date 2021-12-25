@@ -6,7 +6,7 @@ if (!isset($_SESSION['USERNAME_admin'])) {
 ?>
 
 <?php
-    $id = $_GET['Code_PLane'];
+    $id = $_GET['Code_Plane'];
     require "connect.php";
     $query = "DELETE FROM list_planes WHERE Code_Plane = '$id' "; 
     mysqli_query($conn,$query);
