@@ -18,9 +18,9 @@ include "header_admin.php";
                 <th scope="col" class="text-center">Code_Flight</th>
                 <th scope="col" class="text-center">Code_Plane</th>
                 <th scope="col" class="text-center">Start_Date</th>
-                <th scope="col" class="text-center">End_Date</th>
-                <th scope="col" class="text-center">Start_Time</th>    
-                <th scope="col" class="text-center">End_Time</th>                        
+                <th scope="col" class="text-center">End_Date</th>     
+                <th scope="col" class="text-center">Start_Time</th>
+                <th scope="col" class="text-center">End_Time</th>
                 <th scope="col" class="text-center">Departure_Plane</th>
                 <th scope="col" class="text-center">To_Plane</th>
                 <th scope="col" class="text-center">Price_L1</th>
@@ -48,7 +48,7 @@ include "header_admin.php";
                     <td><?php echo $data['Price_L1']  ?></td>
                     <td><?php echo $data['Price_L1']  ?></td>
 
-                    <td class="text-center"><a href="#"><i class="bi bi-pencil-square"></i> </a></td>
+                    <td class="text-center"><a href="flight_edit.php?Code_Flight=<?php echo $data['Code_Flight'] ?>"><i class="bi bi-pencil-square"></i> </a></td>
                     <td class="text-center"><a href="flight_delete.php?Code_Flight=<?php echo $data['Code_Flight']  ?>"><i class="bi bi-trash"></i></a></td>
                     
                 </tr>

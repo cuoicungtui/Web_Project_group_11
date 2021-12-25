@@ -12,9 +12,9 @@ include "header_admin.php";
 ?>
 
 <div class="container" style="margin-top: 6%;">
-    <h3 class="text-center mt-auto">Add flight</h3>
+    <h3 class="text-center mt-auto">Edit flight</h3>
 
-    <Form action="flight_addDB.php" method="Post" onsubmit="return check_flight_add()" >
+    <Form action="flight_addDB.php" method="Post" onsubmit="return check_flight_edit()" >
         <script src="../assets/js/flight_add.js"></script>
         <div class="row">
             <div class="mb-3 col-6">
