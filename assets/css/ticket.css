@@ -5,6 +5,7 @@
 .main-btn {
     background-color: var(--primary-color);
 }
+
 .main-btn:hover a,
 .main-btn a {
     text-decoration: none;
@@ -226,6 +227,10 @@
 
 .btn-disabled:hover {
     background-color: rgb(230, 161, 34);
+}
+
+.btn-disabled:hover a {
+    color: #fff;
 }
 
 .btn-choosed {

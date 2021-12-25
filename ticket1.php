@@ -170,7 +170,7 @@
                                 <div class="ticket-text gray">Đã chọn</div>
                                 <h5 class="red me-2 ms-2 quantily">0/1</h5>
                                 <div>chuyến bay</div>
-                                <div class="btn-bookT ms-3 btn-disabled disabled"> <a href="">Đặt vé</a> </div>
+                                <div class="btn-bookT ms-3 btn-disabled disabled"> <a href="information.php">Đặt vé</a> </div>
                             </div>
                         </div>
                     </div>
