@@ -67,8 +67,101 @@
                                 <p class="ms-3 detail">Chi tiết</p>
                                 <div class="ticket-price">
                                     <h5 class="red">622.000 ₫</h5>
-                                    <div class="btn-bookT btn-choose" value="abc">Chọn</div>
-                                    <div class="btn-bookT btn-remove remove">Bỏ Chọn</div>
+                                    <a href="information.php"> <div class="btn-bookT btn-choose">Chọn</div></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row ticket mt-4">
+                        <input type="text" style="display: none;">
+                        <div class="col-md-6 col-lg-3 mb-2 ">
+                            <div class="ticket-logo">
+                                <img src="assets/img/lg1.png" alt="">
+                                <div class="ticket-title">
+                                    <h6>Bamboo Airways</h6>
+                                    <span class="gray">Phổ thông</span>
+                                    <p class="gray">(ECONOMYSAVER)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 mb-2">
+                            <div class="ticket-logo">
+                                <h6 class="ticket-logoID ps-5">QH2181</h6>
+                                <div class="time pe-4">
+                                    <span class="gray">19/12/2021</span>
+                                    <h5>13:20</h5>
+                                    <h6>Cần Thơ (VCA)</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 mb-2">
+                            <div class="ticket-logo">
+                                <div class="ticket-icon ms-3">
+                                    <p>55 phút</p>
+                                    <i class="fa fa-plane" style="font-size: 20px; color: rgb(250, 186, 49)"></i>
+                                    <p>Bay thẳng</p>
+                                </div>
+                                <div class="time me-4">
+                                    <span class="gray">19/12/2021</span>
+                                    <h5>13:20</h5>
+                                    <h6>Cần Thơ (VCA)</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 mb-2">
+                            <div class="ticket-logo">
+                                <p class="ms-3 detail">Chi tiết</p>
+                                <div class="ticket-price">
+                                    <h5 class="red">622.000 ₫</h5>
+                                    <a href="information.php"> <div class="btn-bookT btn-choose">Chọn</div></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row ticket mt-4">
+                        <input type="text" style="display: none;">
+                        <div class="col-md-6 col-lg-3 mb-2 ">
+                            <div class="ticket-logo">
+                                <img src="assets/img/lg1.png" alt="">
+                                <div class="ticket-title">
+                                    <h6>Bamboo Airways</h6>
+                                    <span class="gray">Phổ thông</span>
+                                    <p class="gray">(ECONOMYSAVER)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 mb-2">
+                            <div class="ticket-logo">
+                                <h6 class="ticket-logoID ps-5">QH2181</h6>
+                                <div class="time pe-4">
+                                    <span class="gray">19/12/2021</span>
+                                    <h5 class=>13:20</h5>
+                                    <h6>Cần Thơ (VCA)</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 mb-2">
+                            <div class="ticket-logo">
+                                <div class="ticket-icon ms-3">
+                                    <p>55 phút</p>
+                                    <i class="fa fa-plane" style="font-size: 20px; color: rgb(250, 186, 49)"></i>
+                                    <p>Bay thẳng</p>
+                                </div>
+                                <div class="time me-4">
+                                    <span class="gray">19/12/2021</span>
+                                    <h5>13:20</h5>
+                                    <h6>Cần Thơ (VCA)</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 mb-2">
+                            <div class="ticket-logo">
+                                <p class="ms-3 detail">Chi tiết</p>
+                                <div class="ticket-price">
+                                    <h5 class="red">622.000 ₫</h5>
+                                    <a href="information.php"> <div class="btn-bookT btn-choose">Chọn</div></a>
                                 </div>
                             </div>
                         </div>
@@ -178,29 +271,57 @@
             </div>
 
 <script type="text/javascript">
-    price1 = document.querySelector('.price1')
-    btnChoose = document.querySelector('.btn-choose')
-    remove = document.querySelector('.remove')
-    btnRemove = document.querySelector('.btn-remove')
-    quantily = document.querySelector('.quantily')
-    btnDisabled = document.querySelector('.btn-disabled')
 
-    btnChoose.addEventListener('click', function() {
-        btnChoose.classList.add('remove')
-        btnRemove.classList.remove('remove')
-        price1.textContent = ' 1.244.000 ₫';
-        quantily.textContent = '1/1';
-        btnDisabled.classList.remove('disabled');
-    })
+    // btnSelect = function() {
+    //     price1 = document.querySelector('.price1')
+    //     btnChoose = document.querySelector('.btn-choose')
+    //     remove = document.querySelector('.remove')
+    //     btnRemove = document.querySelector('.btn-remove')
+    //     quantily = document.querySelector('.quantily')
+    //     btnDisabled = document.querySelector('.btn-disabled')
 
-    btnRemove.addEventListener('click', function() {
-        btnRemove.classList.add('remove')
-        btnChoose.classList.remove('remove')
-        price1.textContent = '0 ₫';
-        quantily.textContent = '0/1';
-        btnDisabled.classList.add('disabled');
-    })
+    //     btnChoose.addEventListener('click', function() {
+    //         btnChoose.classList.add('remove')
+    //         btnRemove.classList.remove('remove')
+    //         price1.textContent = ' 1.244.000 ₫';
+    //         quantily.textContent = '1/1';
+    //         btnDisabled.classList.remove('disabled');
+    //     })
 
+    //     btnRemove.addEventListener('click', function() {
+    //         btnRemove.classList.add('remove')
+    //         btnChoose.classList.remove('remove')
+    //         price1.textContent = '0 ₫';
+    //         quantily.textContent = '0/1';
+    //         btnDisabled.classList.add('disabled');
+    //     })
+    // }
+
+    
+
+    
+
+    // $(document).ready(function() {
+    //     $('.ticket').each(function() {
+    //         var btnRemove = $(this).querySelector('.btn-remove')
+    //         var btnChoose =  $(this).querySelector('.btnChoose');
+    //         btnChoose.addEventListener('click', function() {
+    //         btnChoose.classList.add('remove')
+    //         btnRemove.classList.remove('remove')
+    //         // price1.textContent = ' 1.244.000 ₫';
+    //         // quantily.textContent = '1/1';
+    //         // btnDisabled.classList.remove('disabled');
+    //         })
+
+    //         btnRemove.addEventListener('click', function() {
+    //         btnRemove.classList.add('remove')
+    //         btnChoose.classList.remove('remove')
+    //         // price1.textContent = '0 ₫';
+    //         // quantily.textContent = '0/1';
+    //         // btnDisabled.classList.add('disabled');
+    //         })
+    //     })
+    // })
 
     
     detailsBottom = document.querySelector('.details-bottom')

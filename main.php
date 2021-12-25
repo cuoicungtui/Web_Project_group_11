@@ -38,6 +38,15 @@
                                 <div class="row">
                                     <div class="input-bookTicket col-12 col-xl-3 col-sm-6 mb-3">
                                         <span>Điểm khởi hành</span>
+                                        <select data-mdb-filter="true" class="selectpicker" data-show-subtext="true" data-live-search="true">
+                                            <option data-subtext="Rep California">Tom Foolery</option>
+                                            <option data-subtext="Sen California">Bill Gordon</option>
+                                            <option data-subtext="Sen Massacusetts">Elizabeth Warren</option>
+                                            <option data-subtext="Rep Alabama">Mario Flores</option>
+                                            <option data-subtext="Rep Alaska">Don Young</option>
+                                            <option data-subtext="Rep California" disabled="disabled">Marvin Martinez</option>
+                                        <select>
+
                                         <input type="text" value="Đà Nẵng (DAD)">
                                         <i class="input-bookTicket-icon fa fa-plane"></i>
                                     </div>
