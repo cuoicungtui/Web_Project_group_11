@@ -11,8 +11,8 @@ include "header_admin.php";
 ?>
 <div class="container" style="margin-top: 5%;">
     <h1 class="mt-3 text-center">Planes</h1>
-    <a class="btn btn-primary mb-5 bt-3" href="#" role="button">Add Planes</a>
-    <table class="table">
+    <a class="btn btn-primary mb-5 bt-3" href="plane_add_admin.php" role="button">Add Planes</a>
+    <table class="table table-hover table-bordered">
         <thead>
             <tr>
                 <th scope="col" class="text-center">Code_Plane</th>
@@ -38,8 +38,8 @@ include "header_admin.php";
                     <td><?php echo $data['Name_Airline']  ?></td>
                     <td ><?php echo $data['L1_Chair']  ?></td>
                     <td ><?php echo $data['L2_Chair']  ?></td>              
-                    <td class="text-center"><a href="#"><i class="bi bi-pencil-square"></i> </a></td>
-                    <td class="text-center"><a href="plane_delete_admin.php?Code_PLane=<?php echo $data['Code_Plane'] ?>"><i class="bi bi-trash"></i></a></td>
+                    <td class="text-center"><a href="plane_edit_admin.php?Code_Plane=<?php echo $data['Code_Plane'] ?>"><i class="bi bi-pencil-square"></i> </a></td>
+                    <td class="text-center"><a href="plane_delete_admin.php?Code_Plane=<?php echo $data['Code_Plane'] ?>"><i class="bi bi-trash"></i></a></td>
                     
                 </tr>
 

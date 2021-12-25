@@ -6,9 +6,9 @@ if (!isset($_SESSION['USERNAME_admin'])) {
 ?>
 
 <?php
-    $id = $_GET['Code_Plane'];
+    $id = $_GET['Id'];
     require "connect.php";
-    $query = "DELETE FROM list_planes WHERE Code_Plane = '$id' "; 
+    $query = "DELETE FROM list_customer WHERE Id = '$id' "; 
     mysqli_query($conn,$query);
-    header("location:Plane_admin.php");
+    header("location:customer_admin.php");
 ?>

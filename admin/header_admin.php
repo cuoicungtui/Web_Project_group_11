@@ -39,8 +39,8 @@
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <li><a class="dropdown-item" href="flight_admin.php">Flight Manager </a></li>
-                                <li><a class="dropdown-item" href="#">Plane Manager</a></li>
-                                <li><a class="dropdown-item" href="#">Customer Manager</a></li>
+                                <li><a class="dropdown-item" href="plane_admin.php">Plane Manager</a></li>
+                                <li><a class="dropdown-item" href="customer_admin.php">Customer Manager</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">

@@ -1,156 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Đặt vé máy bay | Hahalolo</title>
-    <link rel="stylesheet" href="./assets/css/base.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/ticket.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-light header fixed-top">
-        <div class="container-fluid navbar-heading">
-            <div class="" >
-                <a class="navbar-brand navbar-logo" href="#">
-                    <img src="assets/img/hahalolo.png" height="40" alt="hahalolo" loading="lazy"/>
-                    <div class="navbar-input input-search">
-                        <input class="navbar-search" type="text" placeholder="Tìm kiếm">
-                        <i class="bi bi-search"></i>
-                    </div>
-                </a>
-            </div>
-
-            <ul class="navbar-nav m-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <div class="navbar-item-wrap">
-                            <div class="circle"></div>
-                            <i class="bi bi-newspaper"></i> 
-                        </div>
-                        <p>Bảng tin</p>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <div class="navbar-item-wrap">
-                            <div class="circle"></div>
-                            <i class="bi bi-umbrella"></i>
-                        </div>
-                        <p>Trải nghiệm</p>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <div class="navbar-item-wrap">
-                            <div class="circle circle1"></div>
-                            <i class="bi bi-geo"></i>
-                        </div>
-                        <p>Tour</p>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <div class="navbar-item-wrap">
-                            <div class="circle"></div>
-                            <i class="bi bi-building"></i>
-                        </div>
-                        <p>Khách sạn</p>
-                    </a>
-                </li>
-                <li class="nav-item active-navbar">
-                    <a class="nav-link" href="index.php">
-                        <div class="navbar-item-wrap">
-                            <div class="circle"></div>
-                            <i class="bi bi-send"></i>
-                        </div>
-                        <p>Vé máy bay</p>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <div class="navbar-item-wrap">
-                            <div class="circle"></div>
-                            <i class="bi bi-truck"></i>
-                        </div>
-                        <p>Cho thuê xe</p>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <div class="navbar-item-wrap">
-                            <div class="circle"></div>
-                            <i class="bi bi-bag"></i>
-                        </div>
-                        <p>Mua sắm</p>
-                    </a>
-                </li>
-            </ul>
-            
-            <div class="d-flex align-items-center icon-size">
-                <a class="cart text-reset me-4" href="#">
-                    <i class="bi bi-cart3"></i>
-                </a>
-                
-                <div class="cart-wrap">
-                    <h5 class="mb-3">Giỏ hàng</h5>
-                    <h6>Thanh toán</h6>
-                    <div class="cart-product">
-                        <i class="bi bi-cart3"></i>
-                        <p class="cart-product-text">Không có sản phẩm nào trong giỏ hàng của bạn</p>
-                    </div>
-                </div>
-
-                <a class="text-reset me-4" href="#">
-                    <i class="bi bi-wallet"></i>
-                </a>
-                <a class="text-reset me-4" href="#">
-                    <i class="bi bi-messenger"></i>
-                </a>
-                <a class="d-flex align-items-center hidden-arrow focus-avatar" href="#" role="button" aria-expanded="false">
-                    <img src="./assets/img/no-avatar.png" class="rounded-circle" height="40" alt="Black and White Portrait of a Man" loading="lazy"/>
-                </a>
-                <div class="manage-wrap">
-                    <p>
-                        <!-- <?php 
-                            // session_start();
-                            // if(isset($_SESSION['USERNAME_admin'])){
-                            //     echo '<p>';
-                            //     echo $_SESSION['USERNAME_admin'];
-                            //     echo '</p>';
-                            // }
-                        ?> -->
-                    </p>
-                    <a href="" class="manage-link">
-                        <i class="bi bi-journal-bookmark"></i>
-                        <p>Quản lý đơn hàng</p>
-                    </a>
-                    <a href="login.php" class="login-link">
-                        <i class="bi bi-box-arrow-in-left"></i>
-                        <p>Đăng nhập</p>
-                    </a>
-                </div>
-            </div>
-
-            
-        </div>
-    </nav>
-
-
-            
-
-
-
 <?php include('header.php') ?>
+
+
     <div id="main">
         <div class="container">
             <div class="row">
@@ -162,10 +12,10 @@
                             <span>2 người lớn</span>
                         </div>
                     </h2>
-                    <div class="main-btn">Thay đổi tìm kiếm</div>
+                    <div class="main-btn"> <a href="index.php">Thay đổi tìm kiếm</a> </div>
                 </div>
 
-                <div class="flight">
+                <div class="flight ps-3">
                     <p class="light-title">Chuyến bay</p>
                     <div class="adress">
                         <span>Cần thơ (VCA)</span> 
@@ -178,7 +28,7 @@
                 <div class="container">
                     <div class="row ticket mt-4">
                         <input type="text" style="display: none;">
-                        <div class="col-md-3">
+                        <div class="col-md-6 col-lg-3 mb-2 ">
                             <div class="ticket-logo">
                                 <img src="assets/img/lg1.png" alt="">
                                 <div class="ticket-title">
@@ -188,7 +38,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-6 col-lg-3 mb-2">
                             <div class="ticket-logo">
                                 <h6 class="ticket-logoID ps-5">QH2181</h6>
                                 <div class="time pe-4">
@@ -198,7 +48,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-6 col-lg-3 mb-2">
                             <div class="ticket-logo">
                                 <div class="ticket-icon ms-3">
                                     <p>55 phút</p>
@@ -212,7 +62,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-6 col-lg-3 mb-2">
                             <div class="ticket-logo">
                                 <p class="ms-3 detail">Chi tiết</p>
                                 <div class="ticket-price">
@@ -225,7 +75,7 @@
 
                     </div>
 
-                    <div class="row details-wrap mt-2 mb-3">
+                    <div class="row details-wrap pt-2 mb-3">
                         <div class="details mt-3">
                             <div class="detail-left">
                                 <h5 class="ms-3 mb-3 detail-title">Chi tiết chuyến bay</h5>
@@ -265,7 +115,7 @@
     
                             <div class="detail-right">
                                 <h5 class="mb-3 detail-title">Chi tiết giá vé</h5>
-                                <div class="ticket-left">
+                                <div class="ticket-right">
                                     <div class="ticket-title-right">
                                         <h6>Hành khách</h6>
                                         <span class="gray ticket-text">Người lớn</span>
@@ -310,17 +160,17 @@
                     </div>
 
                     <div class="row">
-                        <div class="detail-totalprice d-flex justify-content-between">
-                            <div class="detail-totalprice-left d-flex">
+                        <div class="detail-totalprice">
+                            <div class="detail-totalprice-left">
                                 <h5>Tổng tiền:</h5>
                                 <h5 class="red ms-3 me-3 price1">0 ₫</h5>
                                 <div class="ticket-text gray">(Giá đã bao gồm thuế và phí)</div>
                             </div>
-                            <div class="detail-totalprice-right d-flex">
+                            <div class="detail-totalprice-right">
                                 <div class="ticket-text gray">Đã chọn</div>
                                 <h5 class="red me-2 ms-2 quantily">0/1</h5>
                                 <div>chuyến bay</div>
-                                <div class="btn-bookT ms-3 btn-disabled disabled">Đặt vé</div>
+                                <div class="btn-bookT ms-3 btn-disabled disabled"> <a href="">Đặt vé</a> </div>
                             </div>
                         </div>
                     </div>
@@ -363,6 +213,3 @@
 </script>
 
 <?php include('footer.php') ?>
-<script src="./assets/js/javascript.js"></script>
-</body>
-</html>
