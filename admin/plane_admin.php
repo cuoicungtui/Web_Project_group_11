@@ -12,7 +12,7 @@ include "header_admin.php";
 <div class="container" style="margin-top: 5%;">
     <h1 class="mt-3 text-center">Planes</h1>
     <a class="btn btn-primary mb-5 bt-3" href="#" role="button">Add Planes</a>
-    <table class="table">
+    <table class="table table-hover table-bordered">
         <thead>
             <tr>
                 <th scope="col" class="text-center">Code_Plane</th>
