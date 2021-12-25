@@ -10,8 +10,18 @@ include "header_admin.php";
 ?>
 <div class="container" style="margin-top: 5%;">
     <h1 class="mt-3 text-center">News</h1>
-    <a class="btn btn-primary mb-5 bt-3" href="News_add.php?add_news" role="button">Add News</a>
-    <table class="table">
+    <div class="row">
+        <div class="div col-6">
+            <a class="btn btn-primary mb-5 bt-3" href="News_add.php?add_news" role="button">Add News</a>
+        </div>
+        
+
+        <div class="form-group pull-right col-6 ">
+            <input type="text" class="search form-control" placeholder="What you looking for?">
+    </div>
+    </div>
+
+    <table class="table table-hover table-bordered results">
         <thead>
             <tr>
 
@@ -24,6 +34,9 @@ include "header_admin.php";
                 <th scope="col" class="text-center">Delete </th>
                 <th scope="col" class="text-center">More</th>
             </tr>
+            <tr class="warning no-result">
+                    <td colspan="8"><i class="fa fa-warning"></i> No result</td>
+                </tr>
         </thead>
         <tbody>
             <?php

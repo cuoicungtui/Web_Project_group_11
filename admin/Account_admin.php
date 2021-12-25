@@ -10,10 +10,25 @@ include "header_admin.php";
 ?>
 
 <body>
-    <div class="container "style="margin-top: 5%;">
-       <h1 class="title mt-5 mb-5 text-center">Manage Users</h1>
-        <a class="btn btn-primary mt-5" href="add_admin.php?add" role="button">Add admin</a>
-        <table class="table mt-2">
+   
+    <div class="container " style="margin-top: 5%;">
+        <h1 class="title mt-5 mb-5 text-center">Manage Users</h1>
+
+
+           <div class="row">
+           <div class="col-6">
+              <a class="btn btn-primary" href="add_admin.php?add" role="button">Add admin</a>
+            </div>
+          
+
+            <div class="form-group pull-right col-6 ">
+                <input type="text" class="search form-control" placeholder="What you looking for?">
+            </div>
+        
+           </div>
+        
+
+        <table class="table mt-2 table-hover table-bordered results">
             <thead>
                 <tr>
                     <th scope="col" class="text-center">ID</th>
@@ -22,6 +37,9 @@ include "header_admin.php";
                     <th scope="col" class="text-center">Change Password</th>
                     <th scope="col" class="text-center">Delete Admin</th>
                 </tr>
+                <tr class="warning no-result">
+                    <td colspan="5"><i class="fa fa-warning"></i> No result</td>
+                </tr>
             </thead>
             <tbody>
                 <!-- <tr>
@@ -29,6 +47,7 @@ include "header_admin.php";
                     <td>5</td>
                     <td> 6 </td>
                 </tr> -->
+                
                 <?php
                 require "connect.php";
                 $query = "SELECT * FROM admin";
@@ -52,6 +71,7 @@ include "header_admin.php";
         </table>
     </div>
 
+       
 </body>
 
 <?php
