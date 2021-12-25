@@ -1,8 +1,7 @@
 <?php
-    session_start();
-    if (!isset($_SESSION['USERNAME_admin'])) {
-        header("location:index.php");
-}
+    if(!isset($_POST['submit'])){
+        header('location:index.php');
+    }
 ?>
 
 <?php

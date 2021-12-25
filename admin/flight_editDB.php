@@ -1,10 +1,9 @@
 <?php
     if(!isset($_POST['submit'])){
         header('location:index.php');
+        return;
     }
 ?>
-
-
 <?php
     $code_flight = $_POST['Code_Flight'];
     $code_plane = $_POST['Code_Plane'];
@@ -17,8 +16,8 @@
     $L1 = $_POST['Price_L1'];
     $L2 = $_POST['Price_L2'];
     require_once "connect.php";
-    $query = "INSERT INTO list_flight Values('$code_flight','$code_plane','$start_date','$end_date','$start_time','$end_time','$departure_plane','$to_plane',$L1,$L2)";
-     $result =  $conn->query($query);
+    $query = "UPDATE list_flight SET 	Code_Plane = '$code_plane',Start_Date ='$start_date',End_Date='$end_date',Start_Time='$start_time',	End_Time ='$end_time',Departure_Plane ='$departure_plane',To_Plane='$to_plane',Price_L1= $L1,Price_L2 = $L2 WHERE Code_Flight  ='$code_flight'";
+    $result =  $conn->query($query);
     if($result){
       header('location:flight_admin.php');   
     }else{ 

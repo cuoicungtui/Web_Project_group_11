@@ -22,8 +22,18 @@ include "header_admin.php";
                 <input type="text" class="form-control" id="Code_Flight" name="Code_Flight" placeholder="Code_Flight" required >
             </div>
             <div class="mb-3 col-6">
-                <label for="Code_Plane " class="form-label">Code_Plane</label>
-                <input type="text" class="form-control" id="Code_Plane" name="Code_Plane" placeholder="Code_Flight" required >
+                <label for="Code_Plane " class="form-label">Code_Plane</label>    
+                <select class="form-select" aria-label="Code_Plane" id="Code_Plane" name="Code_Plane">
+                    <?php
+                        require_once "connect.php";
+                        $query = "SELECT * FROM list_planes";
+                        $result = $conn->query($query);
+                        while($row = $result->fetch_assoc() ){
+                            echo  '<option value="'.$row['Code_Plane'].'">'.$row['Code_Plane'].'</option>';
+                        }
+                    ?>                                
+                </select>
+
             </div>
         </div>
 
@@ -46,7 +56,7 @@ include "header_admin.php";
 
             <div class="mb-3 col-6">
                 <label for="End_Time " class="form-label">End_Time </label>
-                <input type="time" class="form-control" id="End_Time " name="End_Time " placeholder="End_Time " required >
+                <input type="time" class="form-control" id="End_Time " name="End_Time" placeholder="End_Time " required >
             </div>
         </div>
         
@@ -105,7 +115,7 @@ include "header_admin.php";
     <script >
         <?php
         if(isset($_GET['err'])){
-            echo 'alert("Add flight failed\n(Code flight already exists or code plane do not exist)")';
+            echo 'alert("Add flight failed\nCode flight already exists")';
         }
         ?>
     </script>

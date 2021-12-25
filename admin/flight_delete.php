@@ -10,5 +10,5 @@ if (!isset($_SESSION['USERNAME_admin'])) {
     require "connect.php";
     $query = "DELETE FROM  list_flight WHERE Code_Flight='$Code_Flight'"; 
     mysqli_query($conn,$query);
-    header("location:flight_delete.php");
+    header("location:flight_admin.php");
 ?>
