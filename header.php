@@ -136,7 +136,7 @@
                             $result = mysqli_query($conn,$query);
                             $data = mysqli_fetch_assoc($result);
                             ?>
-                                <a class="login-link">
+                                <a class="login-link" href="user_information.php">
                                     <i class="bi bi-person"></i>
                                     <p>
                                         <?php
