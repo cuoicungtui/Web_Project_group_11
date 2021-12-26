@@ -299,6 +299,8 @@
                     }
                     if(Number(adult1.value) < Number(baby1.value)) {
                         alert('Số lượng người lớn phải lớn hơn hoặc bằng em bé!');
+                        adult1.style.borderColor = "red";
+                        baby1.style.borderColor = "red";
                         return false;
                     }
                     if(startD.getTime() < nowD.getTime()) {
@@ -319,7 +321,9 @@
                     var endD = new Date(day3.value)
                     var nowD = new Date();
                     if(Number(adult2.value) < Number(baby2.value)) {
-                        alert('Số lượng người lớn phải lớn hơn hoặc bằng em bé!')
+                        alert('Số lượng người lớn phải lớn hơn hoặc bằng em bé!');
+                        adult2.style.borderColor = "red";
+                        baby2.style.borderColor = "red";
                         return false;
                     }
                     if(startD.getTime() < nowD.getTime() || endD.getTime() < startD.getTime()) {

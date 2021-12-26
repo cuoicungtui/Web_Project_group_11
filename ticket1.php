@@ -5,8 +5,8 @@
 ?>
 
 <?php
-    $location1 = $_POST['location1'];
-    $location2 = $_POST['location2'];
+    $location1 = $_POST['form1-select1'];
+    $location2 = $_POST['form1-select2'];
     $day = $_POST['day1'];
     $adult = $_POST['adult1'];
     $children = $_POST['children1'];
@@ -24,7 +24,20 @@
                         Kết quả tìm kiếm "chuyến bay một chiều"
                         <div class="people mt-3">
                             <i class="bi bi-people"></i>
-                            <span>2 người lớn</span>
+                            <span>
+                                <?php 
+                                    echo $adult;
+                                    echo ' người lớn, ';
+                                    if($children != '') {
+                                        echo $children;
+                                        echo ' trẻ em, ';
+                                    }
+                                    if($baby != '') {
+                                        echo $baby;
+                                        echo ' em bé';
+                                    }
+                                ?>
+                            </span>
                         </div>
                     </h2>
                     <div class="main-btn"> <a href="index.php">Thay đổi tìm kiếm</a> </div>
@@ -33,14 +46,34 @@
                 <div class="flight ps-3">
                     <p class="light-title">Chuyến bay</p>
                     <div class="adress">
-                        <span>Cần thơ (VCA)</span> 
+                        <span>
+                            <?php 
+                                echo $location1;
+                            ?>
+                        </span> 
                         <i class="bi bi-arrow-right"></i>
-                        <span>Phú Quốc (PQC)</span>
+                        <span>
+                            <?php 
+                                echo $location2;
+                            ?>
+                        </span>
                     </div>
-                    <div class="date">Thứ Tư, 22/12/2021</div>
+                    <div class="date">
+                        <?php 
+                            echo $day;
+                        ?>
+                    </div>
                 </div>
 
                 <div class="container">
+                    <?php 
+                        $query = "SELECT * FROM list_flight Where Departure_Plane = '$location1' and To_Plane = '$location2' and Start_Date = '$day'";
+                    ?>
+
+
+
+
+                    
                     <div class="row ticket mt-4">
                         <input type="text" style="display: none;">
                         <div class="col-md-6 col-lg-3 mb-2 ">
@@ -79,111 +112,23 @@
                         </div>
                         <div class="col-md-6 col-lg-3 mb-2">
                             <div class="ticket-logo">
-                                <p class="ms-3 detail">Chi tiết</p>
+                                <?php
+                                echo '<p class="ms-3';
+                                echo ' detail">Chi tiết</p>';
+                                ?>
                                 <div class="ticket-price">
                                     <h5 class="red">622.000 ₫</h5>
                                     <a href="information.php"> <div class="btn-bookT btn-choose">Chọn</div></a>
                                 </div>
                             </div>
                         </div>
-
-                    </div>
-                    <div class="row ticket mt-4">
-                        <input type="text" style="display: none;">
-                        <div class="col-md-6 col-lg-3 mb-2 ">
-                            <div class="ticket-logo">
-                                <img src="assets/img/lg1.png" alt="">
-                                <div class="ticket-title">
-                                    <h6>Bamboo Airways</h6>
-                                    <span class="gray">Phổ thông</span>
-                                    <p class="gray">(ECONOMYSAVER)</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3 mb-2">
-                            <div class="ticket-logo">
-                                <h6 class="ticket-logoID ps-5">QH2181</h6>
-                                <div class="time pe-4">
-                                    <span class="gray">19/12/2021</span>
-                                    <h5>13:20</h5>
-                                    <h6>Cần Thơ (VCA)</h6>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3 mb-2">
-                            <div class="ticket-logo">
-                                <div class="ticket-icon ms-3">
-                                    <p>55 phút</p>
-                                    <i class="fa fa-plane" style="font-size: 20px; color: rgb(250, 186, 49)"></i>
-                                    <p>Bay thẳng</p>
-                                </div>
-                                <div class="time me-4">
-                                    <span class="gray">19/12/2021</span>
-                                    <h5>13:20</h5>
-                                    <h6>Cần Thơ (VCA)</h6>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3 mb-2">
-                            <div class="ticket-logo">
-                                <p class="ms-3 detail">Chi tiết</p>
-                                <div class="ticket-price">
-                                    <h5 class="red">622.000 ₫</h5>
-                                    <a href="information.php"> <div class="btn-bookT btn-choose">Chọn</div></a>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="row ticket mt-4">
-                        <input type="text" style="display: none;">
-                        <div class="col-md-6 col-lg-3 mb-2 ">
-                            <div class="ticket-logo">
-                                <img src="assets/img/lg1.png" alt="">
-                                <div class="ticket-title">
-                                    <h6>Bamboo Airways</h6>
-                                    <span class="gray">Phổ thông</span>
-                                    <p class="gray">(ECONOMYSAVER)</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3 mb-2">
-                            <div class="ticket-logo">
-                                <h6 class="ticket-logoID ps-5">QH2181</h6>
-                                <div class="time pe-4">
-                                    <span class="gray">19/12/2021</span>
-                                    <h5 class=>13:20</h5>
-                                    <h6>Cần Thơ (VCA)</h6>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3 mb-2">
-                            <div class="ticket-logo">
-                                <div class="ticket-icon ms-3">
-                                    <p>55 phút</p>
-                                    <i class="fa fa-plane" style="font-size: 20px; color: rgb(250, 186, 49)"></i>
-                                    <p>Bay thẳng</p>
-                                </div>
-                                <div class="time me-4">
-                                    <span class="gray">19/12/2021</span>
-                                    <h5>13:20</h5>
-                                    <h6>Cần Thơ (VCA)</h6>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3 mb-2">
-                            <div class="ticket-logo">
-                                <p class="ms-3 detail">Chi tiết</p>
-                                <div class="ticket-price">
-                                    <h5 class="red">622.000 ₫</h5>
-                                    <a href="information.php"> <div class="btn-bookT btn-choose">Chọn</div></a>
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
 
-                    <div class="row details-wrap pt-2 mb-3">
+                    <?php
+                        echo '<div '.'id=123'.' class="row details-wrap pt-2 mb-3';
+                        echo '">';
+                    ?>
+
                         <div class="details mt-3">
                             <div class="detail-left">
                                 <h5 class="ms-3 mb-3 detail-title">Chi tiết chuyến bay</h5>
@@ -266,8 +211,24 @@
                         </div>
 
                     </div>
+                    <?php
+                        echo '<style>';
+                        echo '.123{}';
+                        echo '</style>';
+                    ?>
+                        <?php
+                            echo '<script>';
+                            echo "detailsWrap = document.querySelector('#123')";
+                            echo "detail = document.querySelector('.detail')";
+                            echo 'detail.onclick = function() {';
+                            echo "detailsWrap.classList.toggle('details-wrap-active')";
+                            echo '};';
+                            echo '</script>';
+                        ?>
+                    
 
-                    <div class="row">
+
+                    <!-- <div class="row">
                         <div class="detail-totalprice">
                             <div class="detail-totalprice-left">
                                 <h5>Tổng tiền:</h5>
@@ -281,7 +242,7 @@
                                 <div class="btn-bookT ms-3 btn-disabled disabled"> <a href="information.php">Đặt vé</a> </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
 
@@ -339,12 +300,11 @@
     // })
 
     
-    detailsBottom = document.querySelector('.details-bottom')
-    detail = document.querySelector('.detail')
-    detailsWrap = document.querySelector('.row .details-wrap')
-    detail.onclick = function() {
-        detailsWrap.classList.toggle('details-wrap-active')
-    }
+    // detail = document.querySelector('.detail')
+    // detailsWrap = document.querySelector('.row .details-wrap')
+    // detail.onclick = function() {
+    //     detailsWrap.classList.toggle('details-wrap-active')
+    // }
 
 </script>
 
