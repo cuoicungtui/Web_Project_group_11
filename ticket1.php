@@ -1,3 +1,18 @@
+<?php 
+    if(!isset($_POST['btn1'])) {
+        header('Location: index.php');
+    }
+?>
+
+<?php
+    $location1 = $_POST['location1'];
+    $location2 = $_POST['location2'];
+    $day = $_POST['day1'];
+    $adult = $_POST['adult1'];
+    $children = $_POST['children1'];
+    $baby = $_POST['baby1'];
+
+?>
 <?php include('header.php') ?>
 
 
@@ -32,7 +47,7 @@
                             <div class="ticket-logo">
                                 <img src="assets/img/lg1.png" alt="">
                                 <div class="ticket-title">
-                                    <h6>Bamboo Airways</h6>
+                                    <h6 name="ticket-title">Bamboo Airways</h6>
                                     <span class="gray">Phổ thông</span>
                                     <p class="gray">(ECONOMYSAVER)</p>
                                 </div>

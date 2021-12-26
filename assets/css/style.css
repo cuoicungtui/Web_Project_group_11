@@ -234,8 +234,23 @@
     padding: 8px;
 }
 
+/* .input-bookTicket input[type="date"]:hover,
 .input-bookTicket input[type="text"]:hover {
     border-bottom: 1px solid #000;
+} */
+
+.input-bookTicket input[type="number"] {
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 6px;
+}
+
+.input-bookTicket input[type="date"] {
+    padding: 4px 10px 8px;
+    width: 100%;
+    outline: none;
+    border: 1px solid #ccc;
+    color: #000;
 }
 
 .input-bookTicket input[type="text"] {
