@@ -200,11 +200,11 @@
 }
 
 .row .details-wrap {
-    display: none
+    display: none;
 }
 
 .row .details-wrap-active {
-    display: block
+    display: block;
 }
 
 .btn-remove {

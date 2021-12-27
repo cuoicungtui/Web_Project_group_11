@@ -112,10 +112,7 @@
                         </div>
                         <div class="col-md-6 col-lg-3 mb-2">
                             <div class="ticket-logo">
-                                <?php
-                                echo '<p class="ms-3';
-                                echo ' detail">Chi tiết</p>';
-                                ?>
+                                <p class="ms-3' detail">Chi tiết</p>
                                 <div class="ticket-price">
                                     <h5 class="red">622.000 ₫</h5>
                                     <a href="information.php"> <div class="btn-bookT btn-choose">Chọn</div></a>
@@ -124,11 +121,7 @@
                         </div>
                     </div>
 
-                    <?php
-                        echo '<div '.'id=123'.' class="row details-wrap pt-2 mb-3';
-                        echo '">';
-                    ?>
-
+                    <div class="row details-wrap pt-2 mb-3">
                         <div class="details mt-3">
                             <div class="detail-left">
                                 <h5 class="ms-3 mb-3 detail-title">Chi tiết chuyến bay</h5>
@@ -211,20 +204,20 @@
                         </div>
 
                     </div>
-                    <?php
-                        echo '<style>';
-                        echo '.123{}';
-                        echo '</style>';
+                    <!-- <?php
+                        // echo '<style>';
+                        // echo '.123{}';
+                        // echo '</style>';
                     ?>
                         <?php
-                            echo '<script>';
-                            echo "detailsWrap = document.querySelector('#123')";
-                            echo "detail = document.querySelector('.detail')";
-                            echo 'detail.onclick = function() {';
-                            echo "detailsWrap.classList.toggle('details-wrap-active')";
-                            echo '};';
-                            echo '</script>';
-                        ?>
+                            // echo '<script>';
+                            // echo "detailsWrap = document.querySelector('#123')";
+                            // echo "detail = document.querySelector('.detail')";
+                            // echo 'detail.onclick = function() {';
+                            // echo "detailsWrap.classList.toggle('details-wrap-active')";
+                            // echo '};';
+                            // echo '</script>';
+                        ?> -->
                     
 
 
@@ -299,9 +292,21 @@
     //     })
     // })
 
+    var details = document.querySelector('.detail');
+    var detailWrap = document.querySelector('.details-wrap');
+
+    details.forEach((detailC, index) => {
+        const detailWraps = detailWrap[index];
+
+        detailC.onclick = function () {
+        document.querySelector(".detail.details-wrap-active").classList.remove("details-wrap-active");
+        document.querySelector(".details-wrap.details-wrap-active").classList.remove("details-wrap-active");
+
+        this.classList.add("details-wrap-active");
+        pane.classList.add("details-wrap-active");
+    };
+});
     
-    // detail = document.querySelector('.detail')
-    // detailsWrap = document.querySelector('.row .details-wrap')
     // detail.onclick = function() {
     //     detailsWrap.classList.toggle('details-wrap-active')
     // }
