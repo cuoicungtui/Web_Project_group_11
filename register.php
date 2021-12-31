@@ -13,7 +13,7 @@
 </head>
 <body>
     <section class="h-100 gradient-form" style="background-image: url(./assets/img/bg.png);background-attachment: fixed;">
-        <div class="container py-5 h-100">
+        <div class="container py-3 h-100">
             <div class="row d-flex justify-content-center align-items-center h-100">
                 <div class="col-xl-10">
                     <div class="card rounded-3 text-black">

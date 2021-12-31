@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th12 22, 2021 lúc 03:25 PM
+-- Thời gian đã tạo: Th12 31, 2021 lúc 07:17 PM
 -- Phiên bản máy phục vụ: 10.4.21-MariaDB
 -- Phiên bản PHP: 8.0.12
 
@@ -173,7 +173,10 @@ CREATE TABLE `list_flight` (
 
 INSERT INTO `list_flight` (`Code_Flight`, `Code_Plane`, `Start_Date`, `End_Date`, `Start_Time`, `End_Time`, `Departure_Plane`, `To_Plane`, `Price_L1`, `Price_L2`) VALUES
 ('1233454', 'BBA123', '2021-12-15', '2021-12-16', '09:30:00', '12:15:00', 'Sài Gòn', 'Vinh', 1500000, 700000),
-('1234567', 'VJA123', '2021-12-13', '2021-12-13', '11:30:00', '14:30:00', 'Hà Nội', 'Sài Gòn', 0, 0);
+('1234567', 'VJA123', '2021-12-13', '2021-12-13', '11:30:00', '14:30:00', 'Hà Nội', 'Sài Gòn', 0, 0),
+('123VAL', 'VAL123', '2022-01-01', '2022-01-01', '07:30:00', '09:30:00', 'Hà Nội', 'Điện Biên Phủ', 600000, 850000),
+('123VN', 'BBA123', '2022-01-01', '2022-01-01', '05:30:00', '09:30:00', 'Hà Nội', 'Điện Biên Phủ', 500000, 600000),
+('VJA123', 'VJA123', '2022-01-01', '2022-01-01', '06:45:00', '10:30:00', 'Hà Nội', 'Điện Biên Phủ', 450000, 300000);
 
 -- --------------------------------------------------------
 
@@ -185,6 +188,7 @@ CREATE TABLE `list_planes` (
   `Code_Plane` char(7) NOT NULL,
   `Name_Plane` varchar(25) NOT NULL,
   `Name_Airline` varchar(25) NOT NULL,
+  `img` varchar(200) NOT NULL,
   `L1_Chair` int(11) DEFAULT NULL,
   `L2_Chair` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -193,9 +197,10 @@ CREATE TABLE `list_planes` (
 -- Đang đổ dữ liệu cho bảng `list_planes`
 --
 
-INSERT INTO `list_planes` (`Code_Plane`, `Name_Plane`, `Name_Airline`, `L1_Chair`, `L2_Chair`) VALUES
-('BBA123', 'BBA_BAe 146', 'Bamboo Airline', 40, 180),
-('VJA123', 'VJA_Boing707', 'Vietjet Airline', 50, 150);
+INSERT INTO `list_planes` (`Code_Plane`, `Name_Plane`, `Name_Airline`, `img`, `L1_Chair`, `L2_Chair`) VALUES
+('BBA123', 'BBA_BAe 146', 'Bamboo Airline', 'assets/img/lg1.png', 40, 180),
+('VAL123', 'VAL_boing101', 'Vietnam Airlines', 'assets/img/vietnam-airline-logo.jpg', 90, 120),
+('VJA123', 'VJA_Boing707', 'Vietjet Airline', 'assets/img/vietjet.jpg', 50, 150);
 
 -- --------------------------------------------------------
 
@@ -236,7 +241,9 @@ CREATE TABLE `user_login` (
 --
 
 INSERT INTO `user_login` (`id`, `firstname`, `lastname`, `email`, `password`) VALUES
-(11, 'Tưởng đăng', 'quốc', 'tuondangvuongquoc901@gmail.com', '$2y$10$zvuzB/xq7oL/skQrwAqVFurPKJJS8ydwQBPjix7HLt18Zn51GLIi6');
+(11, 'Tưởng đăng', 'quốc', 'tuondangvuongquoc901@gmail.com', '$2y$10$zvuzB/xq7oL/skQrwAqVFurPKJJS8ydwQBPjix7HLt18Zn51GLIi6'),
+(12, 'Tùng', 'Ngô', 'ngotung180301@gmail.com', '$2y$10$WzhWaQAmbGKtxzZSa70VQ.ECWtJLSH/VEDXSxmrhoB0g/Dc9m4Mzi'),
+(13, 'Quốc', 'Vương', 'quocvuong@gmail.com', '$2y$10$TsXIVmYQbvxw4n9mMGaC1OrLwCd/wOECDTHa0.gPCHAwdQnS/3B.y');
 
 --
 -- Chỉ mục cho các bảng đã đổ
@@ -276,7 +283,7 @@ ALTER TABLE `list_customer`
 --
 ALTER TABLE `list_flight`
   ADD PRIMARY KEY (`Code_Flight`),
-  ADD UNIQUE KEY `Code_Plane` (`Code_Plane`);
+  ADD KEY `fk_qh` (`Code_Plane`);
 
 --
 -- Chỉ mục cho bảng `list_planes`
@@ -336,7 +343,7 @@ ALTER TABLE `table_dl`
 -- AUTO_INCREMENT cho bảng `user_login`
 --
 ALTER TABLE `user_login`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- Các ràng buộc cho các bảng đã đổ
@@ -358,7 +365,7 @@ ALTER TABLE `list_customer`
 -- Các ràng buộc cho bảng `list_flight`
 --
 ALTER TABLE `list_flight`
-  ADD CONSTRAINT `list_flight_ibfk_1` FOREIGN KEY (`Code_Plane`) REFERENCES `list_planes` (`Code_Plane`);
+  ADD CONSTRAINT `fk_qh` FOREIGN KEY (`Code_Plane`) REFERENCES `list_planes` (`Code_Plane`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

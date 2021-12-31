@@ -15,7 +15,7 @@
           $data = mysqli_query($conn,$query);
           $row = mysqli_fetch_assoc($data);
           ?>
-         <h2 class="mb-3 mt-3"><?php echo $row['Title'] ?></h2>
+        <h2 class="mb-3 mt-3"><?php echo $row['Title'] ?></h2>
         <p ><?php echo $row['date']?></p>
         <?php
           $query = "SELECT * FROM conten WHERE ID=$id ORDER BY index_";
