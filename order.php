@@ -13,18 +13,25 @@
     </div>
     <div class="row">
         <div class="nav nav-pills">
+<<<<<<< HEAD
             <div class="tabs">
                 <div class="tab-item">Vé đã mua</div>
                 <div class="tab-item tab-item1">Vé đang chờ xử lý</div>
+=======
+            <div class="tabName d-flex">
+                <div class="tabName-item">Vé đã mua</div>
+                <div class="tabName-item ms-3">Vé đang chờ xử lý</div>
+>>>>>>> 695cc3aca28b43f0a566d395c9e4d2c37247d292
             </div>
         </div>
-        <div class="tab-content ">
-            <div class="tab-panel text-center ">
+        <div class="tab-Content">
+            <div class="tab-img text-center ">
                 <img src="assets/img/noflight.png" alt="">
                 <p class="tab-text mt-3 mb-5">Hiện tại bạn chưa có đơn hàng vé máy bay nào.</p>
                 <a href="index.php" class="btn-bookT" style="text-decoration: none;">Tìm kiếm & Đặt vé ngay</a>
             </div>
         </div>
+<<<<<<< HEAD
         <div class="tab-content1 hiden">
             <div class="tab-panel text-center ">
             <?php 
@@ -620,13 +627,15 @@
 
 
 
+=======
+>>>>>>> 695cc3aca28b43f0a566d395c9e4d2c37247d292
     </div>
 </div>
 
-
 </div>
 </div>
 
+<<<<<<< HEAD
 <script>
     var tabText = document.querySelector('.tab-item')
     var tabContent = document.querySelector('.tab-content')
@@ -645,3 +654,6 @@
 </body>
 
 </html>
+=======
+<?php include('footer.php') ?>
+>>>>>>> 695cc3aca28b43f0a566d395c9e4d2c37247d292
