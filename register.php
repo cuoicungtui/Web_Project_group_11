@@ -65,7 +65,7 @@
                                             Mật khẩu không giống
                                             </p>';
                                         }
-                                        else {
+                                        if(isset($_GET['err2'])){
                                             echo '<p style="color: red;">
                                             <i class="bi bi-exclamation-octagon"></i>
                                             Email đã tồn tại

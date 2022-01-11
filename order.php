@@ -31,7 +31,7 @@
                 <a href="index.php" class="btn-bookT" style="text-decoration: none;">Tìm kiếm & Đặt vé ngay</a>
             </div>
         </div>
-<<<<<<< HEAD
+
         <div class="tab-content1 hiden">
             <div class="tab-panel text-center ">
             <?php 
@@ -40,11 +40,8 @@
                         $result = mysqli_query($conn,$query);
                         // $row = mysqli_fetch_assoc($result);
                         // $rowcount=mysqli_num_rows($result);
-                       
 
                         while($row = mysqli_fetch_assoc($result)){
-                           
-                        
                             
                             ?>
                                 <div class="containerC">
@@ -607,7 +604,7 @@
 
                                         <hr class="mt-3 mb-3">
 
-                                      
+                                    
                                     </div>
 
                                 </div> -->

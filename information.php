@@ -25,10 +25,10 @@
                         <span>
                             <?php 
                                     echo $adult;
-                                    echo ' người lớn ';
+                                    echo ' người lớn, ';
                                     if($children != '') {
                                         echo $children;
-                                        echo ', trẻ em, ';
+                                        echo ' trẻ em, ';
                                     }
                                     if($baby != '') {
                                         echo $baby;
@@ -54,60 +54,60 @@
                         }
             ?>
             <div class="col-md-8 info-left">
-                <div class="info-top">
-                    <h5>Thông tin liên hệ</h5>
-                    <div class="info-name d-flex">
-                        <div class="input-bookTicket col-md-6 mb-3 me-3">
-                            <span>Họ tên</span>
-                            <input class="name" type="text" value="<?php echo $data['firstname'] . ' ' . $data['lastname'] ?>">
-                        </div>
-                        
-                    </div>
-    
-                    <div class="info-radio d-flex">
-                        <p class="pe-3">Giới tính</p>
-                        <?php
-                            if($data['sex']==1){
-                                echo '<div class="form-check form-check-inline">';
-                                echo '<input class="form-check-input" type="radio" checked="true">';
-                                echo '<label class="form-check-label" for="inlineRadio1">Nam</label>';
-                                echo '</div>';
-                                echo '<div class="form-check form-check-inline">';
-                                echo '<input class="form-check-input" type="radio">';
-                                echo '<label class="form-check-label" for="inlineRadio1">Nữ</label>';
-                                echo '</div>';
-                            }
-                            else {
-                                echo '<div class="form-check form-check-inline">';
-                                echo '<input class="form-check-input" type="radio">';
-                                echo '<label class="form-check-label" for="inlineRadio1">Nam</label>';
-                                echo '</div>';
-                                echo '<div class="form-check form-check-inline">';
-                                echo '<input class="form-check-input" type="radio" checked="true">';
-                                echo '<label class="form-check-label" for="inlineRadio1">Nữ</label>';
-                                echo '</div>';
-                            }
-                            ?>
+                <!-- <form> -->
+                    <div class="info-top">
+                        <h5>Thông tin liên hệ</h5>
+                        <div class="info-name d-flex">
+                            <div class="input-bookTicket col-md-6 mb-3 me-3">
+                                <span>Họ tên</span>
+                                <input class="name" type="text" value="<?php echo $data['firstname'] . ' ' . $data['lastname'] ?>">
+                            </div>
                             
-                    </div>
-    
-                    <div class="email d-flex">
-                        <div class="input-bookTicket col-md-6 mb-3 me-3">
-                            <span>Email</span>
-                            <input type="text" value="<?php echo $data['email']?>">
                         </div>
+        
+                        <div class="info-radio d-flex">
+                            <p class="pe-3">Giới tính</p>
+                            <?php
+                                if($data['sex']==1){
+                                    echo '<div class="form-check form-check-inline">';
+                                    echo '<input name="gt" class="form-check-input" type="radio" checked="true" value="1">';
+                                    echo '<label class="form-check-label" for="inlineRadio1">Nam</label>';
+                                    echo '</div>';
+                                    echo '<div class="form-check form-check-inline">';
+                                    echo '<input name="gt" class="form-check-input" type="radio" value="0">';
+                                    echo '<label class="form-check-label" for="inlineRadio1">Nữ</label>';
+                                    echo '</div>';
+                                }
+                                else {
+                                    echo '<div class="form-check form-check-inline">';
+                                    echo '<input name="gt" class="form-check-input" type="radio">';
+                                    echo '<label class="form-check-label" for="inlineRadio1">Nam</label>';
+                                    echo '</div>';
+                                    echo '<div class="form-check form-check-inline">';
+                                    echo '<input name="gt" class="form-check-input" type="radio" checked="true">';
+                                    echo '<label class="form-check-label" for="inlineRadio1">Nữ</label>';
+                                    echo '</div>';
+                                }
+                                ?>
+                                
+                        </div>
+        
+                        <div class="email d-flex">
+                            <div class="input-bookTicket col-md-6 mb-3 me-3">
+                                <span>Email</span>
+                                <input type="text" value="<?php echo $data['email']?>">
+                            </div>
+                            <div class="input-bookTicket col-md-5 mb-3">
+                                <span>Số điện thoại</span>
+                                <input type="text" value="<?php echo $data['sdt']?>">
+                            </div>
+                        </div>
+        
                         <div class="input-bookTicket col-md-5 mb-3">
-                            <span>Số điện thoại</span>
-                            <input type="text" value="<?php echo $data['sdt']?>">
+                            <span>Địa chỉ</span>
+                            <input type="text" value="<?php echo $data['adress']?>">
                         </div>
                     </div>
-    
-                    <div class="input-bookTicket col-md-5 mb-3">
-                        <span>Địa chỉ</span>
-                        <input type="text" value="<?php echo $data['adress']?>">
-                    </div>
-                </div>
-
                 <?php
                     for($i=1;$i<=(int)$adult;$i=$i+1){
                         ?>
@@ -118,18 +118,18 @@
                                 <div class="info-name d-flex">
                                     <div class="input-bookTicket col-md-6 mb-3 me-3">
                                         <span>Họ tên</span>
-                                        <input id="adult" class="name1" type="text">
+                                        <input id="adult" class="name1" type="text" required>
                                     </div>
                                 </div>
             
                                 <div class="info-radio d-flex">
                                     <p class="pe-3">Giới tính</p>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" id="inlineRadio1" value="option1">
+                                        <input name="<?php echo $i . 'gt' ?>" class="form-check-input gt" type="radio" id="inlineRadio1" value="1">
                                         <label class="form-check-label" for="inlineRadio1">Nam</label>
                                     </div>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" id="inlineRadio1" value="option1">
+                                        <input name="<?php echo $i . 'gt' ?>" class="form-check-input gt" type="radio" id="inlineRadio1" value="0">
                                         <label class="form-check-label" for="inlineRadio1">Nữ</label>
                                     </div>
                                 </div>
@@ -159,7 +159,7 @@
                                 <div class="info-name d-flex">
                                     <div class="input-bookTicket col-md-6 mb-3 me-3">
                                         <span>Họ tên</span>
-                                        <input class="name1" type="text">
+                                        <input class="name1" type="text" required>
                                     </div>
                                     
                                 </div>
@@ -167,11 +167,11 @@
                                 <div class="info-radio d-flex">
                                     <p class="pe-3">Giới tính</p>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" id="inlineRadio1" value="option1">
+                                        <input name="<?php echo $i . 'gt1' ?> class="form-check-input gt" type="radio" id="inlineRadio1" value="1">
                                         <label class="form-check-label" for="inlineRadio1">Nam</label>
                                     </div>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" id="inlineRadio1" value="option1">
+                                        <input name="<?php echo $i . 'gt1' ?> class="form-check-input gt" type="radio" id="inlineRadio1" value="0">
                                         <label class="form-check-label" for="inlineRadio1">Nữ</label>
                                     </div>
                                 </div>
@@ -201,7 +201,7 @@
                                 <div class="info-name d-flex">
                                     <div class="input-bookTicket col-md-6 mb-3 me-3">
                                         <span>Họ tên</span>
-                                        <input class="name1" type="text">
+                                        <input class="name1" type="text" required>
                                     </div>
                                     
                                 </div>
@@ -209,11 +209,11 @@
                                 <div class="info-radio d-flex">
                                     <p class="pe-3">Giới tính</p>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" id="inlineRadio1" value="option1">
+                                        <input name="<?php echo $i . 'gt2' ?> class="form-check-input gt" type="radio" id="inlineRadio1" value="1">
                                         <label class="form-check-label" for="inlineRadio1">Nam</label>
                                     </div>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" id="inlineRadio1" value="option1">
+                                        <input name="<?php echo $i . 'gt2' ?> class="form-check-input gt" type="radio" id="inlineRadio1" value="0">
                                         <label class="form-check-label" for="inlineRadio1">Nữ</label>
                                     </div>
                                 </div>
@@ -235,23 +235,40 @@
                         <?php
                     }
                 ?>
+                <button type="submit" class="btn-bookT mt-3 mb-5" id="submit">Tiếp tục</button>
+                <!-- </form> -->
 
-                <div class="btn-bookT mt-3 mb-5" id="submit">
-                    Tiếp tục
-                </div>
+
 
                 <script>
                     var submit = document.getElementById("submit");
                     submit.addEventListener('click', function() {
                         var name = document.getElementsByClassName("name1");
+                        for(var i=0;i<=name.length;i++){
+                            if(name[i].value == ""){
+                                name[i].style.borderColor = 'red';
+                                return false;
+                            }
+                        }
+                        var gt = document.getElementsByClassName("gt");
+                        var gt_value = [];
+                        for(var i=0;i<gt.length;i+=2) {
+                            if(gt[i].checked==true) {
+                                gt_value.push(1);
+                            }else {
+                                gt_value.push(0);
+                            }
+                        }
                         
-                        // $.ajax({
-                        //     type: "Post",
-                        //     url: "pay.php",
-                        //     // data: {email : $(this).val()},
-                        // });
-                        alert(name.length);
-
+                        request = $.ajax({
+                            url: "pay.php",
+                            type: "Post",
+                            data: {name: name, gt: gt_value},
+                            
+                        });
+                        request.done(function (response){
+                            alert(response);
+                        });
                     })
                 </script>
 

@@ -1,1 +1,5 @@
-<?php echo '123' ?>
+<?php
+    header('index.php');
+    $response = '12';
+    return $response;
+?>
