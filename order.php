@@ -14,20 +14,19 @@
         
     </div>
     <div class="row">
-        <div class="pregnancy-page">
-            <div class="statics">
-                <div class="statics-item">Tất cả</div>
-                <div class="statics-item">Đang chờ phục vụ</div>
-                <div class="statics-item">Đang phục vụ</div>
-                <div class="statics-item">Hoàn thành</div>
-                <div class="statics-item">Chờ xử lý hủy</div>
-                <div class="line"></div>
-            </div>
+    <ul class="nav nav-pills">
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="#">Vé đã mua</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Vé đang chờ xử lý</a>
+  </li>
+</ul>
             <div class="tab-content ">
                 <div class="tab-img text-center ">
                     <img src="assets/img/noflight.png" alt="">
                     <p class="tab-text mt-3 mb-5">Hiện tại bạn chưa có đơn hàng vé máy bay nào.</p>
-                    <p class = "btn-bookT">Tìm kiếm &  Đặt vé ngay</p>
+                    <a href="index.php" class = "btn-bookT" style="text-decoration: none;">Tìm kiếm &  Đặt vé ngay</a>
                 </div>
             </div>
             

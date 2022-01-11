@@ -124,7 +124,7 @@
                 </a>
                 <div class="manage-wrap">
                     
-                    <a href="" class="manage-link">
+                    <a href="order.php" class="manage-link">
                         <i class="bi bi-journal-bookmark"></i>
                         <p>Quản lý đơn hàng</p>
                     </a>

@@ -53,7 +53,7 @@ $data = mysqli_fetch_assoc($result);
             <div class="mb-4 row">
                 <label for="" class="col-sm-2 col-form-label">Họ Tên</label>
                 <div class="col-sm-10">
-                    <input type="text" class="form-control" value=" <?php echo $data['firstname'] . ' ' . $data['lastname'] ?>" readonly>
+                    <input type="text" class="form-control" value=" <?php echo $data['firstname'] . ' ' . $data['lastname'] ?>" >
                 </div>
             </div>
             <div class="mb-4 row">
