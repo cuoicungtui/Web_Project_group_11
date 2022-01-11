@@ -59,7 +59,7 @@
                     <div class="info-name d-flex">
                         <div class="input-bookTicket col-md-6 mb-3 me-3">
                             <span>Họ tên</span>
-                            <input type="text" value="<?php echo $data['firstname'] . ' ' . $data['lastname'] ?>">
+                            <input class="name" type="text" value="<?php echo $data['firstname'] . ' ' . $data['lastname'] ?>">
                         </div>
                         
                     </div>
@@ -118,9 +118,8 @@
                                 <div class="info-name d-flex">
                                     <div class="input-bookTicket col-md-6 mb-3 me-3">
                                         <span>Họ tên</span>
-                                        <input type="text">
+                                        <input id="adult" class="name1" type="text">
                                     </div>
-                                    
                                 </div>
             
                                 <div class="info-radio d-flex">
@@ -141,9 +140,7 @@
                                         <img class="package-logo-img" src="assets/img/lg1.png" alt="">
                                         <p class="package-text">Sân bay quốc tế Nội Bài (HAN) - Sân bay quốc tế Tân Sơn Nhất (SGN)</p> 
                                         <select name="" id="select">
-                                            <option value=""></option>
-                                            <option value="">10 KILO, 22 POUND - 151.000 ₫</option>
-                                            <option value="">23 KILO, 50 POUND - 269.000 ₫</option>
+                                            <option value="">10 KILO, 22 POUND</option>
                                         </select>
                                     </div>
                                 </div>
@@ -162,7 +159,7 @@
                                 <div class="info-name d-flex">
                                     <div class="input-bookTicket col-md-6 mb-3 me-3">
                                         <span>Họ tên</span>
-                                        <input type="text">
+                                        <input class="name1" type="text">
                                     </div>
                                     
                                 </div>
@@ -185,9 +182,7 @@
                                         <img class="package-logo-img" src="assets/img/lg1.png" alt="">
                                         <p class="package-text">Sân bay quốc tế Nội Bài (HAN) - Sân bay quốc tế Tân Sơn Nhất (SGN)</p> 
                                         <select name="" id="select">
-                                            <option value=""></option>
-                                            <option value="">10 KILO, 22 POUND - 151.000 ₫</option>
-                                            <option value="">23 KILO, 50 POUND - 269.000 ₫</option>
+                                            <option value="">10 KILO, 22 POUND</option>
                                         </select>
                                     </div>
                                 </div>
@@ -206,7 +201,7 @@
                                 <div class="info-name d-flex">
                                     <div class="input-bookTicket col-md-6 mb-3 me-3">
                                         <span>Họ tên</span>
-                                        <input type="text">
+                                        <input class="name1" type="text">
                                     </div>
                                     
                                 </div>
@@ -229,9 +224,7 @@
                                         <img class="package-logo-img" src="assets/img/lg1.png" alt="">
                                         <p class="package-text">Sân bay quốc tế Nội Bài (HAN) - Sân bay quốc tế Tân Sơn Nhất (SGN)</p> 
                                         <select name="" id="select">
-                                            <option value=""></option>
-                                            <option value="">10 KILO, 22 POUND - 151.000 ₫</option>
-                                            <option value="">23 KILO, 50 POUND - 269.000 ₫</option>
+                                            <option value="">10 KILO, 22 POUND</option>
                                         </select>
                                     </div>
                                 </div>
@@ -249,13 +242,16 @@
 
                 <script>
                     var submit = document.getElementById("submit");
-                    var name = doc
                     submit.addEventListener('click', function() {
-                        $.ajax({
-                        type: "Post",
-                        url: "pay.php",
-                        data: {email : $(this).val()},
-                        });
+                        var name = document.getElementsByClassName("name1");
+                        
+                        // $.ajax({
+                        //     type: "Post",
+                        //     url: "pay.php",
+                        //     // data: {email : $(this).val()},
+                        // });
+                        alert(name.length);
+
                     })
                 </script>
 
