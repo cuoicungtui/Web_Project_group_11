@@ -153,30 +153,6 @@
 
         </div>
         </div>
-<<<<<<< HEAD
-
-        <div class="tab-content1 hiden">
-            <div class="tab-panel text-center ">
-            <?php 
-                    require 'admin/connect.php';
-                        $query = "SELECT * FROM list_customer, user_login,list_flight Where list_customer.id_user = user_login.id_user and list_flight.Code_Flight=list_customer.Code_Flight and status = 0";
-                        $result = mysqli_query($conn,$query);
-                        // $row = mysqli_fetch_assoc($result);
-                        // $rowcount=mysqli_num_rows($result);
-
-                        while($row = mysqli_fetch_assoc($result)){
-                            
-                            ?>
-                                <div class="containerC">
-                                    <div class="row ticket mt-4">
-                                        <input type="text" style="display: none;">
-                                        <div class="col-md-6 col-lg-3 mb-2 ">
-                                            <div class="ticket-logo">
-                                                <?php 
-                                                    // echo '<img src="';
-                                                    // echo $row['img'];
-                                                    // echo '" alt="">';
-=======
         <div class="tab-content1 hiden">
             <div class="tab-img text-center ">
             
@@ -206,7 +182,6 @@
                                             <h6 name="ticket-title">
                                                 <?php
                                                 echo $row['Name_Airline'];
->>>>>>> 1ed9acccb3ed6479d5a410fa64b87483e9549cc7
                                                 ?>
                                             </h6>
                                             <span class="gray">Thương gia</span>
@@ -263,13 +238,6 @@
                                                 ?>
                                             </h6>
                                         </div>
-<<<<<<< HEAD
-
-                                        <hr class="mt-3 mb-3">
-
-                                    
-=======
->>>>>>> 1ed9acccb3ed6479d5a410fa64b87483e9549cc7
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-lg-3 mb-2">
