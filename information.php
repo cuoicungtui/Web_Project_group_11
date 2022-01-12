@@ -1,14 +1,43 @@
+<?php 
+    session_start();
+    if(!isset($_SESSION['USER'])){
+        header('location: login.php');
+        return;
+    }
+?>
 <?php include('header.php') ?>
 
 <?php 
-    if(!isset($_GET['adult'])){
-        header('location: index.php');
-        return;
+    // if(!isset($_GET['adult'])){
+    //     header('location: index.php');
+    //     return;
+    // }
+    if(isset($_GET['adult'])){
+        $adult = $_GET['adult'];
+    }else {
+        $adult = 1;
     }
-    $adult = $_GET['adult'];
-    $children = $_GET['children'];
-    $baby = $_GET['baby'];
-    $code_flight = $_GET['flight'];
+    if(isset($_GET['children'])){
+        $children = $_GET['children'];
+    }else {
+        $children = 1;
+    }
+    if(isset($_GET['baby'])){
+        $baby = $_GET['baby'];
+    }else {
+        $baby = 1;
+    }
+    if(isset($_GET['baby'])){
+        $baby = $_GET['baby'];
+    }else {
+        $baby = 1;
+    }
+    if(isset($_GET['code_flight'])){
+        $code_flight = $_GET['flight'];
+    }else {
+        $code_flight = '123VAL';
+    }
+    // $code_flight = $_GET['flight'];
     $lever = '';
     if (isset($_GET['1'])) {
         $lever = '1';
@@ -242,8 +271,6 @@
                 <button type="submit" class="btn-bookT mt-3 mb-5" id="submit">Tiếp tục</button>
                 </form>
 
-
-
                 <script>
                     var submit = document.getElementById("submit");
                     submit.addEventListener('click', function() {
@@ -263,13 +290,13 @@
                                 gt_value.push(0);
                             }
                         }
-                        $('form').submit(function() {
+                        $('form').submit(function(event) {
                             $.ajax({
                                 url: "pay.php",
                                 type: "Post",
                                 data: {name: name, gt: gt_value},
                                 success: function(res) {
-                                    window.location = 'index.php';
+                                    window.location="index.php";
                                 }
                             });
                         })

@@ -2,6 +2,6 @@
     session_start();
     if(isset($_SESSION['USER'])){
         unset($_SESSION['USER']);
-        header("location:login.php");
+        header("location: index.php");
     }
 ?>
