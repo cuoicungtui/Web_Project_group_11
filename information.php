@@ -1,6 +1,10 @@
 <?php include('header.php') ?>
 
 <?php 
+    if(!isset($_GET['adult'])){
+        header('location: index.php');
+        return;
+    }
     $adult = $_GET['adult'];
     $children = $_GET['children'];
     $baby = $_GET['baby'];
@@ -54,7 +58,7 @@
                         }
             ?>
             <div class="col-md-8 info-left">
-                <!-- <form> -->
+                <form autocomplete>
                     <div class="info-top">
                         <h5>Thông tin liên hệ</h5>
                         <div class="info-name d-flex">
@@ -118,7 +122,7 @@
                                 <div class="info-name d-flex">
                                     <div class="input-bookTicket col-md-6 mb-3 me-3">
                                         <span>Họ tên</span>
-                                        <input id="adult" class="name1" type="text" required>
+                                        <input name="name" id="adult" class="name1" type="text" required>
                                     </div>
                                 </div>
             
@@ -159,7 +163,7 @@
                                 <div class="info-name d-flex">
                                     <div class="input-bookTicket col-md-6 mb-3 me-3">
                                         <span>Họ tên</span>
-                                        <input class="name1" type="text" required>
+                                        <input name="name" class="name1" type="text" required>
                                     </div>
                                     
                                 </div>
@@ -201,7 +205,7 @@
                                 <div class="info-name d-flex">
                                     <div class="input-bookTicket col-md-6 mb-3 me-3">
                                         <span>Họ tên</span>
-                                        <input class="name1" type="text" required>
+                                        <input name="name" class="name1" type="text" required>
                                     </div>
                                     
                                 </div>
@@ -236,7 +240,7 @@
                     }
                 ?>
                 <button type="submit" class="btn-bookT mt-3 mb-5" id="submit">Tiếp tục</button>
-                <!-- </form> -->
+                </form>
 
 
 
@@ -259,16 +263,16 @@
                                 gt_value.push(0);
                             }
                         }
-                        
-                        request = $.ajax({
-                            url: "pay.php",
-                            type: "Post",
-                            data: {name: name, gt: gt_value},
-                            
-                        });
-                        request.done(function (response){
-                            alert(response);
-                        });
+                        $('form').submit(function() {
+                            $.ajax({
+                                url: "pay.php",
+                                type: "Post",
+                                data: {name: name, gt: gt_value},
+                                success: function(res) {
+                                    window.location = 'index.php';
+                                }
+                            });
+                        })
                     })
                 </script>
 
