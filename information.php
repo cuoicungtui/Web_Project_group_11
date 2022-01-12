@@ -167,7 +167,7 @@
                                         echo $data["img"];
                                         echo '"alt="">';
                                     ?>
-                                        <p class="package-text">Sân bay quốc tế Nội Bài (HAN) - Sân bay quốc tế Tân Sơn Nhất (SGN)</p> 
+                                        <span class="package-text">Sân bay quốc tế Nội Bài (HAN) - Sân bay quốc tế Tân Sơn Nhất (SGN)</sp> 
                                         <select name="" id="select">
                                             <option value="">10 KILO, 22 POUND</option>
                                         </select>
@@ -219,7 +219,7 @@
                                             echo $data["img"];
                                             echo '"alt="">';
                                         ?>
-                                        <p class="package-text">Sân bay quốc tế Nội Bài (HAN) - Sân bay quốc tế Tân Sơn Nhất (SGN)</p> 
+                                        <span class="package-text">Sân bay quốc tế Nội Bài (HAN) - Sân bay quốc tế Tân Sơn Nhất (SGN)</sp> 
                                         <select name="" id="select">
                                             <option value="">10 KILO, 22 POUND</option>
                                         </select>
@@ -271,7 +271,7 @@
                                             echo $data["img"];
                                             echo '"alt="">';
                                         ?>
-                                        <p class="package-text">Sân bay quốc tế Nội Bài (HAN) - Sân bay quốc tế Tân Sơn Nhất (SGN)</p> 
+                                        <span class="package-text">Sân bay quốc tế Nội Bài (HAN) - Sân bay quốc tế Tân Sơn Nhất (SGN)</sp> 
                                         <select name="" id="select">
                                             <option value="">10 KILO, 22 POUND</option>
                                         </select>
@@ -284,7 +284,7 @@
                         <?php
                     }
                 ?>
-                <button type="submit" class="btn-bookT mt-3 mb-5" id="submit">Tiếp tục</button>
+                <button style="border:none;" type="submit" class="btn-bookT mt-3 mb-5" id="submit">Hoàn Thành</button>
                 </form>
 
                 <script>

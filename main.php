@@ -108,7 +108,7 @@
                                 </div>
                             </div>
                         </form>
-                        <form class="tab-pane" method="post" onsubmit="return check_searchTwo()">
+                        <form class="tab-pane" method="post" onsubmit="return check_searchTwo()" action="ticket2.php">
                             <div class="container">
                             <div class="row">
                                     <div class="input-bookTicket col-12 col-xl-3 col-sm-6 mb-3">
@@ -192,7 +192,7 @@
                                 </div>
                             </div>
                         </form>
-                        <form class="tab-pane">
+                        <form class="tab-pane" action="ticket2.php">
                             <div class="container">
                                 <div class="row">
                                     <div class="input-bookTicket col-sm-6 col-12 col-xl-4 mb-3">
@@ -248,8 +248,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="btn-bookNC mt-3">
-                                    <a href="#" class="btn-bookT text-center" style="color: #fff; text-decoration: none;">Tìm kiếm</a>
+                                <div class="tab-search mt-3">
+                                    <button type="submit" name="btn3" class="btn-bookT" style="color: #fff; text-decoration: none;">Tìm kiếm</button>
                                 </div>
                             </div>
                         </fo>

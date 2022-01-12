@@ -1,7 +1,6 @@
 <?php
     $username = 'nguyeanhtuatus@gmail.com';
     $password = 'sjxhgeunjpertiih';
-
     use PHPMailer\PHPMailer\PHPMailer;
     use PHPMailer\PHPMailer\Exception;
 
@@ -29,19 +28,18 @@ try {
 
     $mail->setFrom('hahalolo@gmail.com', 'HaHaLoLo');
     $mail->addAddress($email);     
-   
-   
+    
     $mail->isHTML(true);                                  
     $mail->Subject = 'HaHaLoLo đặt vé máy bay';
-    $mail->Body    = 'Click vào đường link để hoàn thành đặt vé<a href="'.$link.'" > click</a>';
+    $mail->Body    = 'Click vào đường link để hoàn thành đặt vé <a href="'.$link.'">Click</a>';
     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
     $mail->send();
-    echo 'Message has been sent';
+    return true;
 } catch (Exception $e) {
-    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+    // echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+    return false;
 }
 }
-sendmail('nguyeanhtuatus@gmail.com','http://localhost:81/btlweb/Web_Project_group_11/index.php')
 
 ?>

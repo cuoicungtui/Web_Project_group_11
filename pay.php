@@ -2,10 +2,11 @@
     session_start();
     if(!isset($_SESSION['USER'])){
         header('location: index.php');
-    }else {
+    }
+    else {
         $code_flight = $_GET['code_flight'];
         $id_user = $_SESSION['USER'];
-        $token = md5($id_user . rand(10, 9999));
+        $token =  'aa';
         $adult = $_GET['adult'];
         $children = $_GET['children'];
         $baby = $_GET['baby'];
@@ -37,6 +38,27 @@
             $result = mysqli_query($conn, $query);
         }
         
+        $query = "SELECT * FROM user_login WHERE id = $id_user";
+        $result = mysqli_query($conn, $query);
+        $data = mysqli_fetch_assoc($result);
+        $email = $data['email'];
+        require_once "sendmail/sendmailer.php";
+        $link = "active.php?id_user=<?php echo $id_user?>&code_flight=<?php echo $code_flight?>&token=<?php echo $token?>";
+        if(sendmail($email,$link)){
+            // header('location: index.php');
+            echo $link;
+            echo "<br>";
+            echo '<a href="'.'bb'.'"></a>';
+            echo "<br>";
+            echo $email;
+        }
+        else {
+            header('location: login.php');
+        }
+        // $active_code = $_GET['active_code'];
+        ?>
+        <?php
     }
-    // echo $_GET['adult'];
-?>
+    
+    
+    ?>
