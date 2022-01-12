@@ -12,32 +12,18 @@
     //     header('location: index.php');
     //     return;
     // }
-    if(isset($_GET['adult'])){
-        $adult = $_GET['adult'];
-    }else {
-        $adult = 1;
-    }
-    if(isset($_GET['children'])){
+    $adult = $_GET['adult'];
+    if($_GET['children']==''){
+        $children = 0;
+    }else{
         $children = $_GET['children'];
-    }else {
-        $children = 1;
     }
-    if(isset($_GET['baby'])){
+    if($_GET['baby']==''){
+        $baby = 0;
+    }else{
         $baby = $_GET['baby'];
-    }else {
-        $baby = 1;
     }
-    if(isset($_GET['baby'])){
-        $baby = $_GET['baby'];
-    }else {
-        $baby = 1;
-    }
-    if(isset($_GET['code_flight'])){
-        $code_flight = $_GET['flight'];
-    }else {
-        $code_flight = '123VAL';
-    }
-    // $code_flight = $_GET['flight'];
+    $code_flight = $_GET['flight'];
     $lever = '';
     if (isset($_GET['1'])) {
         $lever = '1';
@@ -87,7 +73,7 @@
                         }
             ?>
             <div class="col-md-8 info-left">
-                <form autocomplete>
+                <form autocomplete action="pay.php?adult=<?php echo $adult?>&children=<?php echo $children?>&baby=<?php echo $baby?>&code_flight=<?php echo $code_flight?>&chair=<?php echo $lever?>" method="post">
                     <div class="info-top">
                         <h5>Thông tin liên hệ</h5>
                         <div class="info-name d-flex">
@@ -151,18 +137,18 @@
                                 <div class="info-name d-flex">
                                     <div class="input-bookTicket col-md-6 mb-3 me-3">
                                         <span>Họ tên</span>
-                                        <input name="name" id="adult" class="name1" type="text" required>
+                                        <input name="adult_name<?php echo $i?>" id="adult" class="name1" type="text" required>
                                     </div>
                                 </div>
             
                                 <div class="info-radio d-flex">
                                     <p class="pe-3">Giới tính</p>
                                     <div class="form-check form-check-inline">
-                                        <input name="<?php echo $i . 'gt' ?>" class="form-check-input gt" type="radio" id="inlineRadio1" value="1">
+                                        <input name="adult_gt<?php echo $i?>" class="form-check-input gt" type="radio" id="inlineRadio1" value="1">
                                         <label class="form-check-label" for="inlineRadio1">Nam</label>
                                     </div>
                                     <div class="form-check form-check-inline">
-                                        <input name="<?php echo $i . 'gt' ?>" class="form-check-input gt" type="radio" id="inlineRadio1" value="0">
+                                        <input name="adult_gt<?php echo $i?>" class="form-check-input gt" type="radio" id="inlineRadio1" value="0">
                                         <label class="form-check-label" for="inlineRadio1">Nữ</label>
                                     </div>
                                 </div>
@@ -170,7 +156,17 @@
                                 <div class="package mb-3">
                                     <h6>Hành lý ký gửi</h6>
                                     <div class="package-logo">
-                                        <img class="package-logo-img" src="assets/img/lg1.png" alt="">
+                                    <?php 
+                                    require_once "admin/connect.php";
+                                        $query = "SELECT img FROM list_planes,list_flight WHERE list_planes.Code_Plane  = list_flight.Code_Plane and code_flight = '$code_flight'";
+                                        $result = mysqli_query($conn,$query);
+                                        $data = mysqli_fetch_assoc($result);
+                                    ?>
+                                    <?php
+                                        echo '<img class="package-logo-img" src="';
+                                        echo $data["img"];
+                                        echo '"alt="">';
+                                    ?>
                                         <p class="package-text">Sân bay quốc tế Nội Bài (HAN) - Sân bay quốc tế Tân Sơn Nhất (SGN)</p> 
                                         <select name="" id="select">
                                             <option value="">10 KILO, 22 POUND</option>
@@ -192,7 +188,7 @@
                                 <div class="info-name d-flex">
                                     <div class="input-bookTicket col-md-6 mb-3 me-3">
                                         <span>Họ tên</span>
-                                        <input name="name" class="name1" type="text" required>
+                                        <input name="children_name<?php echo $i?>" class="name1" type="text" required>
                                     </div>
                                     
                                 </div>
@@ -200,11 +196,11 @@
                                 <div class="info-radio d-flex">
                                     <p class="pe-3">Giới tính</p>
                                     <div class="form-check form-check-inline">
-                                        <input name="<?php echo $i . 'gt1' ?> class="form-check-input gt" type="radio" id="inlineRadio1" value="1">
+                                        <input name="children_gt<?php echo $i?>" class="form-check-input gt" type="radio" id="inlineRadio1" value="1">
                                         <label class="form-check-label" for="inlineRadio1">Nam</label>
                                     </div>
                                     <div class="form-check form-check-inline">
-                                        <input name="<?php echo $i . 'gt1' ?> class="form-check-input gt" type="radio" id="inlineRadio1" value="0">
+                                        <input name="children_gt<?php echo $i?>" class="form-check-input gt" type="radio" id="inlineRadio1" value="0">
                                         <label class="form-check-label" for="inlineRadio1">Nữ</label>
                                     </div>
                                 </div>
@@ -212,7 +208,17 @@
                                 <div class="package mb-3">
                                     <h6>Hành lý ký gửi</h6>
                                     <div class="package-logo">
-                                        <img class="package-logo-img" src="assets/img/lg1.png" alt="">
+                                        <?php 
+                                        require_once "admin/connect.php";
+                                            $query = "SELECT img FROM list_planes,list_flight WHERE list_planes.Code_Plane  = list_flight.Code_Plane and code_flight = '$code_flight'";
+                                            $result = mysqli_query($conn,$query);
+                                            $data = mysqli_fetch_assoc($result);
+                                        ?>
+                                        <?php
+                                            echo '<img class="package-logo-img" src="';
+                                            echo $data["img"];
+                                            echo '"alt="">';
+                                        ?>
                                         <p class="package-text">Sân bay quốc tế Nội Bài (HAN) - Sân bay quốc tế Tân Sơn Nhất (SGN)</p> 
                                         <select name="" id="select">
                                             <option value="">10 KILO, 22 POUND</option>
@@ -234,7 +240,7 @@
                                 <div class="info-name d-flex">
                                     <div class="input-bookTicket col-md-6 mb-3 me-3">
                                         <span>Họ tên</span>
-                                        <input name="name" class="name1" type="text" required>
+                                        <input name="baby_name<?php echo $i?>" class="name1" type="text" required>
                                     </div>
                                     
                                 </div>
@@ -242,11 +248,11 @@
                                 <div class="info-radio d-flex">
                                     <p class="pe-3">Giới tính</p>
                                     <div class="form-check form-check-inline">
-                                        <input name="<?php echo $i . 'gt2' ?> class="form-check-input gt" type="radio" id="inlineRadio1" value="1">
+                                        <input name="baby_gt<?php echo $i?>" class="form-check-input gt" type="radio" id="inlineRadio1" value="1">
                                         <label class="form-check-label" for="inlineRadio1">Nam</label>
                                     </div>
                                     <div class="form-check form-check-inline">
-                                        <input name="<?php echo $i . 'gt2' ?> class="form-check-input gt" type="radio" id="inlineRadio1" value="0">
+                                        <input name="baby_gt<?php echo $i?>" class="form-check-input gt" type="radio" id="inlineRadio1" value="0">
                                         <label class="form-check-label" for="inlineRadio1">Nữ</label>
                                     </div>
                                 </div>
@@ -254,7 +260,17 @@
                                 <div class="package mb-3">
                                     <h6>Hành lý ký gửi</h6>
                                     <div class="package-logo">
-                                        <img class="package-logo-img" src="assets/img/lg1.png" alt="">
+                                        <?php 
+                                        require_once "admin/connect.php";
+                                            $query = "SELECT img FROM list_planes,list_flight WHERE list_planes.Code_Plane  = list_flight.Code_Plane and code_flight = '$code_flight'";
+                                            $result = mysqli_query($conn,$query);
+                                            $data = mysqli_fetch_assoc($result);
+                                        ?>
+                                        <?php
+                                            echo '<img class="package-logo-img" src="';
+                                            echo $data["img"];
+                                            echo '"alt="">';
+                                        ?>
                                         <p class="package-text">Sân bay quốc tế Nội Bài (HAN) - Sân bay quốc tế Tân Sơn Nhất (SGN)</p> 
                                         <select name="" id="select">
                                             <option value="">10 KILO, 22 POUND</option>
@@ -290,16 +306,6 @@
                                 gt_value.push(0);
                             }
                         }
-                        $('form').submit(function(event) {
-                            $.ajax({
-                                url: "pay.php",
-                                type: "Post",
-                                data: {name: name, gt: gt_value},
-                                success: function(res) {
-                                    window.location="index.php";
-                                }
-                            });
-                        })
                     })
                 </script>
 
