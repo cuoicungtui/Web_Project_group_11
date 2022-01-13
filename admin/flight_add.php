@@ -66,27 +66,47 @@ include "header_admin.php";
                 <label for="Departure_Plane" class="form-label">Departure_Plane</label>
 
                 <select class="form-select" aria-label="Departure_Plane" id="Departure_Plane" name="Departure_Plane">
-                    <option value="Hà NỘI">HÀ NỘI</option>
-                    <option value="SÀI GÒN">SÀI GÒN</option>
-                    <option value="ĐÀ NẴNG">ĐÀ NẴNG</option>
-                    <option value="VINH">VINH</option>
-                    <option value="HẢI PHÒNG">HẢI PHÒNG</option>
-
+                <option value="Hà Nội">Hà Nội</option>
+                    <option value="Điện Biên Phủ">Điện Biên Phủ</option>
+                    <option value="Hài Phòng">Hài Phòng</option>
+                    <option value="Đà Nẵng">Đà Nẵng</option>
+                    <option value="Quảng Ninh">Quảng Ninh</option>
+                    <option value="Nha Trang">Nha Trang</option>
+                    <option value="Đà Lạt">Đà Lạt</option>
+                    <option value="Phú Quốc">Phú Quốc</option>
+                    <option value="Quảng Nam">Quảng Nam</option>
+                    <option value="Pleiku">Pleiku</option>
+                    <option value="Kiên Giang">Kiên Giang</option>
+                    <option value="Côn Đảo">Côn Đảo</option>
+                    <option value="Cà Mau">Cà Mau</option>
+                    <option value="Phú Yên">Phú Yên</option>
+                    <option value="Vinh">Vinh</option>
+                    <option value="Huế">Huế</option>
                 </select>
 
-               
+        
                 
             </div>
 
             <div class="mb-3 col-6">
                 <label for="To_Plane" class="form-label">To_Plane</label>
                 <select class="form-select" aria-label="To_Plane" name="To_Plane" id="To_Plane">
-                    <option value="Hà NỘI">HÀ NỘI</option>
-                    <option value="SÀI GÒN">SÀI GÒN</option>
-                    <option value="ĐÀ NẴNG">ĐÀ NẴNG</option>
-                    <option value="VINH">VINH</option>
-                    <option value="HẢI PHÒNG">HẢI PHÒNG</option>
-
+                <option value="Hà Nội">Hà Nội</option>
+                    <option value="Điện Biên Phủ">Điện Biên Phủ</option>
+                    <option value="Hài Phòng">Hài Phòng</option>
+                    <option value="Đà Nẵng">Đà Nẵng</option>
+                    <option value="Quảng Ninh">Quảng Ninh</option>
+                    <option value="Nha Trang">Nha Trang</option>
+                    <option value="Đà Lạt">Đà Lạt</option>
+                    <option value="Phú Quốc">Phú Quốc</option>
+                    <option value="Quảng Nam">Quảng Nam</option>
+                    <option value="Pleiku">Pleiku</option>
+                    <option value="Kiên Giang">Kiên Giang</option>
+                    <option value="Côn Đảo">Côn Đảo</option>
+                    <option value="Cà Mau">Cà Mau</option>
+                    <option value="Phú Yên">Phú Yên</option>
+                    <option value="Vinh">Vinh</option>
+                    <option value="Huế">Huế</option>
                 </select>
             </div>
         </div>
