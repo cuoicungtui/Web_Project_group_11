@@ -56,7 +56,7 @@ include "header_admin.php";
                     <td><?php echo $data['Departure_Plane']  ?></td>
                     <td><?php echo $data['To_Plane']  ?></td>
                     <td><?php echo $data['Price_L1']  ?></td>
-                    <td><?php echo $data['Price_L1']  ?></td>
+                    <td><?php echo $data['Price_L2']  ?></td>
 
                     <td class="text-center"><a href="flight_edit.php?Code_Flight=<?php echo $data['Code_Flight'] ?>"><i class="bi bi-pencil-square"></i> </a></td>
                     <td class="text-center"><a href="flight_delete.php?Code_Flight=<?php echo $data['Code_Flight']  ?>"><i class="bi bi-trash"></i></a></td>
