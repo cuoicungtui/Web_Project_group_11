@@ -67,13 +67,11 @@
                             $data = mysqli_fetch_assoc($result);
                         }
             ?>
-<<<<<<< HEAD
+
             <div class="col-md-8 info-left">
                 <form autocomplete action="pay2.php?adult=<?php echo $adult?>&children=<?php echo $children?>&baby=<?php echo $baby?>&code_flight1=<?php echo $code_flight1?>&code_flight2=<?php echo $code_flight2?>&chair1=<?php echo $L1?>&chair2=<?php echo $L2?>" method="post">
-=======
-            <div class="col-md-12 col-lg-8 info-left">
-                <form autocomplete action="pay.php?adult=<?php echo $adult?>&children=<?php echo $children?>&baby=<?php echo $baby?>&code_flight=<?php echo $code_flight?>&chair=<?php echo $lever?>" method="post">
->>>>>>> e0b7c965a0c93877401a8d1c8685276fd9235372
+
+
                     <div class="info-top">
                         <h5>Thông tin liên hệ</h5>
                         <div class="info-name d-flex">
