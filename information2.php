@@ -69,7 +69,7 @@
                         }
             ?>
             <div class="col-md-8 info-left">
-                <form autocomplete action="pay.php?adult=<?php echo $adult?>&children=<?php echo $children?>&baby=<?php echo $baby?>&code_flight=<?php echo $code_flight?>&chair=<?php echo $lever?>" method="post">
+                <form autocomplete action="pay2.php?adult=<?php echo $adult?>&children=<?php echo $children?>&baby=<?php echo $baby?>&code_flight1=<?php echo $code_flight1?>&code_flight2=<?php echo $code_flight2?>&chair1=<?php echo $L1?>&chair2=<?php echo $L2?>" method="post">
                     <div class="info-top">
                         <h5>Thông tin liên hệ</h5>
                         <div class="info-name d-flex">
@@ -123,7 +123,7 @@
                             <input type="text" value="<?php echo $data['adress']?>">
                         </div>
                     </div>
-                <?php
+                    <?php
                     for($i=1;$i<=(int)$adult;$i=$i+1){
                         ?>
                             <div class="info-top mb-3">

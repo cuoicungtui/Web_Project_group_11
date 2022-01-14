@@ -36,6 +36,22 @@
 
         </div>
     </div>
+    <?php
+        if(isset($_GET['ok'])){
+            ?>
+                <script>
+                    alert('Đặt vé thành công');
+                </script>
+            <?php
+        }
+        if(isset($_GET['ko'])){
+            ?>
+                <script>
+                    alert('Đặt vé không thành công');
+                </script>
+            <?php
+        }
+    ?>
     
     <div class="btn-load">
         <div class="btn-bookT">Xem thêm</div>

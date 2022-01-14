@@ -34,8 +34,13 @@ try {
     $mail->Body    = 'Click vào đường link để hoàn thành đặt vé <a href="'.$link.'">Click</a>';
     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
-    $mail->send();
-    return true;
+    
+    if($mail->send()){
+        return true;
+    }
+    else{
+        return false;
+    }
 } catch (Exception $e) {
     // echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
     return false;

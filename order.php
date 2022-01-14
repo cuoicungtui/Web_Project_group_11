@@ -6,6 +6,12 @@
     }
     $id = $_SESSION['USER'];
 ?>
+<style>
+    .cl {
+        background-color: var(--primary-color) !important;
+        color: #fff;
+    }
+</style>
 <?php include('header.php') ?>
 <div class="container " style="margin-top: var(--header-mg);">
     <div class="row">
@@ -24,9 +30,7 @@
 
             <div class="tabs">
                 <div class="tab-item">Vé đã mua</div>
-                <div class="tab-item tab-item1">Vé đang chờ xử lý</div>
-
-
+                <div class="tab-item tab-item1 cl">Vé đang chờ xử lý</div>
             </div>
         </div>
         <div class="tab-content">
@@ -295,12 +299,15 @@
     tabText.addEventListener('click', function() {
         tabContent.classList.add('hiden')
         tabContent1.classList.remove('hiden')
-
+        tabText.classList.add('cl')
+        tabText1.classList.remove('cl')
     })
 
     tabText1.addEventListener('click', function() {
         tabContent.classList.remove('hiden')
         tabContent1.classList.add('hiden')
+        tabText.classList.remove('cl')
+        tabText1.classList.add('cl')
 
     })
 </script>
