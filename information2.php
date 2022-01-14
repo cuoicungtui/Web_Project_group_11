@@ -13,24 +13,20 @@
     //     return;
     // }
     $adult = $_GET['adult'];
-    if($_GET['children']==''){
+    if($_GET['children']=='' || $_GET['children']=='0' ){
         $children = 0;
     }else{
         $children = $_GET['children'];
     }
-    if($_GET['baby']==''){
+    if($_GET['baby']=='' || $_GET['baby']=='0'){
         $baby = 0;
     }else{
         $baby = $_GET['baby'];
     }
-    $code_flight = $_GET['flight'];
-    $lever = '';
-    if (isset($_GET['1'])) {
-        $lever = '1';
-    }else {
-        $lever = '2';
-    }
-    // $totalPrice = $_GET['totalPrice'];
+    $code_flight1 = $_GET['code_flight_1'];
+    $code_flight2 = $_GET['code_flight_2'];
+    $L1 = $_GET['L1'];
+    $L2 = $_GET['L2'];
 ?>
 
 <div id="main">
@@ -153,26 +149,26 @@
                                     </div>
                                 </div>
             
-                                <div class="package mb-3">
+                                <!-- <div class="package mb-3">
                                     <h6>Hành lý ký gửi</h6>
                                     <div class="package-logo">
                                     <?php 
-                                    require_once "admin/connect.php";
-                                        $query = "SELECT img FROM list_planes,list_flight WHERE list_planes.Code_Plane  = list_flight.Code_Plane and code_flight = '$code_flight'";
-                                        $result = mysqli_query($conn,$query);
-                                        $data = mysqli_fetch_assoc($result);
+                                    // require_once "admin/connect.php";
+                                    //     $query = "SELECT img FROM list_planes,list_flight WHERE list_planes.Code_Plane  = list_flight.Code_Plane and code_flight = '$code_flight'";
+                                    //     $result = mysqli_query($conn,$query);
+                                    //     $data = mysqli_fetch_assoc($result);
                                     ?>
                                     <?php
-                                        echo '<img class="package-logo-img" src="';
-                                        echo $data["img"];
-                                        echo '"alt="">';
+                                        // echo '<img class="package-logo-img" src="';
+                                        // echo $data["img"];
+                                        // echo '"alt="">';
                                     ?>
                                         <span class="package-text">Sân bay quốc tế Nội Bài (HAN) - Sân bay quốc tế Tân Sơn Nhất (SGN)</sp> 
                                         <select name="" id="select">
                                             <option value="">10 KILO, 22 POUND</option>
                                         </select>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                         <?php
                             
@@ -205,26 +201,26 @@
                                     </div>
                                 </div>
             
-                                <div class="package mb-3">
+                                <!-- <div class="package mb-3">
                                     <h6>Hành lý ký gửi</h6>
                                     <div class="package-logo">
                                         <?php 
-                                        require_once "admin/connect.php";
-                                            $query = "SELECT img FROM list_planes,list_flight WHERE list_planes.Code_Plane  = list_flight.Code_Plane and code_flight = '$code_flight'";
-                                            $result = mysqli_query($conn,$query);
-                                            $data = mysqli_fetch_assoc($result);
+                                        // require_once "admin/connect.php";
+                                        //     $query = "SELECT img FROM list_planes,list_flight WHERE list_planes.Code_Plane  = list_flight.Code_Plane and code_flight = '$code_flight'";
+                                        //     $result = mysqli_query($conn,$query);
+                                        //     $data = mysqli_fetch_assoc($result);
                                         ?>
                                         <?php
-                                            echo '<img class="package-logo-img" src="';
-                                            echo $data["img"];
-                                            echo '"alt="">';
+                                            // echo '<img class="package-logo-img" src="';
+                                            // echo $data["img"];
+                                            // echo '"alt="">';
                                         ?>
                                         <span class="package-text">Sân bay quốc tế Nội Bài (HAN) - Sân bay quốc tế Tân Sơn Nhất (SGN)</sp> 
                                         <select name="" id="select">
                                             <option value="">10 KILO, 22 POUND</option>
                                         </select>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                         <?php
                             
@@ -257,26 +253,26 @@
                                     </div>
                                 </div>
             
-                                <div class="package mb-3">
+                                <!-- <div class="package mb-3">
                                     <h6>Hành lý ký gửi</h6>
                                     <div class="package-logo">
                                         <?php 
-                                        require_once "admin/connect.php";
-                                            $query = "SELECT img FROM list_planes,list_flight WHERE list_planes.Code_Plane  = list_flight.Code_Plane and code_flight = '$code_flight'";
-                                            $result = mysqli_query($conn,$query);
-                                            $data = mysqli_fetch_assoc($result);
+                                        // require_once "admin/connect.php";
+                                        //     $query = "SELECT img FROM list_planes,list_flight WHERE list_planes.Code_Plane  = list_flight.Code_Plane and code_flight = '$code_flight'";
+                                        //     $result = mysqli_query($conn,$query);
+                                        //     $data = mysqli_fetch_assoc($result);
                                         ?>
                                         <?php
-                                            echo '<img class="package-logo-img" src="';
-                                            echo $data["img"];
-                                            echo '"alt="">';
+                                            // echo '<img class="package-logo-img" src="';
+                                            // echo $data["img"];
+                                            // echo '"alt="">';
                                         ?>
                                         <span class="package-text">Sân bay quốc tế Nội Bài (HAN) - Sân bay quốc tế Tân Sơn Nhất (SGN)</sp> 
                                         <select name="" id="select">
                                             <option value="">10 KILO, 22 POUND</option>
                                         </select>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                         <?php
                             
@@ -322,19 +318,18 @@
                         <li class="note-item">Trường hợp trẻ em đi một mình vui lòng liên hệ trực tiếp đại lý để được tư vấn dịch vụ trẻ em đi một mình trên chuyến bay.</li>
                     </ul>
                 </div>
-
             </div>
-
+            
             <div class="col-md-4 info-rights">
                 <div class="info-right">
-                    <h5>Thông tin chuyến bay</h4>
+                    <h5>Thông tin chuyến bay đi</h4>
                     <hr>
                     <div class="infoFly">
                         <div class="infoFly-title">
                             <h6>Chuyến bay</h6>
                             <?php 
                             require_once "admin/connect.php";
-                                $query = "SELECT img FROM list_planes,list_flight WHERE list_planes.Code_Plane  = list_flight.Code_Plane and code_flight = '$code_flight'";
+                                $query = "SELECT img FROM list_planes,list_flight WHERE list_planes.Code_Plane  = list_flight.Code_Plane and code_flight = '$code_flight1'";
                                 $result = mysqli_query($conn,$query);
                                 $data = mysqli_fetch_assoc($result);
                             ?>
@@ -347,11 +342,11 @@
     
                         <?php 
                             require_once "admin/connect.php";
-                                $query = "SELECT * FROM list_flight WHERE code_flight = '$code_flight'";
+                                $query = "SELECT * FROM list_flight WHERE code_flight = '$code_flight1'";
                                 $result = mysqli_query($conn,$query);
                                 $data = mysqli_fetch_assoc($result);
                                 $Price = 0;
-                                if(isset($_GET['1'])){
+                                if($L1='1'){
                                     $Price = $data['Price_L1'];
                                 }else {
                                     $Price = $data['Price_L2'];
@@ -369,7 +364,7 @@
                                 else{
                                     $price3 = 0;
                                 }
-                                $totalPrice = (int)$price1 + (int)$price2 + (int)$price3 + 1053000;
+                                $totalPrice = (int)$price1 + (int)$price2 + (int)$price3 + 750000;
                         ?>
 
                         <div class="infoFly-time">
@@ -468,7 +463,154 @@
                             ?>
                             <div class="adult">
                                 <p class="adult-text">Phí & Thuế</p>
-                                <div class="aldult-price">1053000 ₫</div>
+                                <div class="aldult-price">750000 ₫</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-right mt-3">
+                    <h5>Thông tin chuyến bay về</h4>
+                    <hr>
+                    <div class="infoFly">
+                        <div class="infoFly-title">
+                            <h6>Chuyến bay</h6>
+                            <?php 
+                            require_once "admin/connect.php";
+                                $query = "SELECT img FROM list_planes,list_flight WHERE list_planes.Code_Plane  = list_flight.Code_Plane and code_flight = '$code_flight2'";
+                                $result = mysqli_query($conn,$query);
+                                $data = mysqli_fetch_assoc($result);
+                            ?>
+                            <?php
+                                echo '<img class="package-logo-img" src="';
+                                echo $data["img"];
+                                echo '"alt="">';
+                            ?>
+                        </div>
+    
+                        <?php 
+                            require_once "admin/connect.php";
+                                $query = "SELECT * FROM list_flight WHERE code_flight = '$code_flight2'";
+                                $result = mysqli_query($conn,$query);
+                                $data = mysqli_fetch_assoc($result);
+                                $Price = 0;
+                                if($L2='1'){
+                                    $Price = $data['Price_L1'];
+                                }else {
+                                    $Price = $data['Price_L2'];
+                                }
+                                $price1 = ($Price + (int)('573000'))*$adult;
+                                if($children != '') {
+                                    $price2 = ($Price + (int)('473000'))*$children;
+                                }
+                                else{
+                                    $price2 = 0;
+                                }
+                                if($baby != '') {
+                                    $price3 = ($Price + (int)('7000'))*$baby;
+                                }
+                                else{
+                                    $price3 = 0;
+                                }
+                                $totalPrice = (int)$price1 + (int)$price2 + (int)$price3 + 750000;
+                        ?>
+
+                        <div class="infoFly-time">
+                            <p class="infoFly-text">
+                                <?php echo $data['Start_Date']?>
+                            </p> 
+                            <p class="infoFly-customer">Hành khách: 
+                                <?php 
+                                    echo $adult;
+                                    echo ' người lớn, ';
+                                    if($children != '') {
+                                        echo $children;
+                                        echo ' trẻ em, ';
+                                    }
+                                    if($baby != '') {
+                                        echo $baby;
+                                        echo ' em bé';
+                                    }
+                                ?>
+                            </p>
+                        </div>
+                                    
+                        <div class="ticket-logo">
+                            <div class="time">
+                                <span class="gray">
+                                    <?php echo $data['Start_Date']?>
+                                </span>
+                                <h5>
+                                    <?php echo $data['Start_Time']?>
+                                </h5>
+                                <h6>
+                                    <?php echo $data['Departure_Plane']?>
+                                </h6>
+                            </div>
+                            <div class="ticket-icon ms-3">
+                                <i class="fa fa-plane" style="font-size: 20px; color: rgb(250, 186, 49)"></i>
+                                <p>Bay thẳng</p>
+                            </div>
+                            <div class="time">
+                                <span class="gray">
+                                    <?php echo $data['End_Date']?>
+                                </span>
+                                <h5>
+                                    <?php echo $data['End_Time']?>
+                                </h5>
+                                <h6>
+                                    <?php echo $data['To_Plane']?>
+                                </h6>
+                            </div>
+                        </div>
+    
+                        <div class="info-price">
+                            <p>Giá: </p>
+                            <p class="red ps-3">
+                                <?php echo $totalPrice . ' ₫'?>
+                            </p>
+                        </div>
+    
+                        <hr>
+    
+                        <div class="info-bottom">
+                            <h6>Chi tiết giá vé</h6>
+                            <div class="adult mt-3">
+                                <p class="adult-text">Người lớn x
+                                    <?php echo $adult ?>
+                                </p> 
+                                <div class="aldult-price">
+                                    <?php echo $price1 . ' ₫'?>
+                                </div>
+                            </div>
+                            <?php 
+                                if($children > 0){
+                                    ?>
+                                    <div class="adult">
+                                        <p class="adult-text">Trẻ em x
+                                            <?php echo $children . ' ₫'?>
+                                        </p>
+                                        <div class="aldult-price">
+                                            <?php echo $price2 . ' ₫'?>
+                                        </div>
+                                    </div>
+                                    <?php
+                                }
+                                if($baby>0){
+                                    ?>
+                                    <div class="adult">
+                                        <p class="adult-text">Em bé x
+                                            <?php echo $baby ?>
+                                        </p>
+                                        <div class="aldult-price">
+                                            <?php echo $price3 . ' ₫'?>
+                                        </div>
+                                    </div>
+                                    <?php
+                                }
+                            ?>
+                            <div class="adult">
+                                <p class="adult-text">Phí & Thuế</p>
+                                <div class="aldult-price">750000 ₫</div>
                             </div>
                         </div>
                     </div>

@@ -34,7 +34,7 @@
             
             <?php
             require 'admin/connect.php';
-            $query = "SELECT * FROM list_customer,list_flight,user_login,list_planes Where list_flight.Code_Flight = list_customer.Code_Flight and user_login.id=list_customer.id_user and list_flight.Code_Plane=list_planes.Code_Plane and status = 1 and user_login.id=$id ";
+            $query = "SELECT * FROM list_customer,list_flight,user_login,list_planes Where list_flight.Code_Flight = list_customer.Code_Flight and user_login.id=list_customer.id_user and list_flight.Code_Plane=list_planes.Code_Plane and status = 0 and user_login.id=$id ";
             $result = mysqli_query($conn, $query);
             // $row = mysqli_fetch_assoc($result);
             // $rowcount=mysqli_num_rows($result);
@@ -158,7 +158,7 @@
             
                 <?php
                 require 'admin/connect.php';
-                $query = "SELECT * FROM list_customer,list_flight,user_login,list_planes Where list_flight.Code_Flight = list_customer.Code_Flight and user_login.id=list_customer.id_user and list_flight.Code_Plane=list_planes.Code_Plane and status = 0 and user_login.id=$id";
+                $query = "SELECT * FROM list_customer,list_flight,user_login,list_planes Where list_flight.Code_Flight = list_customer.Code_Flight and user_login.id=list_customer.id_user and list_flight.Code_Plane=list_planes.Code_Plane and status = 1 and user_login.id=$id";
                 $result = mysqli_query($conn, $query);
                 // $row = mysqli_fetch_assoc($result);
                 // $rowcount=mysqli_num_rows($result);

@@ -24,6 +24,9 @@
                         Kết quả tìm kiếm "chuyến bay khứ hồi"
                         <div class="people mt-3">
                             <i class="bi bi-people"></i>
+                            <p style="display: none;" class="people1">
+                                adult=<?php echo $adult?>&children=<?php echo $children?>&baby=<?php echo $baby?>
+                            </p>
                             <span>
                                 <?php 
                                     echo $adult;
@@ -77,7 +80,7 @@
                             // $row = mysqli_fetch_assoc($result);
                             // $rowcount=mysqli_num_rows($result);
                             
-
+                            $link = 'information2.php?adult=<?php echo $adult?>&children=<?php echo $children?>&baby=<?php echo $baby?>';
                             while($row = mysqli_fetch_assoc($result)){
                                 $totalPeople = (int)$adult + (int)$children;
                                 $price1 = ((int)$row['Price_L1'] + (int)('573000'))*$adult;
@@ -197,6 +200,14 @@
                                                         <?php 
 
                                                         ?>
+
+                                                        <?php
+                                                            
+                                                        ?>
+
+                                                        <p  style="display: none;" class="code_flight_1">
+                                                            <?php echo $row['Code_Flight'] ?>
+                                                        </p>
                                                         <div class="btn-bookT btn-choose active1">Chọn</div>
                                                     </div>
                                                 </div>
@@ -483,6 +494,9 @@
                                                             ?>
                                                         </h5>
                                                         
+                                                        <p  style="display: none;" class="code_flight_1">
+                                                                <?php echo $row['Code_Flight'] ?>
+                                                        </p>
                                                         <div class="btn-bookT btn-choose active1">Chọn</div>
                                                 </div>
                                             </div>
@@ -843,8 +857,10 @@
                                                     <?php 
 
                                                     ?>
-                                                    <a href="information2.php?adult2=<?php echo $adult?>&children2=<?php echo $children?>&baby2=<?php echo $baby?>&flight=<?php echo $row['Code_Flight']?>&1">
-                                                    <div class="btn-bookT btn-choose">Chọn</div></a>
+                                                    <p  style="display: none;" class="code_flight_2">
+                                                        <?php echo $row['Code_Flight'] ?>
+                                                    </p>
+                                                    <div class="btn-bookT btn-choose active2">Chọn</div></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1130,8 +1146,10 @@
                                                             echo '₫';
                                                         ?>
                                                     </h5>
-                                                    <a href="information2.php">
-                                                    <div class="btn-bookT btn-choose">Chọn</div></a>
+                                                    <p  style="display: none;" class="code_flight_2">
+                                                        <?php echo $row['Code_Flight'] ?>
+                                                    </p>
+                                                    <div class="btn-bookT btn-choose active2">Chọn</div></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1342,16 +1360,47 @@
                     </div>
 
             <script>
-                $(document).ready(function(){
-                    var AC1 = document.querySelector('.AC1');
-                    var AC2 = document.querySelector('.AC2');
-                    var active1 = document.querySelectorAll('.active1').forEach(item => {
-                        item.addEventListener('click', event => {
-                            AC1.classList.add('hidden');
-                            AC2.classList.remove('hidden');
-                        })
+                var people1 = document.querySelector('.people1');
+                var link = 'information2.php?';
+                people2 = (people1.textContent).trim();
+                link = link + people2;
+
+                var codeFlight1_select = '';
+                var AC1 = document.querySelector('.AC1');
+                var AC2 = document.querySelector('.AC2');
+                var codeFlight1 = document.querySelectorAll('.code_flight_1');
+                var active1 = document.querySelectorAll('.active1').forEach((item, index) => {
+                    item.addEventListener('click', event => {
+                        // lấy code_flight từ AC1
+                        codeFlight1_select = codeFlight1[index].textContent;
+                        link = link + '&code_flight_1=' + codeFlight1_select.trim();
+                        if(index%2==0){
+                            link = link + '&L1=1' ;
+                        }else{
+                            link = link + '&L1=2' ;
+                        }
+                        AC1.classList.add('hidden');
+                        AC2.classList.remove('hidden');
                     })
-                });
+                })
+
+                var codeFlight2 = document.querySelectorAll('.code_flight_2');
+                var codeFlight2_select = '';
+                var active2 = document.querySelectorAll('.active2').forEach((item, index) => {
+                    item.addEventListener('click', event => {
+                        // lấy code_flight từ AC2
+                        codeFlight2_select = codeFlight2[index].textContent;
+                        link = link + '&code_flight_2=' + codeFlight2_select.trim();
+                        if(index%2==0){
+                            link = link + '&L2=1' ;
+                        }else{
+                            link = link + '&L2=2' ;
+                        }
+                        window.location = link;
+                        
+                    })
+                })
+
             </script>
         </div>
 <script type="text/javascript">

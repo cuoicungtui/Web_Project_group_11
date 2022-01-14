@@ -109,6 +109,11 @@ body {
     }
 }
 
+/* @media screen and (max-width: 1194px) {
+    .navbar-nav {
+        display: none;
+    }
+} */
 
 
 .btn-load {
@@ -118,3 +123,4 @@ body {
     display: flex;
     margin-bottom: 400px;
 }
+
