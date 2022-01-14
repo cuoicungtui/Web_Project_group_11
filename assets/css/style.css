@@ -62,8 +62,8 @@
     flex-grow: 0 !important;
 }
 
-.navbar-nav {
-    vertical-align: row !important;
+.header-nav {
+    display: flex;
     list-style: none;
     padding-left: 0;
     margin: 6px 0;

@@ -34,7 +34,7 @@
                 </a>
             </div>
 
-            <ul class="navbar-nav m-auto">
+            <ul class="header-nav m-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="#">
                         <div class="navbar-item-wrap">
@@ -125,10 +125,6 @@
                 </a>
                 <div class="manage-wrap">
                     
-                    <a href="order.php" class="manage-link">
-                        <i class="bi bi-journal-bookmark"></i>
-                        <p>Quản lý đơn hàng</p>
-                    </a>
                     <?php 
                         require_once "admin/connect.php";
                         if(isset($_SESSION['USER'])){
@@ -137,6 +133,10 @@
                             $result = mysqli_query($conn,$query);
                             $data = mysqli_fetch_assoc($result);
                             ?>
+                                <a href="order.php" class="manage-link">
+                                    <i class="bi bi-journal-bookmark"></i>
+                                    <p>Quản lý đơn hàng</p>
+                                </a>
                                 <a class="login-link" href="user_information.php">
                                     <i class="bi bi-person"></i>
                                     <p>
