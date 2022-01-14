@@ -1,5 +1,5 @@
+<?php include('header.php') ?>
 <?php 
-    session_start();
     if(!isset($_SESSION['USER'])){
         header('index.php');
         return;
@@ -12,7 +12,6 @@
         color: #fff;
     }
 </style>
-<?php include('header.php') ?>
 <div class="container " style="margin-top: var(--header-mg);">
     <div class="row">
         <div class="col-md-12">
