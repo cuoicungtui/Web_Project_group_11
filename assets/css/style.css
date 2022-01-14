@@ -62,8 +62,7 @@
     flex-grow: 0 !important;
 }
 
-.header-nav {
-    /* display: flex; */
+.navbar-nav {
     vertical-align: row !important;
     list-style: none;
     padding-left: 0;
