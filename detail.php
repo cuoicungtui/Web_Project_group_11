@@ -52,22 +52,6 @@
           echo "</div>";
         ?>
 
-
-
-        <!-- <div class="content" style="align-items: justify;">
-          <div class="image" style="text-align:center;">
-            <img src="./assets/img/d1.png" alt="" class="mb-3 mt-3">
-            <p class="mb-5">Ảnh 1: Thời gian di chuyển giữa 2 thành phố ở 2 đầu đất nước được rút ngắn đáng kể bằng các chuyến bay thẳng của Bamboo Airways</p>
-          </div>
-          <p class="mb-2">Với những hành trình bay bằng phản lực Embraer của Bamboo Airways, lần đầu tiên trong lịch sử, khoảng cách gần 2000km giữa TP HCM và Điện Biên sẽ chỉ còn gói gọn trong hơn 2 giờ bay thẳng. </p>
-          
-          <p>Cụ thể, Bamboo Airways đã chính thức mở bán vé đường bay thẳng khứ hồi kết nối TP HCM – Điện Biên với tần suất 05 chuyến khứ hồi/ tuần và mức giá từ 159.000 đồng/ vé. Hai khung giờ khởi hành dự kiến của hãng là 10h20 cất cánh từ TP. HCM và 13h10 cất cánh từ Điện Biên. Tần suất chung sẽ tăng dần tùy theo điều kiện thực tế và nhu cầu của hành khách.</p>
-          <p>Ngay khi đi vào hoạt động, đường bay thẳng TP. HCM – Điện Biên của Bamboo Airways sẽ góp phần rút ngắn đáng kể thời gian di chuyển giữa 2 thành phố ở hai đầu đất nước. Dự kiến, tổng thời gian hành trình bay giữa TP. HCM – Điện Biên khai thác bằng máy bay phản lực Embraer của Bamboo Airways sẽ chỉ còn hơn 2 tiếng đồng hồ.
-          </p>
-          
-        </div> --> 
-
-
   <!-- footer -->
         <h5 class="d-flex justify-content-center mt-5">HAHALOLO luôn sát cánh trên mọi chuyến bay của bạn.</h5>
         <div class="contact">

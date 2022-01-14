@@ -1,7 +1,7 @@
 <div id="main">
         <div class="container">
             <div class="row">
-                <div class="main-top">
+                <div class="main-top mt-3">
                     <h2 class="main-title">Tìm kiếm chuyến bay cho hành trình của bạn!</h2>
                     <div class="main-btn">Tra cứu đặt chỗ</div>
                 </div>
