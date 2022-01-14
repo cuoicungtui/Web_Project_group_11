@@ -1,7 +1,7 @@
 <div id="main">
         <div class="container">
             <div class="row">
-                <div class="main-top mt-3">
+                <div class="main-top">
                     <h2 class="main-title">Tìm kiếm chuyến bay cho hành trình của bạn!</h2>
                     <div class="main-btn">Tra cứu đặt chỗ</div>
                 </div>
@@ -104,14 +104,14 @@
                                     </div>
                                 </div>
                                 <div class="tab-search">
-                                    <button class="btn-bookT" name="btn1" type="submit" style="color: #fff; text-decoration: none;">Tìm kiếm</button>
+                                    <button class="btn-bookT" name="btn1" type="submit" style="color: #fff; text-decoration: none; border: none;">Tìm kiếm</button>
                                 </div>
                             </div>
                         </form>
                         <form class="tab-pane" method="post" onsubmit="return check_searchTwo()" action="ticket2.php">
                             <div class="container">
                             <div class="row">
-                                    <div class="input-bookTicket col-12 col-xl-3 col-sm-6 mb-3">
+                                    <div class="input-bookTicket col-12 col-xl-4 col-sm-6 mb-3">
                                         <span>Điểm khởi hành</span>
                                         <select class="form-select form2-select1" id="cardtype" aria-label="Default select example" name="form2-select1">
                                             <option value="Hà Nội">Hà Nội</option>
@@ -132,7 +132,7 @@
                                             <option value="Huế">Huế</option>
                                         </select>
                                     </div>
-                                    <div class="input-bookTicket col-12 col-xl-3 col-sm-6 mb-3">
+                                    <div class="input-bookTicket col-12 col-xl-4 col-sm-6 mb-3">
                                         <span>Điểm đến</span>
                                         <select class="form-select form2-select2" id="cardtype" aria-label="Default select example" name="form2-select2">
                                             <option value="Hà Nội">Hà Nội</option>
@@ -153,7 +153,7 @@
                                             <option value="Huế">Huế</option>
                                         </select>
                                     </div>
-                                    <div class="input-bookTicket col-12 col-xl-3 col-sm-6 mb-3">
+                                    <div class="input-bookTicket col-12 col-xl-4 col-sm-6 mb-3">
                                         <div class="info-name d-flex">
                                             <div class="input-bookTicket col-md-6">
                                                 <span>Ngày đi</span>
@@ -167,7 +167,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="input-bookTicket col-12 col-xl-3 col-sm-6 mb-3 d-flex">
+                                    <div class="input-bookTicket col-12 col-xl-4 col-sm-6 mb-3 d-flex">
                                         <div class="info-name d-flex">
                                             <div class="input-bookTicket col-md-4">
                                                 <span>Người lớn</span>
@@ -188,7 +188,7 @@
                                     </div>
                                 </div>
                                 <div class="tab-search">
-                                    <button type="submit" name="btn2" class="btn-bookT" style="color: #fff; text-decoration: none;">Tìm kiếm</button>
+                                    <button type="submit" name="btn2" class="btn-bookT" style="color: #fff; text-decoration: none; border: none;">Tìm kiếm</button>
                                 </div>
                             </div>
                         </form>
@@ -249,7 +249,7 @@
                                     </div>
                                 </div>
                                 <div class="tab-search mt-3">
-                                    <button type="submit" name="btn3" class="btn-bookT" style="color: #fff; text-decoration: none;">Tìm kiếm</button>
+                                    <button type="submit" name="btn3" class="btn-bookT" style="color: #fff; text-decoration: none; border: none;">Tìm kiếm</button>
                                 </div>
                             </div>
                         </fo>

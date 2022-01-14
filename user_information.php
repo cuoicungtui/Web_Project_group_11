@@ -1,5 +1,5 @@
+<?php include('header.php') ?>
 <?php
-session_start();
 if (!isset($_SESSION['USER'])) {
     header("location:login.php");
 }
@@ -11,7 +11,6 @@ $query = "SELECT * FROM user_login WHERE id = $id";
 $result = mysqli_query($conn, $query);
 $data = mysqli_fetch_assoc($result);
 ?>
-<?php include('header.php') ?>
 <div class="container " style="margin-top: var(--header-mg);">
     <div class="row">
         <div class="col-md-12 mt-2 mb-4">
@@ -21,7 +20,7 @@ $data = mysqli_fetch_assoc($result);
         </div>
     </div>
     <div class="row">
-        <div class="col-4">
+        <div class="col-4" style="text-align:center;">
             <?php
             if ($data['avatar'] == "") {
                 echo '<img src="assets/img/user_icon.png" width="50%" height="auto" alt="" class="rounded-circle">';
@@ -35,7 +34,7 @@ $data = mysqli_fetch_assoc($result);
             ?>
             
 
-            <h5 class="ms-3 mt-2">
+            <h5 class="mt-3">
                 <?php
                 echo $data['firstname'];
                 echo ' ';

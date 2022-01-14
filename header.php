@@ -275,13 +275,13 @@
                 <div class="manage-wrap">
                     
                     <?php 
-                        require_once "admin/connect.php";
-                        if(isset($_SESSION['USER'])){
-                            $id = $_SESSION['USER'];
-                            $query = "SELECT * FROM user_login WHERE id = $id";
-                            $result = mysqli_query($conn,$query);
-                            $data = mysqli_fetch_assoc($result);
-                            ?>
+                        // require_once "admin/connect.php";
+                        // if(isset($_SESSION['USER'])){
+                        //     $id = $_SESSION['USER'];
+                        //     $query = "SELECT * FROM user_login WHERE id = $id";
+                        //     $result = mysqli_query($conn,$query);
+                        //     $data = mysqli_fetch_assoc($result);
+                        ?>
                                 <a href="order.php" class="manage-link">
                                     <i class="bi bi-journal-bookmark"></i>
                                     <p>Quản lý đơn hàng</p>
@@ -290,9 +290,9 @@
                                     <i class="bi bi-person"></i>
                                     <p>
                                         <?php
-                                            echo $data['firstname'];
-                                            echo ' ';
-                                            echo $data['lastname'];
+                                            // echo $data['firstname'];
+                                            // echo ' ';
+                                            // echo $data['lastname'];
                                         ?>
                                     </p>
                                 </a>
@@ -303,15 +303,15 @@
                                     <p>Đăng xuất</p>
                                 </a>
                             <?php
-                        }
-                        else {
+                        // }
+                        // else {
                             ?>
                                 <a href="login.php" class="login-link">
                                     <i class="bi bi-box-arrow-in-left"></i>
                                     <p>Đăng nhập</p>
                                 </a>
                             <?php
-                        }
+                        // }
                     ?> 
                     
                     
