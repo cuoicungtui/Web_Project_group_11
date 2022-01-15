@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th12 31, 2021 lúc 07:17 PM
+-- Thời gian đã tạo: Th1 15, 2022 lúc 05:22 AM
 -- Phiên bản máy phục vụ: 10.4.21-MariaDB
 -- Phiên bản PHP: 8.0.12
 
@@ -114,16 +114,16 @@ INSERT INTO `dl` (`ID`, `img`, `Title`, `Prg`, `date`) VALUES
 (18, './assets/img/p4.jpg', 'HAHALOLO TUYỂN ĐẠI LÝ VÉ MÁY BAY CẤP 2 TRÊN TOÀN QUỐC.', '            Hahalolo hiện đang là đại lý cấp 1 của tất cả các hãng hàng không nội địa: Vietnam Airlines, Bamboo Airways, Vietjet Air, Vietravel Airlines và là đối tác được tin cậy của các hãng hàng không quốc tế. Nhằm mở rộng và phát triển hệ thống mạng lưới bán vé máy bay cả trong và ngoài nước. Hahalolo cần tìm đối tác là cá nhân, doanh nghiệp, công ty du lịch, ... có nguyện vọng làm đại lý vé máy bay cấp 2.            ', '2021-12-27'),
 (19, './assets/img/p5.jpg', 'CÓ NÊN MUA BẢO HIỂM HÀNG KHÔNG KHI ĐẶT VÉ MÁY BAY?', '                        Nhiều Quý khách hàng luôn thắc mắc “Bảo hiểm hàng không là gì?” và “Có được những quyền lợi gì khi tham gia bảo hiểm”. Để giải đáp những thắc mắc trên, hãy cùng Hahalolo tìm hiểu kỹ hơn về bảo hiểm vé máy bay ở bài viết dưới đây nhé!                        ', '2021-12-27'),
 (20, './assets/img/p6.jpg', 'LOWER PRICE - HIGHER COMMISSION', '            “No funds released, tons of profit received”: Do you believe that you will earn tons of profit without having to spend any money? Yes, it is an undoubted truth. Hurry to become an airline ticketing collaborator for Hahalolo to relish that incentive.            ', '2021-12-27'),
-(21, './assets/img/p11.jpg', 'HAHALOLO - THE LOWEST FLIGHT TICKETS ON THE MARKET', 'Cheap flight tickets are always a viral topic for globetrotters though not all of them can find a reputable place offering many alluring promotions, especially the lowest prices on the market. Let\'s find out the favorable aspects when booking on Hahalolo so that you can hunt for super cheap tickets.', '2021-12-20'),
-(22, './assets/img/p10.jpg', 'WHAT SOLUTIONS ARE DESTINED FOR THOSE WHO ', '                        You are a busy person who always finds plane traveling needed, yet your schedule is very changeable. The difficulty found in contacting airlines to change tickets, airlines hotline overloaded, and busy operators will certainly trouble you.                        ', '2021-12-06'),
-(23, './assets/img/p12.jpg', 'IF YOU ARE A TRAVELHOLIC', '                        “The world is a book, and those who do not travel read only one page.”                        ', '2021-12-24'),
-(24, './assets/img/p11.jpg', 'TIPS TO MAKE YOUR BODY MORE COMFORTABLE ON AN AIRPLANE', '            Most travel devotees are certainly not unfamiliar with long-haul flights. Long flights can cause fatigue in your body.            ', '2021-12-19'),
-(25, './assets/img/p12.jpg', 'GIÁ VÉ SIÊU RẺ – HOA HỒNG MỚI MẺ', '                        “0 đồng vốn, 4 đồng lời”: Bạn có tin bạn sẽ kiếm được 4 đồng lời mà không bỏ đồng vốn nào không? Đó là sự thật, hãy nhanh tay trở thành cộng tác viên bán vé máy bay của Hahalolo để được hưởng ưu đãi đó.                        ', '2021-12-17'),
-(26, './assets/img/p10.jpg', 'HAHALOLO – VÉ MÁY BAY GIÁ RẺ NHẤT THỊ TRƯỜNG', '                        Vé máy bay giá rẻ luôn là chủ đề \"Hot\" đối với những người yêu thích du lịch, tuy nhiên không phải ai cũng tìm được một nơi uy tín, có nhiều chương trình khuyến mãi hấp dẫn và điều đặc biệt là giá vé rẻ nhất thị trường.                        ', '2021-12-19'),
-(27, './assets/img/p11.jpg', 'NẾU BẠN LÀ TÍN ĐỒ MÊ DU LỊCH, YÊU THÍCH XÊ DỊCH', '            \"Thế giới là một cuốn sách kì thú, và những người không trải nghiệm du lịch sẽ chỉ đọc duy nhất một trang”.            ', '2021-12-05'),
-(28, './assets/img/p11.jpg', 'MÁCH BẠN GIÚP CƠ THỂ THOẢI MÁI HƠN KHI ĐI MÁY BAY', '                        Với các tín đồ du lịch, chắc chắn không xa lạ với những chuyến bay đường dài. Các chuyến bay nhiều tiếng đồng hồ có thể gây ra sự mệt mỏi cho cơ thể bạn.                        ', '2021-12-05'),
-(29, './assets/img/p12.jpg', 'TẠI SAO NÊN MUA VÉ MÁY BAY QUA ĐẠI LÝ?', '                        Máy bay giờ đây đã trở thành phương tiện di chuyển vô cùng phổ biến bởi sự an toàn và nhanh chóng. Hãy cùng Hahalolo tìm hiểu những lợi ích của việc đặt vé qua đại lý ngay dưới đây.                        ', '2021-12-11'),
-(30, './assets/img/p11.jpg', 'GIẢI PHÁP NÀO DÀNH CHO NGƯỜI ', '            Bạn là người bận rộn, luôn phải di chuyển bằng máy bay nhưng lịch trình lại hay thay đổi nhưng lại quá khó khăn để liên hệ các Hãng hàng không thay đổi vé, hotline của Hãng luôn quá tải, tổng đài viên luôn bận.            ', '2021-12-25');
+(21, './assets/img/p7.jpg', 'HAHALOLO - THE LOWEST FLIGHT TICKETS ON THE MARKET', 'Cheap flight tickets are always a viral topic for globetrotters though not all of them can find a reputable place offering many alluring promotions, especially the lowest prices on the market. Let\'s find out the favorable aspects when booking on Hahalolo so that you can hunt for super cheap tickets.', '2021-12-20'),
+(22, './assets/img/p8.jpg', 'WHAT SOLUTIONS ARE DESTINED FOR THOSE WHO ', '                        You are a busy person who always finds plane traveling needed, yet your schedule is very changeable. The difficulty found in contacting airlines to change tickets, airlines hotline overloaded, and busy operators will certainly trouble you.                        ', '2021-12-06'),
+(23, './assets/img/p9.jpg', 'IF YOU ARE A TRAVELHOLIC', '                        “The world is a book, and those who do not travel read only one page.”                        ', '2021-12-24'),
+(24, './assets/img/p10.jpg', 'TIPS TO MAKE YOUR BODY MORE COMFORTABLE ON AN AIRPLANE', '            Most travel devotees are certainly not unfamiliar with long-haul flights. Long flights can cause fatigue in your body.            ', '2021-12-19'),
+(25, './assets/img/p11.jpg', 'GIÁ VÉ SIÊU RẺ – HOA HỒNG MỚI MẺ', '                        “0 đồng vốn, 4 đồng lời”: Bạn có tin bạn sẽ kiếm được 4 đồng lời mà không bỏ đồng vốn nào không? Đó là sự thật, hãy nhanh tay trở thành cộng tác viên bán vé máy bay của Hahalolo để được hưởng ưu đãi đó.                        ', '2021-12-17'),
+(26, './assets/img/p12.jpg', 'HAHALOLO – VÉ MÁY BAY GIÁ RẺ NHẤT THỊ TRƯỜNG', '                        Vé máy bay giá rẻ luôn là chủ đề \"Hot\" đối với những người yêu thích du lịch, tuy nhiên không phải ai cũng tìm được một nơi uy tín, có nhiều chương trình khuyến mãi hấp dẫn và điều đặc biệt là giá vé rẻ nhất thị trường.                        ', '2021-12-19'),
+(27, './assets/img/p1.jpg', 'NẾU BẠN LÀ TÍN ĐỒ MÊ DU LỊCH, YÊU THÍCH XÊ DỊCH', '            \"Thế giới là một cuốn sách kì thú, và những người không trải nghiệm du lịch sẽ chỉ đọc duy nhất một trang”.            ', '2021-12-05'),
+(28, './assets/img/p2.jpg', 'MÁCH BẠN GIÚP CƠ THỂ THOẢI MÁI HƠN KHI ĐI MÁY BAY', '                        Với các tín đồ du lịch, chắc chắn không xa lạ với những chuyến bay đường dài. Các chuyến bay nhiều tiếng đồng hồ có thể gây ra sự mệt mỏi cho cơ thể bạn.                        ', '2021-12-05'),
+(29, './assets/img/p3.jpg', 'TẠI SAO NÊN MUA VÉ MÁY BAY QUA ĐẠI LÝ?', '                        Máy bay giờ đây đã trở thành phương tiện di chuyển vô cùng phổ biến bởi sự an toàn và nhanh chóng. Hãy cùng Hahalolo tìm hiểu những lợi ích của việc đặt vé qua đại lý ngay dưới đây.                        ', '2021-12-11'),
+(30, './assets/img/p4.jpg', 'GIẢI PHÁP NÀO DÀNH CHO NGƯỜI ', '            Bạn là người bận rộn, luôn phải di chuyển bằng máy bay nhưng lịch trình lại hay thay đổi nhưng lại quá khó khăn để liên hệ các Hãng hàng không thay đổi vé, hotline của Hãng luôn quá tải, tổng đài viên luôn bận.            ', '2021-12-25');
 
 -- --------------------------------------------------------
 
@@ -134,19 +134,27 @@ INSERT INTO `dl` (`ID`, `img`, `Title`, `Prg`, `date`) VALUES
 CREATE TABLE `list_customer` (
   `Id` int(11) NOT NULL,
   `Name` varchar(30) DEFAULT NULL,
-  `SDT` char(10) NOT NULL,
-  `EMAIL` char(30) NOT NULL,
   `Code_Flight` char(7) NOT NULL,
-  `Type_Chair` varchar(10) DEFAULT NULL
+  `Type_Chair` varchar(10) DEFAULT NULL,
+  `Sex` bit(1) NOT NULL,
+  `Adress` varchar(100) NOT NULL,
+  `active_code` varchar(100) NOT NULL,
+  `status` bit(1) NOT NULL,
+  `id_user` int(11) NOT NULL,
+  `EMAIL` varchar(200) NOT NULL,
+  `SDT` char(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Đang đổ dữ liệu cho bảng `list_customer`
 --
 
-INSERT INTO `list_customer` (`Id`, `Name`, `SDT`, `EMAIL`, `Code_Flight`, `Type_Chair`) VALUES
-(1, 'Tưởng Đăng Vương Quốc', '0988965602', 'quoctuong@gmail.com', '1233454', 'L1'),
-(2, 'Ngô Văn Tùng', '0854965666', 'TungNgo@gmail.com', '1234567', 'L2');
+INSERT INTO `list_customer` (`Id`, `Name`, `Code_Flight`, `Type_Chair`, `Sex`, `Adress`, `active_code`, `status`, `id_user`, `EMAIL`, `SDT`) VALUES
+(1, 'Tưởng Đăng Vương Quốc', '1233454', 'L1', b'1', 'Nghệ An', 'abc1', b'0', 11, 'tuondangvuongquoc901@gmail.com', '0123456789'),
+(2, 'Ngô Văn Tùng', '1234567', 'L2', b'1', 'Bắc Ninh', 'abc2', b'0', 12, 'ngotung180301@gmail.com', '0393072588'),
+(95, 'TÚ', '1234567', 'L1', b'1', '', '', b'1', 12, 'tus@gmail.com', '0123444899'),
+(132, 'Anh', '1234567', 'L1', b'1', '', 'aa', b'1', 12, 'anh@gmail.com', '0241112356'),
+(134, 'Tùng', 'BBA1', 'L1', b'1', '', 'aa', b'0', 12, 'tung@gmail.com', '0123456999');
 
 -- --------------------------------------------------------
 
@@ -172,10 +180,14 @@ CREATE TABLE `list_flight` (
 --
 
 INSERT INTO `list_flight` (`Code_Flight`, `Code_Plane`, `Start_Date`, `End_Date`, `Start_Time`, `End_Time`, `Departure_Plane`, `To_Plane`, `Price_L1`, `Price_L2`) VALUES
+('11', 'BBA123', '2022-01-29', '2022-01-30', '04:30:00', '07:30:00', 'Hà Nội', 'Đà Nẵng', 800000, 650000),
+('112', 'BBA123', '2022-01-17', '2022-01-17', '18:30:00', '20:30:00', 'Đà Nẵng', 'Hà Nội', 800000, 650000),
+('12', 'BBA123', '2022-01-30', '2022-01-30', '14:30:00', '16:30:00', 'Đà Nẵng', 'Hà Nội', 800000, 650000),
 ('1233454', 'BBA123', '2021-12-15', '2021-12-16', '09:30:00', '12:15:00', 'Sài Gòn', 'Vinh', 1500000, 700000),
-('1234567', 'VJA123', '2021-12-13', '2021-12-13', '11:30:00', '14:30:00', 'Hà Nội', 'Sài Gòn', 0, 0),
+('1234567', 'VJA123', '2022-01-30', '2022-01-30', '11:30:00', '14:30:00', 'Hà Nội', 'Đà Nẵng', 600000, 1000000),
 ('123VAL', 'VAL123', '2022-01-01', '2022-01-01', '07:30:00', '09:30:00', 'Hà Nội', 'Điện Biên Phủ', 600000, 850000),
 ('123VN', 'BBA123', '2022-01-01', '2022-01-01', '05:30:00', '09:30:00', 'Hà Nội', 'Điện Biên Phủ', 500000, 600000),
+('BBA1', 'BBA123', '2022-01-30', '2022-01-30', '14:30:00', '16:30:00', 'Hà Nội', 'Đà Nẵng', 600000, 1000000),
 ('VJA123', 'VJA123', '2022-01-01', '2022-01-01', '06:45:00', '10:30:00', 'Hà Nội', 'Điện Biên Phủ', 450000, 300000);
 
 -- --------------------------------------------------------
@@ -205,26 +217,6 @@ INSERT INTO `list_planes` (`Code_Plane`, `Name_Plane`, `Name_Airline`, `img`, `L
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `table_dl`
---
-
-CREATE TABLE `table_dl` (
-  `ID` int(11) NOT NULL,
-  `Title` varchar(200) NOT NULL,
-  `Prg` varchar(200) NOT NULL,
-  `img` char(200) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Đang đổ dữ liệu cho bảng `table_dl`
---
-
-INSERT INTO `table_dl` (`ID`, `Title`, `Prg`, `img`) VALUES
-(1, 'uyuqwuygqwguyqdguq', 'ádadagdfgdgdgdverevevrve', '\"./assets/img/p11.jpg\"');
-
--- --------------------------------------------------------
-
---
 -- Cấu trúc bảng cho bảng `user_login`
 --
 
@@ -233,17 +225,22 @@ CREATE TABLE `user_login` (
   `firstname` varchar(100) NOT NULL,
   `lastname` varchar(100) NOT NULL,
   `email` varchar(100) NOT NULL,
-  `password` char(200) NOT NULL
+  `password` char(200) NOT NULL,
+  `sdt` char(10) NOT NULL,
+  `avatar` char(200) NOT NULL,
+  `sex` bit(1) NOT NULL,
+  `adress` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Đang đổ dữ liệu cho bảng `user_login`
 --
 
-INSERT INTO `user_login` (`id`, `firstname`, `lastname`, `email`, `password`) VALUES
-(11, 'Tưởng đăng', 'quốc', 'tuondangvuongquoc901@gmail.com', '$2y$10$zvuzB/xq7oL/skQrwAqVFurPKJJS8ydwQBPjix7HLt18Zn51GLIi6'),
-(12, 'Tùng', 'Ngô', 'ngotung180301@gmail.com', '$2y$10$WzhWaQAmbGKtxzZSa70VQ.ECWtJLSH/VEDXSxmrhoB0g/Dc9m4Mzi'),
-(13, 'Quốc', 'Vương', 'quocvuong@gmail.com', '$2y$10$TsXIVmYQbvxw4n9mMGaC1OrLwCd/wOECDTHa0.gPCHAwdQnS/3B.y');
+INSERT INTO `user_login` (`id`, `firstname`, `lastname`, `email`, `password`, `sdt`, `avatar`, `sex`, `adress`) VALUES
+(11, 'Tưởng đăng', 'quốc', 'tuondangvuongquoc901@gmail.com', '$2y$10$zvuzB/xq7oL/skQrwAqVFurPKJJS8ydwQBPjix7HLt18Zn51GLIi6', '0123456789', 'asset/img/d1.png', b'1', 'Nghệ An'),
+(12, 'Tùng', 'Ngô', 'ngotung180301@gmail.com', '$2y$10$WzhWaQAmbGKtxzZSa70VQ.ECWtJLSH/VEDXSxmrhoB0g/Dc9m4Mzi', '0393072588', 'assets/img/a2.jpg', b'1', 'Bắc Ninh'),
+(15, 'ac', 'c', 'ax@gmail.com', '$2y$10$M.VahVBYsQhQg0eIv8WHaOA9iRtC0Ycs8VaGKCsPZKnoCHyfCyKqC', '', '', b'0', ''),
+(16, 'tuấn', 'tú', 'tuantu@gmail.com', '$2y$10$prDD1YiKWoD5nVSYvkYaFOly3LEVbUYe8aT1H2kGkULDTjE3tCuzi', '', '', b'0', '');
 
 --
 -- Chỉ mục cho các bảng đã đổ
@@ -274,9 +271,8 @@ ALTER TABLE `dl`
 --
 ALTER TABLE `list_customer`
   ADD PRIMARY KEY (`Id`),
-  ADD UNIQUE KEY `SDT` (`SDT`),
-  ADD UNIQUE KEY `EMAIL` (`EMAIL`),
-  ADD KEY `Code_Flight` (`Code_Flight`);
+  ADD KEY `Code_Flight` (`Code_Flight`),
+  ADD KEY `id_user` (`id_user`);
 
 --
 -- Chỉ mục cho bảng `list_flight`
@@ -291,12 +287,6 @@ ALTER TABLE `list_flight`
 ALTER TABLE `list_planes`
   ADD PRIMARY KEY (`Code_Plane`),
   ADD UNIQUE KEY `Name_Plane` (`Name_Plane`);
-
---
--- Chỉ mục cho bảng `table_dl`
---
-ALTER TABLE `table_dl`
-  ADD PRIMARY KEY (`ID`);
 
 --
 -- Chỉ mục cho bảng `user_login`
@@ -331,19 +321,13 @@ ALTER TABLE `dl`
 -- AUTO_INCREMENT cho bảng `list_customer`
 --
 ALTER TABLE `list_customer`
-  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
---
--- AUTO_INCREMENT cho bảng `table_dl`
---
-ALTER TABLE `table_dl`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=141;
 
 --
 -- AUTO_INCREMENT cho bảng `user_login`
 --
 ALTER TABLE `user_login`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- Các ràng buộc cho các bảng đã đổ
@@ -359,6 +343,7 @@ ALTER TABLE `conten`
 -- Các ràng buộc cho bảng `list_customer`
 --
 ALTER TABLE `list_customer`
+  ADD CONSTRAINT `id_user` FOREIGN KEY (`id_user`) REFERENCES `user_login` (`id`),
   ADD CONSTRAINT `list_customer_ibfk_1` FOREIGN KEY (`Code_Flight`) REFERENCES `list_flight` (`Code_Flight`);
 
 --
