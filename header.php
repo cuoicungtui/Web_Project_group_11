@@ -22,7 +22,7 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-white d-flex justify-content-between">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white d-flex justify-content-between fixed-top">
         <a class="navbar-brand navbar-logo" href="#">
             <img src="assets/img/hahalolo.png" height="40" alt="hahalolo" loading="lazy"/>
             <div class="navbar-input input-search">

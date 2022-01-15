@@ -17,7 +17,7 @@ include "header_admin.php";
                 <div class="col-sm-12">
                     <form class="md-float-material form-material" action="add_admin_DB.php" method="POST" >
 
-                        <div class="auth-box card">
+                        <div class="auth-box card mt-5">
                             <div class="card-block">
                                 <div class="row">
                                     <div class="col-md-12">
@@ -26,7 +26,7 @@ include "header_admin.php";
                                 </div>
 
                                 <div class="form-group form-primary "> <input type="text" class="form-control " name="first_name" id="first_name" value="" placeholder="User name" required >                 
-                                <p style="color: red;font-size: 80%;"><i class="bi bi-exclamation-lg"></i>Enter password</p>
+                                <!-- <p style="color: red;font-size: 80%;"><i class="bi bi-exclamation-lg"></i>Enter password</p> -->
 
                                 </div>
                                 

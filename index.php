@@ -52,10 +52,6 @@
             <?php
         }
     ?>
-    
-    <div class="btn-load">
-        <div class="btn-bookT">Xem thêm</div>
-    </div>
 
     
 

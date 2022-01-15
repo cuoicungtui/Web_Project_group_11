@@ -6,7 +6,7 @@
 ?>
 
 
-  <div class="container" style="box-shadow: 2px 2px 10px 3px rgba(0, 0, 0, 0.06);">
+  <div class="container bg-white" style="box-shadow: 2px 2px 10px 3px rgba(0, 0, 0, 0.06);">
     <div class="row">
       <div class="col-md-12">
         <?php 

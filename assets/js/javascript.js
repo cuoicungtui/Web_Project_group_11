@@ -34,7 +34,6 @@ const cartWrap = document.querySelector(".cart-wrap")
 const cart = document.querySelector(".cart")
 
 const booking = document.querySelector(".booking")
-const mainBtn = document.querySelector(".main-btn")
 if(document.querySelector(".booking-close")!=null) {
     const bookingClose = document.querySelector(".booking-close")
     bookingClose.onclick = () => {
@@ -43,9 +42,10 @@ if(document.querySelector(".booking-close")!=null) {
 }
 
 
-mainBtn.addEventListener("click", function () {
-    booking.classList.toggle("booking-active")
-})
+// const mainBtn = document.querySelector(".main-btn")
+// mainBtn.addEventListener("click", function () {
+//     booking.classList.toggle("booking-active")
+// })
 
 avatar.addEventListener('click', function () {
     manage.classList.toggle('manage-wrap-active')

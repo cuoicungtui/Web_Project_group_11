@@ -3,9 +3,9 @@
             <div class="row">
                 <div class="main-top">
                     <h2 class="main-title">Tìm kiếm chuyến bay cho hành trình của bạn!</h2>
-                    <div class="main-btn">Tra cứu đặt chỗ</div>
+                    <!-- <div class="main-btn">Tra cứu đặt chỗ</div> -->
                 </div>
-                <div class="booking mb-3">
+                <!-- <div class="booking mb-3">
                     <div class="booking-title">
                         <h5>Tra cứu đặt chỗ</h5>
                         <i class="bi bi-x-lg booking-close"></i>
@@ -13,7 +13,7 @@
                     <input type="text" class="booking-input" placeholder="Mã đặt chỗ">
                     <p class="booking-text">Nhập mã đặt chỗ để tra cứu thông tin chuyến bay của bạn</p>
                     <div class="btn-bookT">Tìm kiếm</div>
-                </div>
+                </div> -->
             </div>
 
             <div class="body-book-ticket">
